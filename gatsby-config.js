@@ -7,25 +7,31 @@ module.exports = {
         path: `src/`,
         imagesPath: `src/images/`,
         iconFile: `src/images/icon.png`,
+        typographyPath: `src/utils/typography.js`,
         siteTitle: `borik.net`,
         siteUrl: `https://borik.net`,
         siteName: `Martin Bórik`,
         siteShortName: `mbr`,
-        siteDescription: `programátor, 8-biťák, milujúci otec`,
+        siteDescription: `frontend developer, 8bit freak, loving father and former alternative electronic music producer`,
         siteKeywords: `frontend software engineer, full stack javascript developer`,
         useMozJpeg: true,
         menuLinks: [
           // title = Link text
           // color = Animation background color on click
-          { name: `home`, title: `Domov`, color: `#000`, link: `` },
           {
-            name: `experience`,
-            title: `Moje práce`,
-            color: `#3a3d98`,
+            name: `home`,
+            title: `Home`,
+            color: `#eee`,
             link: ``,
           },
-          { name: `skills`, title: `Zručnosti`, color: `#d52d43`, link: `` },
-          { name: `about`, title: `O mne`, color: `#fff`, link: `` },
+          {
+            name: `experience`,
+            title: `Experience`,
+            color: `#666`,
+            link: ``,
+          },
+          { name: `skills`, title: `Skills`, color: `#666`, link: `` },
+          { name: `aboutMe`, title: `Who am I?`, color: `#eee`, link: `` },
         ],
         email: `martin@borik.net`,
         social: {
@@ -36,30 +42,30 @@ module.exports = {
           resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
         },
         homePage: {
-          availableToHire: true,
+          availableToHire: false,
           dotColors: ["#0e3e1e", "#6CC551"],
-          h1Text: `Vitajte, som Martin Bórik`,
-          h2Text: `a už viac ako 20 rokov sa živým programovaním a venujem sa aj ďalších oblastiam digitálneho umenia.`,
+          h1Text: `Hello, I'm Martin Bórik`,
+          h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts:`,
           typewriter: [
             `Frontend Software Engineer`,
             `Full-Stack Javascript Developer`,
-            `Skladateľ pôvodnej elektronickej alternatívnej hudby`,
-            `Spracovanie digitálneho obrazu a zvuku`,
+            `Alternative Electronic Music Producer`,
+            `Digital imaginary, sound and video processing`,
           ],
         },
         // Color for menu background
         shapeColor: {
-          link: { color: "#171616", hover: "#fff" },
+          link: { color: "#111", hover: "#fff" },
           shape1: {
-            color: `#413f46`,
+            color: `#333`,
             opacity: `0.7`,
           },
           shape2: {
-            color: `#e6e5ea`,
+            color: `#666`,
             opacity: `0.7`,
           },
           shape3: {
-            color: `#fff`,
+            color: `#eee`,
             opacity: `0.7`,
           },
         },
