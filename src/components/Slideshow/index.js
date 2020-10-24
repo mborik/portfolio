@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import PropTypes from "prop-types"
-import { graphql, useStaticQuery } from "gatsby"
 import Helmet from "react-helmet"
+import useEventListener from "@use-it/event-listener"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { useWnResize } from "../hooks"
 import Slide from "./Slide"
@@ -35,6 +35,17 @@ const Slideshow = ({ images, children }) => {
       setCurrent(current > 0 ? current - 1 : slidesTotal)
     }
   }
+
+  useEventListener("keydown", e => {
+    console.log(`testArrowKeys`, e)
+    const evt = e || window.event
+    const keycode = evt.which || evt.keyCode
+    if (keycode === 37) {
+      goToPrevious()
+    } else if (keycode === 39) {
+      goToNext()
+    }
+  })
 
   function getSlides() {
     return (
@@ -79,28 +90,6 @@ const Slideshow = ({ images, children }) => {
     )
   }
 
-  const siteQuery = graphql`
-    {
-      site {
-        siteMetadata {
-          basePath
-          menuLinks {
-            color
-            name
-          }
-        }
-      }
-    }
-  `
-  const {
-    site: {
-      siteMetadata: { basePath, menuLinks },
-    },
-  } = useStaticQuery(siteQuery)
-
-  const experienceLink = menuLinks.find(({ name }) => name === "experience")
-  const bgColor = experienceLink ? experienceLink.color : "#3a3d98"
-
   return (
     <>
       <Helmet
@@ -117,11 +106,11 @@ const Slideshow = ({ images, children }) => {
           <header>
             <AniLink
               cover
-              to={`${basePath}/experience`}
+              to={`/experience`}
               css={styles.arrowBack}
               direction="right"
               data-test="goback"
-              bg={bgColor}
+              bg="#666"
               style={{ opacity: 1 }}
             >
               <svg css={styles.iconJob}>

@@ -17,8 +17,8 @@ const gridImage = `
   position: relative;
 `
 const gridItem = `
-  width: 200px;
-  padding: 10px;
+  width: 128px;
+  padding: 8px;
   margin: 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -37,6 +37,7 @@ const styles = {
   section: css`
     width: 100%;
     padding: 0 3vmax;
+    min-height: 50vh;
     h2 {
       margin: 0 0 1rem;
       font-size: 3rem;
@@ -54,22 +55,6 @@ const styles = {
         line-height: 1.2em;
         max-width: 500px;
       }
-    }
-  `,
-  sectionStatic: css`
-    width: 100%;
-    padding: 4vmax;
-    h2 {
-      font-size: 6em;
-      ${media36em} {
-        font-size: 2.5em;
-      }
-    }
-    p {
-      font-size: 1em;
-      max-width: 400px;
-      font-weight: 700;
-      position: relative;
     }
   `,
   noPointerEvents: css`

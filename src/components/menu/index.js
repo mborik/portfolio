@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef, createRef } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { css } from "@emotion/core"
 import styles from "./menu.css"
@@ -14,16 +13,16 @@ const Menu = ({
   bgClassName,
 }) => {
   const defaultLinks = {
-    home: { title: "Home", color: "#000", url: "/" },
+    home: { title: "Home", color: "#eee", url: "/" },
     experience: {
       title: "Experience",
-      color: "#3a3d98",
+      color: "#666",
       url: "/experience",
     },
-    skills: { title: "Skills", color: "#d52d43", url: "/skills" },
+    skills: { title: "Skills", color: "#666", url: "/skills" },
     aboutMe: {
       title: "About Me",
-      color: "#fff",
+      color: "#eee",
       url: "/about-me",
     },
   }
@@ -169,45 +168,21 @@ const Menu = ({
     )
   }
 
-  // Get menu links and shape color
-  const siteQuery = graphql`
-    {
-      site {
-        siteMetadata {
-          basePath
-          menuLinks {
-            color
-            title
-            link
-            name
-          }
-          shapeColor {
-            link {
-              color
-              hover
-            }
-            shape1 {
-              opacity
-              color
-            }
-            shape2 {
-              opacity
-              color
-            }
-            shape3 {
-              opacity
-              color
-            }
-          }
-        }
-      }
-    }
-  `
-  const {
-    site: {
-      siteMetadata: { basePath, menuLinks, shapeColor },
+  const shapeColor = {
+    link: { color: "#111", hover: "#fff" },
+    shape1: {
+      color: `#333`,
+      opacity: `0.7`,
     },
-  } = useStaticQuery(siteQuery)
+    shape2: {
+      color: `#666`,
+      opacity: `0.7`,
+    },
+    shape3: {
+      color: `#eee`,
+      opacity: `0.7`,
+    },
+  }
 
   const linkColor = css`
     & a {
@@ -221,25 +196,6 @@ const Menu = ({
   const mainClass = fixedMenuPosition
     ? [styles.portfolio, styles.fixedPosition]
     : styles.portfolio
-
-  // Modify default links data and add new menu items
-  menuLinks.forEach(({ name, title, color, link }) => {
-    const menuOption = defaultLinks[name]
-    if (menuOption) {
-      menuOption.title = title || menuOption.title
-      menuOption.color = color || menuOption.color
-      menuOption.url = basePath
-        ? `${basePath}${menuOption.url}`
-        : menuOption.url
-    } else if (link && title) {
-      defaultLinks["newItems"] = defaultLinks["newItems"] || []
-      defaultLinks["newItems"].push({
-        title,
-        link,
-        color: color || "#000",
-      })
-    }
-  })
 
   // Generates the menu
   let menu = Object.entries(defaultLinks).map(([_key, value]) =>

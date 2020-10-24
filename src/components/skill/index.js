@@ -63,14 +63,12 @@ const Skill = ({
   const cssStyles =
     type === "static"
       ? {
-          section: styles.sectionStatic,
           header: [styles.header, styles.headerStatic, styles.noPointerEvents],
           h2: [styles.textRight, styles.noPointerEvents],
           p: [styles.textRight, styles.elementRight, styles.noPointerEvents],
           div: [styles.gridLayer, styles.gridLayerRight],
         }
       : {
-          section: styles.section,
           header: [styles.header, styles.fixed, styles.noPointerEvents],
           h2: styles.noPointerEvents,
           p: styles.noPointerEvents,

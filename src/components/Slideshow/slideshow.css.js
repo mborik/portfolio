@@ -180,6 +180,7 @@ const styles = {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    filter: drop-shadow(0 0 8px #000c);
   `,
   slideTitle: css`
     position: absolute;
@@ -201,13 +202,13 @@ const styles = {
     }
   `,
   slideTitleMain: css`
-    font-size: 6em;
+    font-size: 2.5em;
     line-height: 0.8;
     display: inline-block;
     margin: 0;
     color: #e8e8e8;
     ${media45em} {
-      font-size: 4em;
+      font-size: 2em;
     }
   `,
   slideTitleSub: css`

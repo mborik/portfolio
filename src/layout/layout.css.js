@@ -57,7 +57,6 @@ const styles = css`
     min-height: 100vh;
   }
   .pgContent {
-    margin-bottom: 34.5px;
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.5);
   }
   .pgContent,

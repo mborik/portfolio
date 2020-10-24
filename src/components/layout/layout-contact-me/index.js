@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
 import Obfuscate from "react-obfuscate"
 import Menu from "../../menu"
@@ -164,20 +163,24 @@ const LayoutContactMe = ({ children, bgClassName }) => {
                   })}
               </p>
               <p>
-                Or drop me an email at{" "}
-                <Obfuscate
-                  email={email}
-                  headers={{
-                    subject: "Come join us!",
-                    body: "We want you in our team, we have pizza friday",
-                  }}
-                />
+                Or drop me an email at <Obfuscate email={email} />
               </p>
             </div>
           </div>
         </div>
       </>
     )
+  }
+
+  const email = `martin@borik.net`
+
+  // Social usernames
+  const social = {
+    twitter: `mborik128`,
+    gitHub: `mborik`,
+    linkedIn: `in/mborik/`,
+    resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
+    stackOverflow: ``,
   }
 
   return (
@@ -194,79 +197,46 @@ const LayoutContactMe = ({ children, bgClassName }) => {
         css={styles.wrapper}
         className={`layout-wrapper ${bgClassName || "white"}`}
       >
-        <StaticQuery
-          query={graphql`
+        <Helmet
+          title={`borik.net`}
+          meta={[
             {
-              site {
-                siteMetadata {
-                  title
-                  email
-                  siteKeywords
-                  siteDescription
-                  social {
-                    gitHub
-                    twitter
-                    stackOverflow
-                    linkedIn
-                    resumeInPdf
-                  }
-                }
-              }
-            }
-          `}
-          render={({
-            site: {
-              siteMetadata: {
-                title,
-                email,
-                siteKeywords,
-                siteDescription,
-                social,
-              },
+              name: "description",
+              content:
+                "frontend developer, 8bit freak, loving father and former alternative electronic music producer",
             },
-          }) => (
-            <>
-              <Helmet
-                title={title}
-                meta={[
-                  {
-                    name: "description",
-                    content: siteDescription,
-                  },
-                  {
-                    name: "keywords",
-                    content: siteKeywords,
-                  },
-                  { charSet: "utf-8" },
-                ]}
-              >
-                <html lang="en" />
-              </Helmet>
-              {contactContent(social, email)}
-              <div className={`page${isContactOpen ? " page-move" : ""}`}>
-                <div css={styles.pageTab} className="tab"></div>
-                <div css={styles.pageTab} className="tab"></div>
-                <div css={styles.pageTab} className="tab"></div>
-                <div css={styles.mainContainer} className="tab">
-                  <div className="layout-inner">
-                    <div css={styles.layoutMagin}>
-                      <Menu
-                        bgClassName={bgClassName}
-                        numPoints={18}
-                        duration={600}
-                        delayPointsMax={300}
-                        delayPerPath={100}
-                        fixedMenuPosition={false}
-                      />
-                      {contactButton()}
-                    </div>
-                    <div css={styles.pageContainer}>{children}</div>
-                  </div>
-                </div>
+            {
+              name: "keywords",
+              content:
+                "frontend software engineer, full stack javascript developer",
+            },
+            { charSet: "utf-8" },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        {contactContent(social, email)}
+        <div className={`page${isContactOpen ? " page-move" : ""}`}>
+          <div css={styles.pageTab} className="tab"></div>
+          <div css={styles.pageTab} className="tab"></div>
+          <div css={styles.pageTab} className="tab"></div>
+          <div css={styles.mainContainer} className="tab">
+            <div className="layout-inner">
+              <div css={styles.layoutMagin}>
+                <Menu
+                  bgClassName={bgClassName}
+                  numPoints={18}
+                  duration={600}
+                  delayPointsMax={300}
+                  delayPerPath={100}
+                  fixedMenuPosition={false}
+                />
+                {contactButton()}
               </div>
-            </>
-          )}
-        />
+              <div css={styles.pageContainer}>{children}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

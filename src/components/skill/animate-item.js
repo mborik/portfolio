@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, createRef } from "react"
+import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import anime from "animejs"
 import styles from "./skills.css"
 
 function AnimateItem({ type, title, image }) {
-  const imgArray = Array(4).fill("")
   const ref = useRef(null)
   const imageRef = useRef()
-  const imagesRef = useRef(imgArray.map(createRef))
 
   useEffect(() => {
     /**
@@ -23,13 +21,7 @@ function AnimateItem({ type, title, image }) {
       if (mEnter) {
         target.style.zIndex = 2
       }
-      if (type === "static") {
-        for (let item of imagesRef.current) {
-          callback(item.current)
-        }
-      } else {
-        callback(imageRef.current)
-      }
+      callback(imageRef.current)
     }
 
     function handleMouseEnter(e) {
@@ -39,16 +31,9 @@ function AnimateItem({ type, title, image }) {
         type === "static"
           ? anime({
               targets: item,
-              translateX: () => {
-                return anime.random(-60, 60)
-              },
-              translateY: () => {
-                return anime.random(-60, 60)
-              },
-              rotateZ: () => {
-                return anime.random(-10, 10)
-              },
-              duration: 1000,
+              translateX: 20,
+              translateY: -20,
+              duration: 200,
               easing: "cubicBezier(.2, 1, .2, 1)",
               delay: 20,
             })
@@ -101,25 +86,16 @@ function AnimateItem({ type, title, image }) {
     >
       <div css={styles.gridImgContainer}>
         {type === "static" ? (
-          imgArray.map((_item, index) => (
-            <div
-              css={styles.gridImgStatic}
-              key={`anImg${index}`}
-              ref={imagesRef.current[index]}
-              style={
-                index !== 0
-                  ? {
-                      position: "absolute",
-                      overflow: "visible",
-                    }
-                  : {
-                      overflow: "visible",
-                    }
-              }
-            >
-              <Img fluid={image.childImageSharp.fluid} alt={title} />
-            </div>
-          ))
+          <div
+            css={styles.gridImgStatic}
+            ref={imageRef}
+            style={{
+              position: "absolute",
+              overflow: "visible",
+            }}
+          >
+            <Img fluid={image.childImageSharp.fluid} alt={title} />
+          </div>
         ) : (
           <>
             <div css={styles.gridImg} ref={imageRef}>

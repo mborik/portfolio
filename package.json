@@ -17,6 +17,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@n8tb1t/use-scroll-position": "^1.0.43",
+    "@use-it/event-listener": "^0.1.5",
     "animejs": "^3.2.0",
     "babel-preset-gatsby": "^0.5.4",
     "gatsby": "^2.24.84",

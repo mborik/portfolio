@@ -1,22 +1,23 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Typewriter from "typewriter-effect"
 import GraphemeSplitter from "grapheme-splitter"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/home.css"
 
-const Home = ({
-  data: {
-    site: {
-      siteMetadata: {
-        siteName,
-        homePage: { h1Text, h2Text, typewriter },
-      },
-    },
-  },
-}) => {
+const Home = () => {
+  const { siteName, h1Text, h2Text, typewriter } = {
+    siteName: `Martin Bórik`,
+    h1Text: `Hello, I'm Martin Bórik`,
+    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts:`,
+    typewriter: [
+      `Frontend Software Engineer`,
+      `Full-Stack Javascript Developer`,
+      `Alternative Electronic Music Producer`,
+      `Digital imaginary, sound and video processing`,
+    ],
+  }
+
   function stringSplitter(string) {
     const splitter = new GraphemeSplitter()
     return splitter.splitGraphemes(string)
@@ -50,34 +51,4 @@ const Home = ({
   )
 }
 
-Home.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        siteName: PropTypes.string.isRequired,
-        homePage: PropTypes.shape({
-          h1Text: PropTypes.string.isRequired,
-          h2Text: PropTypes.string.isRequired,
-          typewriter: PropTypes.array.isRequired,
-        }).isRequired,
-      }).isRequired,
-    }).isRequired,
-  }),
-}
-
 export default Home
-
-export const query = graphql`
-  {
-    site {
-      siteMetadata {
-        siteName
-        homePage {
-          h1Text
-          h2Text
-          typewriter
-        }
-      }
-    }
-  }
-`

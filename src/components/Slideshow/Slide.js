@@ -250,6 +250,10 @@ const Slide = ({
     titleCss.push(styles.slideCurrent)
   }
 
+  function createMarkup() {
+    return { __html: description }
+  }
+
   return (
     <div
       css={slideCss}
@@ -277,7 +281,10 @@ const Slide = ({
       </div>
       <div css={titleCss} ref={titleRef}>
         <h3 css={styles.slideTitleMain}>{title}</h3>
-        <p css={styles.slideTitleSub}>{description}</p>
+        <p
+          css={styles.slideTitleSub}
+          dangerouslySetInnerHTML={createMarkup()}
+        ></p>
       </div>
     </div>
   )

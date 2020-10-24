@@ -14,6 +14,10 @@ export default ({ data }) => {
     }
   }, [post])
 
+  function createMarkup() {
+    return { __html: post.html }
+  }
+
   return !post ? (
     <></>
   ) : (
@@ -36,19 +40,20 @@ export default ({ data }) => {
             </h3>
           </div>
         </div>
-        <div
-          css={styles.contentText}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        {post.html && (
+          <div
+            css={styles.contentText}
+            dangerouslySetInnerHTML={createMarkup()}
+          />
+        )}
       </Slideshow>
       <Skill
         skills={post.frontmatter.skills}
         type="static"
-        title="Tools used"
+        title="Tools &amp; Skills"
         style={{ overflow: "hidden", backgroundColor: "#fff" }}
         showLoadingAnimation={false}
-        description="The list of tools used here corresponds to the Languages, Frameworks,
-        Libraries or Apps that I used in each of the roles performed."
+        description="Languages, frameworks, libraries or apps that I used or learned."
       />
     </>
   )
