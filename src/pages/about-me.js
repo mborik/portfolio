@@ -3,12 +3,13 @@ import { Helmet } from "react-helmet"
 import aboutMe from "../contentJSON/about-me.json"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/aboutme.css"
+import siteTitle from "../utils/siteTitle"
 
 export default () => {
   return (
     <LayoutContactMe bgClassName="aboutme">
       <Helmet>
-        <title>Who am I?</title>
+        <title>{siteTitle("About")}</title>
       </Helmet>
       <section css={styles.aboutSection}>
         <div css={styles.aboutContainer}>

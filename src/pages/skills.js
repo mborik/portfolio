@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import Skill from "../components/skill"
+import siteTitle from "../utils/siteTitle"
 
 export default ({ data, transitionStatus }) => {
   let allSkills = []
@@ -36,7 +37,7 @@ export default ({ data, transitionStatus }) => {
   return (
     <LayoutContactMe bgClassName="skill">
       <Helmet>
-        <title>Skills</title>
+        <title>{siteTitle("Skills")}</title>
       </Helmet>
       <Skill
         skills={allSkills}

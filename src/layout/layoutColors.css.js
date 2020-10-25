@@ -1,17 +1,16 @@
 import { css } from "@emotion/core"
-import lineSvg from "../../static/assets/line.svg"
 
 const styles = css`
-  .e404.layout-wrapper .layout-inner,
   .home.layout-wrapper .layout-inner {
     background: #eee;
     background: radial-gradient(ellipse at center, #eee 0%, #666 100%);
   }
+  .white.layout-wrapper .layout-inner,
   .aboutme.layout-wrapper .layout-inner {
     background: #eee;
     background: radial-gradient(ellipse at center, #eee 0%, #999 100%);
   }
-  .e404 .data-section,
+  .white .data-section,
   .aboutme .data-section,
   .home.layout-wrapper h1,
   .home.layout-wrapper h2 {
@@ -19,8 +18,8 @@ const styles = css`
   }
   .aboutme .hamburgercolr::before,
   .aboutme .hamburgercolr::after,
-  .e404 .hamburgercolr::before,
-  .e404 .hamburgercolr::after {
+  .white .hamburgercolr::before,
+  .white .hamburgercolr::after {
     background-color: #000;
   }
   .skill.layout-wrapper .layout-inner {
@@ -44,8 +43,7 @@ const styles = css`
   .experience .btn-contact-color {
     color: #fff;
   }
-  .aboutme .btn-contact-color,
-  .e404 .btn-contact-color {
+  .aboutme .btn-contact-color {
     color: #000;
   }
 `

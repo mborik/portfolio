@@ -10,12 +10,11 @@ const Menu = ({
   delayPointsMax,
   delayPerPath,
   fixedMenuPosition,
-  bgClassName,
 }) => {
   const defaultLinks = {
     home: { title: "Home", color: "#999", url: "/" },
     experience: {
-      title: "Experience",
+      title: "Work Experience",
       color: "#555",
       url: "/experience",
     },
@@ -247,7 +246,6 @@ Menu.propTypes = {
   delayPointsMax: PropTypes.number.isRequired,
   delayPerPath: PropTypes.number.isRequired,
   fixedMenuPosition: PropTypes.bool.isRequired,
-  bgClassName: PropTypes.string,
 }
 
 export default Menu

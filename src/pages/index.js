@@ -4,20 +4,11 @@ import Typewriter from "typewriter-effect"
 import GraphemeSplitter from "grapheme-splitter"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/home.css"
+import { siteMetadata } from "../../gatsby-config"
 
 const Home = () => {
-  const { siteName, h1Text, h2Text, typewriter } = {
-    siteName: `Martin Bórik`,
-    h1Text: `Hello, I'm Martin Bórik`,
-    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts...`,
-    typewriter: [
-      `Frontend Software Engineer`,
-      `Full-Stack Javascript Developer`,
-      `Alternative Electronic Music Producer`,
-      `Digital Imaginary, Sound and Video Processing`,
-      `Desktop Publishing, Typography and Graphics Procession`,
-    ],
-  }
+  const { siteTitle, homePage } = siteMetadata
+  const { h1Text, h2Text, typewriter } = homePage
 
   function stringSplitter(string) {
     const splitter = new GraphemeSplitter()
@@ -27,7 +18,7 @@ const Home = () => {
   return (
     <LayoutContactMe bgClassName="home">
       <Helmet>
-        <title>{siteName}</title>
+        <title>{siteTitle}</title>
         <meta charset="UTF-8" />
       </Helmet>
       <section css={styles.dataSection}>

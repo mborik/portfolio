@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import styles from "./job.css"
 import Slideshow from "../components/Slideshow"
 import Skill from "../components/skill"
+import siteTitle from "../utils/siteTitle"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -13,6 +14,20 @@ export default ({ data }) => {
       return <></>
     }
   }, [post])
+
+  function formatDateRange(dateFrom, dateTo) {
+    const result = [dateFrom]
+
+    if (dateTo) {
+      if (dateTo !== dateFrom) {
+        result.push(dateTo)
+      }
+    } else {
+      result.push("Present")
+    }
+
+    return result.join(" to ")
+  }
 
   function createMarkup() {
     return { __html: post.html }
@@ -25,7 +40,9 @@ export default ({ data }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          {post.frontmatter.jobTitle} on {post.frontmatter.company}
+          {siteTitle(
+            `${post.frontmatter.jobTitle} @ ${post.frontmatter.company}`
+          )}
         </title>
       </Helmet>
       <Slideshow images={post.frontmatter.images}>
@@ -33,10 +50,11 @@ export default ({ data }) => {
           <div css={styles.jobtitleContent} data-test="content">
             <h1>{post.frontmatter.company}</h1>
             <h3>
-              {post.frontmatter.jobTitle}, {post.frontmatter.dateFrom}{" "}
-              {post.frontmatter.dateTo
-                ? ` to ${post.frontmatter.dateTo}`
-                : " Present"}
+              {post.frontmatter.jobTitle},&nbsp;
+              {formatDateRange(
+                post.frontmatter.dateFrom,
+                post.frontmatter.dateTo
+              )}
             </h3>
           </div>
         </div>

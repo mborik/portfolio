@@ -5,6 +5,8 @@ import { Global, css } from "@emotion/core"
 import Obfuscate from "react-obfuscate"
 import Menu from "../../menu"
 import styles from "./contact-me.css"
+import siteTitle from "../../../utils/siteTitle"
+import { siteMetadata } from "../../../../gatsby-config"
 
 const LayoutContactMe = ({ children, bgClassName }) => {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -173,16 +175,7 @@ const LayoutContactMe = ({ children, bgClassName }) => {
     )
   }
 
-  const email = `martin@borik.net`
-
-  // Social usernames
-  const social = {
-    twitter: `mborik128`,
-    gitHub: `mborik`,
-    linkedIn: `in/mborik/`,
-    resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
-    stackOverflow: ``,
-  }
+  const { email, social } = siteMetadata
 
   return (
     <>
@@ -199,18 +192,10 @@ const LayoutContactMe = ({ children, bgClassName }) => {
         className={`layout-wrapper ${bgClassName || "white"}`}
       >
         <Helmet
-          title={`borik.net`}
+          title={siteTitle()}
           meta={[
-            {
-              name: "description",
-              content:
-                "frontend developer, 8bit freak, loving father and former alternative electronic music producer",
-            },
-            {
-              name: "keywords",
-              content:
-                "frontend software engineer, full stack javascript developer",
-            },
+            { name: "description", content: siteMetadata.siteDescription },
+            { name: "keywords", content: siteMetadata.siteKeywords },
             { charSet: "utf-8" },
           ]}
         >
@@ -225,7 +210,6 @@ const LayoutContactMe = ({ children, bgClassName }) => {
             <div className="layout-inner">
               <div css={styles.layoutMagin}>
                 <Menu
-                  bgClassName={bgClassName}
                   numPoints={18}
                   duration={600}
                   delayPointsMax={300}

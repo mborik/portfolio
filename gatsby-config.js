@@ -1,10 +1,40 @@
+const siteMetadata = {
+  siteUrl: `https://borik.net`,
+  siteTitle: `Martin Bórik ▪ borik.net`,
+  siteName: `Martin Bórik`,
+  siteShortName: `borik.net`,
+  siteDescription: `frontend developer, 8bit freak, loving father and former alternative electronic music producer`,
+  siteKeywords: `frontend software engineer, full stack javascript developer`,
+  email: `martin@borik.net`,
+  social: {
+    twitter: `mborik128`,
+    gitHub: `mborik`,
+    linkedIn: `in/mborik/`,
+    resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
+    stackOverflow: ``,
+  },
+  homePage: {
+    h1Text: `Hello, I'm Martin Bórik`,
+    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts...`,
+    typewriter: [
+      `Frontend Software Engineer`,
+      `Full-Stack Javascript Developer`,
+      `Alternative Electronic Music Producer`,
+      `Digital Imaginary, Sound and Video Processing`,
+      `Desktop Publishing, Typography and Graphics Procession`,
+    ],
+  },
+}
+
 module.exports = {
+  siteMetadata,
   plugins: [
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: true,
+        defaultQuality: 75,
       },
     },
     `gatsby-transformer-remark`,
@@ -38,12 +68,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Martin Bórik`,
-        short_name: `borik.net`,
-        description: `frontend developer, 8bit freak, loving father and former alternative electronic music producer`,
+        name: siteMetadata.siteName,
+        short_name: siteMetadata.siteShortName,
+        description: siteMetadata.siteDescription,
         lang: `en`,
         start_url: `/`,
-        background_color: `#000`,
+        background_color: `#333`,
         theme_color: `#fff`,
         display: `standalone`,
         icon: `${__dirname}/src/images/icon.png`,

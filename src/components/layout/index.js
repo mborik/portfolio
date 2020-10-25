@@ -1,8 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+import { Global, css } from "@emotion/core"
 import styles from "./layout.css"
 import Menu from "../menu"
+import siteTitle from "../../utils/siteTitle"
+import { siteMetadata } from "../../../gatsby-config"
 
 const Layout = ({
   title,
@@ -12,36 +15,40 @@ const Layout = ({
 }) => {
   return (
     <>
-      <Helmet
-        title={title || "borik.net"}
-        meta={[
-          {
-            name: "description",
-            content:
-              "frontend developer, 8bit freak, loving father and former alternative electronic music producer",
-          },
-          {
-            name: "keywords",
-            content:
-              "frontend software engineer, full stack javascript developer",
-          },
-          { charSet: "utf-8" },
-        ]}
+      <Global
+        styles={css`
+          .tl-edges {
+            max-width: 100%;
+            overflow-x: inherit;
+          }
+        `}
+      />
+      <div
+        css={styles.wrapper}
+        className={`layout-wrapper ${bgClassName || "white"}`}
       >
-        <html lang="en" />
-      </Helmet>
-      <div className="layout-inner">
-        <div css={styles.layout}>
-          <Menu
-            bgClassName={bgClassName}
-            numPoints={18}
-            duration={600}
-            delayPointsMax={300}
-            delayPerPath={100}
-            fixedMenuPosition={fixedMenuPosition}
-          />
+        <Helmet
+          title={siteTitle(title)}
+          meta={[
+            { name: "description", content: siteMetadata.siteDescription },
+            { name: "keywords", content: siteMetadata.siteKeywords },
+            { charSet: "utf-8" },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <div className="layout-inner">
+          <div css={styles.layout}>
+            <Menu
+              numPoints={18}
+              duration={600}
+              delayPointsMax={300}
+              delayPerPath={100}
+              fixedMenuPosition={fixedMenuPosition}
+            />
+          </div>
+          <div css={styles.pageContainer}>{children}</div>
         </div>
-        <div css={styles.pageContainer}>{children}</div>
       </div>
     </>
   )

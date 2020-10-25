@@ -3,12 +3,13 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import Experience from "../components/experience"
+import siteTitle from "../utils/siteTitle"
 
 export default ({ data, transitionStatus }) => {
   return (
     <LayoutContactMe bgClassName="experience">
       <Helmet>
-        <title>Work Experience</title>
+        <title>{siteTitle("Work Experience")}</title>
       </Helmet>
       <Experience
         jobs={data.allMarkdownRemark.edges}
