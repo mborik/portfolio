@@ -326,8 +326,8 @@ const styles = {
     }
     .slide-img:nth-of-type(4) {
       top: 50%;
-      left: 75%;
-      width: 22.5%;
+      left: 66%;
+      width: 30%;
       height: 42.5%;
     }
   `,

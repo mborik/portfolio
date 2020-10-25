@@ -29,9 +29,9 @@ images: [
         <li><b>ProLik</b>: settlement and inspection management of vehicle incident claims</li>
         <li><b>APK</b>: interactive wizard for insurance brokers to easier interaction with client</li>
         <li><b>Agáta</b>: address, inspection and supression of insurance-related crimes</li></ul></li>
-      <li>Frontend developer of many other desktop web applications for insurance brokers.</li>
-      <li>UI/UX and responsive design (consultancy or application into SCSS).</li>
+      <li>Frontend developer of few another desktop web applications for insurance brokers.</li>
       <li>Reinvented and improved many of former core application components and services.</li>
+      <li>UI/UX and responsive design.</li>
       <li>All solutions built on <b>Angular 6+</b> framework</li></ul>",
     layout: "3",
     files: [
@@ -46,7 +46,7 @@ images: [
     title: "Customer: ČEZ Group",
     description: "<ul>
       <li><b>\"JSŘOT - Centrála\"</b> - Frontend developer of the desktop web application for vehicle monitoring and tracking, fleet & asset management.</li>
-      <li>UI/UX and responsive design (consultancy or application into SCSS).</li>
+      <li>UI/UX and responsive design.</li>
       <li>Solution built on <b>Angular 8</b> framework, <b>NgRx</b> and Reactive Forms.</li></ul>",
     layout: "1",
     files: [
