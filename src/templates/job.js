@@ -106,6 +106,7 @@ export const query = graphql`
         skills {
           title
           image {
+            publicURL
             childImageSharp {
               fluid(maxWidth: 200) {
                 ...GatsbyImageSharpFluid

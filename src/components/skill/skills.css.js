@@ -53,7 +53,9 @@ const styles = {
     width: 100%;
   `,
   gridLayerRight: css`
+    max-width: calc(136px * 5);
     margin-top: -5rem;
+    margin-left: 10rem;
     transform: perspective(3000px) translateY(-70px) rotateX(55deg)
       rotateZ(-45deg);
     transform-origin: center center;
@@ -130,25 +132,30 @@ const styles = {
   `,
   gridImg: css`
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 120px;
     border-radius: 2%;
     background: #fff;
     margin: 0;
     padding: 0;
     position: relative;
+
+    img {
+      width: 90%;
+      height: 90%;
+      margin: 5%;
+    }
   `,
   gridTitle: css`
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     position: absolute;
     z-index: -1;
     bottom: 0;
     width: 100%;
     text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fff;
+    letter-spacing: 1px;
+    color: #000;
     opacity: 0;
     transform: translate3d(0, -20px, 0);
     transition: transform 0.3s, opacity 0.3s;

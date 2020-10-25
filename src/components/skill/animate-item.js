@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
 import anime from "animejs"
 import styles from "./skills.css"
+import CompatibleImg from "./compatible-image"
 
 function AnimateItem({ type, title, image }) {
   const ref = useRef(null)
@@ -83,8 +83,8 @@ function AnimateItem({ type, title, image }) {
     <li css={styles.gridItem} ref={ref}>
       <div css={styles.gridImgContainer}>
         <div css={styles.gridImg} ref={imageRef}>
-          <Img
-            fluid={image.childImageSharp.fluid}
+          <CompatibleImg
+            imageInfo={image}
             style={{
               overflow: "visible",
             }}
