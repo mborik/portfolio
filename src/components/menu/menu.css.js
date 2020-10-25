@@ -302,6 +302,7 @@ const styles = {
     left: 0;
     &.is-opened {
       pointer-events: auto;
+      z-index: 3;
     }
   `,
 }

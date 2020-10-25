@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import Layout from "../components/layout"
+import LayoutContactMe from "../components/layout/layout-contact-me"
 import Skill from "../components/skill"
 
 export default ({ data, transitionStatus }) => {
@@ -34,7 +34,7 @@ export default ({ data, transitionStatus }) => {
   }
 
   return (
-    <Layout title={`Skills`} bgClassName={`skill`} fixedMenuPosition={true}>
+    <LayoutContactMe bgClassName="skill">
       <Helmet>
         <title>Skills</title>
       </Helmet>
@@ -42,12 +42,12 @@ export default ({ data, transitionStatus }) => {
         skills={allSkills}
         type="scrollable"
         title="Skills"
-        description="These are the skills that I have acquired through my years of
-            experience working as a software developer, the order is based on
-            the ones I like most and or I have used."
+        description="These are the skills that I have acquired
+          through my years of experience working as a software development engineer
+          or freelance digital artist:"
         transitionStatus={transitionStatus}
       />
-    </Layout>
+    </LayoutContactMe>
   )
 }
 

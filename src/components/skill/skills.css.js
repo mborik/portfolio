@@ -6,27 +6,6 @@ const [media36em, media50em] = mediaQueryGenerator([
   { type: "max", size: "50" },
 ])
 
-const gridImage = `
-  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 100%;
-  border-radius: 2%;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  position: relative;
-`
-const gridItem = `
-  width: 128px;
-  padding: 8px;
-  margin: 0;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  ${media36em} {
-    width: 150px;
-  }
-`
-
 const styles = {
   textRight: css`
     text-align: right;
@@ -61,7 +40,7 @@ const styles = {
     pointer-events: none;
   `,
   header: css`
-    padding: 0 3vmax;
+    padding: 0 3vmax 0 0;
   `,
   headerStatic: css`
     position: relative;
@@ -74,6 +53,7 @@ const styles = {
     width: 100%;
   `,
   gridLayerRight: css`
+    margin-top: -5rem;
     transform: perspective(3000px) translateY(-70px) rotateX(55deg)
       rotateZ(-45deg);
     transform-origin: center center;
@@ -85,12 +65,12 @@ const styles = {
     }
   `,
   gridLayerLeft: css`
-    transform: translateX(0) translateY(0) rotateX(45deg) rotateZ(45deg);
+    transform: translateX(0) translateY(0) rotateX(0) rotateZ(45deg);
     position: fixed;
     z-index: 2;
     transform-origin: top left;
     padding-top: 10rem;
-    padding-left: 20rem;
+    // padding-left: 20rem;
     width: calc(80% + 20rem);
   `,
   gridHeight: css`
@@ -109,7 +89,14 @@ const styles = {
     justify-content: flex-start;
   `,
   gridItem: css`
-    ${gridItem}
+    width: 128px;
+    padding: 8px;
+    margin: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    ${media36em} {
+      width: 100px;
+    }
     &:hover span {
       opacity: 1;
       transform: translate3d(0, -5px, 0);
@@ -135,9 +122,6 @@ const styles = {
       }
     }
   `,
-  gridItemStatic: css`
-    ${gridItem}
-  `,
   gridImgContainer: css`
     position: relative;
     cursor: pointer;
@@ -145,30 +129,14 @@ const styles = {
     display: block;
   `,
   gridImg: css`
-    ${gridImage}
-  `,
-  gridImgStatic: css`
-    ${gridImage}
-    &:not(:first-of-type) {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    &:nth-of-type(1) {
-      background-color: #2d2d2d;
-      border-radius: 3%;
-    }
-    &:nth-of-type(2) {
-      background-color: #323232;
-      border-radius: 3%;
-    }
-    &:nth-of-type(3) {
-      background-color: #373737;
-      border-radius: 3%;
-    }
-    &:nth-of-type(4) {
-      background-color: #fff;
-    }
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
   `,
   gridTitle: css`
     font-size: 1.1em;

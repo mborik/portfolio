@@ -13,16 +13,16 @@ const Menu = ({
   bgClassName,
 }) => {
   const defaultLinks = {
-    home: { title: "Home", color: "#eee", url: "/" },
+    home: { title: "Home", color: "#999", url: "/" },
     experience: {
       title: "Experience",
-      color: "#666",
+      color: "#555",
       url: "/experience",
     },
-    skills: { title: "Skills", color: "#666", url: "/skills" },
+    skills: { title: "Skills", color: "#777", url: "/skills" },
     aboutMe: {
-      title: "About Me",
-      color: "#eee",
+      title: "Who am I?",
+      color: "#999",
       url: "/about-me",
     },
   }

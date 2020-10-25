@@ -9,12 +9,13 @@ const Home = () => {
   const { siteName, h1Text, h2Text, typewriter } = {
     siteName: `Martin Bórik`,
     h1Text: `Hello, I'm Martin Bórik`,
-    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts:`,
+    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts...`,
     typewriter: [
       `Frontend Software Engineer`,
       `Full-Stack Javascript Developer`,
       `Alternative Electronic Music Producer`,
-      `Digital imaginary, sound and video processing`,
+      `Digital Imaginary, Sound and Video Processing`,
+      `Desktop Publishing, Typography and Graphics Procession`,
     ],
   }
 

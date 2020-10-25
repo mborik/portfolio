@@ -37,7 +37,6 @@ const Slideshow = ({ images, children }) => {
   }
 
   useEventListener("keydown", e => {
-    console.log(`testArrowKeys`, e)
     const evt = e || window.event
     const keycode = evt.which || evt.keyCode
     if (keycode === 37) {

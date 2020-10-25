@@ -172,7 +172,9 @@ const styles = {
     }
   `,
   btnContactme: css`
-    font-size: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.25em;
   `,
   contactMe: css`
     font-size: 1.8rem;

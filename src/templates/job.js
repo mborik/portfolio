@@ -53,7 +53,7 @@ export default ({ data }) => {
         title="Tools &amp; Skills"
         style={{ overflow: "hidden", backgroundColor: "#fff" }}
         showLoadingAnimation={false}
-        description="Languages, frameworks, libraries or apps that I used or learned."
+        description="Languages, frameworks, libraries or the apps that I used while I worked for this company, customer or on the project:"
       />
     </>
   )

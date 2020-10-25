@@ -27,6 +27,7 @@ const LayoutContactMe = ({ children, bgClassName }) => {
           title="Contact me"
           data-test="contactme"
         >
+          Contact&ensp;
           <svg className="icon">
             <use xlinkHref="#icon-contact"></use>
           </svg>

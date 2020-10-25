@@ -8,12 +8,12 @@ export default () => {
   return (
     <LayoutContactMe bgClassName="aboutme">
       <Helmet>
-        <title>About Me</title>
+        <title>Who am I?</title>
       </Helmet>
       <section css={styles.aboutSection}>
         <div css={styles.aboutContainer}>
           <div css={styles.aboutContent}>
-            <span css={styles.aboutShadow}>About me</span>
+            <span css={styles.aboutShadow}>borik.net</span>
             {aboutMe.map(({ subtitle, content }) => (
               <Fragment key={subtitle}>
                 <h2

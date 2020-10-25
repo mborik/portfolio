@@ -31,9 +31,9 @@ function AnimateItem({ type, title, image }) {
         type === "static"
           ? anime({
               targets: item,
-              translateX: 20,
-              translateY: -20,
-              duration: 200,
+              translateX: 50,
+              translateY: -50,
+              duration: 500,
               easing: "cubicBezier(.2, 1, .2, 1)",
               delay: 20,
             })
@@ -80,36 +80,18 @@ function AnimateItem({ type, title, image }) {
   }, [type])
 
   return (
-    <li
-      css={type === "static" ? styles.gridItemStatic : styles.gridItem}
-      ref={ref}
-    >
+    <li css={styles.gridItem} ref={ref}>
       <div css={styles.gridImgContainer}>
-        {type === "static" ? (
-          <div
-            css={styles.gridImgStatic}
-            ref={imageRef}
+        <div css={styles.gridImg} ref={imageRef}>
+          <Img
+            fluid={image.childImageSharp.fluid}
             style={{
-              position: "absolute",
               overflow: "visible",
             }}
-          >
-            <Img fluid={image.childImageSharp.fluid} alt={title} />
-          </div>
-        ) : (
-          <>
-            <div css={styles.gridImg} ref={imageRef}>
-              <Img
-                fluid={image.childImageSharp.fluid}
-                style={{
-                  overflow: "visible",
-                }}
-                alt={title}
-              />
-            </div>
-            <span css={styles.gridTitle}>{title}</span>
-          </>
-        )}
+            alt={title}
+          />
+        </div>
+        <span css={styles.gridTitle}>{title}</span>
       </div>
     </li>
   )
