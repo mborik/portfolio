@@ -46,7 +46,7 @@ images: [
       <li>Solution based on <b>Dojo</b> open-source JavaScript toolkit.<br>
         Backend-for-Frontend build on <b>.NET</b> (C#).</li>
       <li>Acceptance test-driven development based on Intern+Chai+Sinon.</li>
-      <li>Agile software development, running in 2 week long sprints</li></ul>",
+      <li>Agile software development, running in 2 week long sprints.</li></ul>",
     layout: "3",
     files: [
       { image: ../images/companies/masternaut/connect4.jpg },
@@ -60,7 +60,7 @@ images: [
     title: "Project: TransIt",
     description: "<ul>
       <li>Part of three day long <b>Masternaut Hackathon 2017</b> which took place in May 2017.</li>
-      <li>Project aimed to build responsive web application to <b>manage translation resources</b> of customer's projects and components, where I've acted as frontend architect.</li>
+      <li>Project aimed to build responsive web application to <b>manage translation resources</b> of customer's projects and components, where I've acted as frontend architect and developer.</li>
       <li>Frontend part built on <b>Aurelia framework</b> driven by TypeScript transpiler and <b>Semantic UI</b> framework driven by LESS transpiler.</li></ul>",
     layout: "1",
     files: [

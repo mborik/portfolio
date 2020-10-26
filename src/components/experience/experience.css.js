@@ -84,7 +84,7 @@ const styles = {
       &:first-of-type {
         margin-top: 5em;
       }
-      &:nth-of-type(2) {
+      &:nth-of-type(3) {
         margin-top: 14em;
       }
       &:nth-of-type(3n + 1) {
@@ -122,11 +122,14 @@ const styles = {
   `,
   img: css`
     max-width: 100%;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 1px #0006;
     transform: translate3d(0, 0, 0);
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    &:hover {
+      box-shadow: 0 0 12px 2px #fff9;
+    }
   `,
   year: css`
     font-size: 0.85em;

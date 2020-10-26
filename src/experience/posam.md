@@ -63,7 +63,7 @@ images: [
     caption: "cez",
     title: "Customer: ČEZ Group",
     description: "<ul>
-      <li><b>\"JSŘOT - Centrála\"</b> - Frontend developer of the desktop web application for vehicle monitoring and tracking, fleet & asset management.</li>
+      <li><b>&quot;JSŘOT - Centrála&quot;</b> - Frontend developer of the desktop web application for vehicle monitoring and tracking, fleet & asset management.</li>
       <li>UI/UX and responsive design.</li>
       <li>Solution built on <b>Angular 8</b> framework, <b>NgRx</b> and Reactive Forms.</li></ul>",
     layout: "1",
