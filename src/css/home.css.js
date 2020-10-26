@@ -20,6 +20,16 @@ const styles = {
       color: #666;
     }
   `,
+  dataShadow: css`
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent url("/me.png") 75% bottom fixed no-repeat;
+    background-size: 75vmin;
+    opacity: 0.1;
+  `,
 }
 
 export default styles

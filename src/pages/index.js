@@ -23,6 +23,7 @@ const Home = () => {
       </Helmet>
       <section css={styles.dataSection}>
         <div css={styles.dataContainer}>
+          <span css={styles.dataShadow}></span>
           <div css={styles.dataContent}>
             <h1>{h1Text}</h1>
             <h2>{h2Text}</h2>
