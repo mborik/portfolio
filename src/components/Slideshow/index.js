@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import useEventListener from "@use-it/event-listener"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { useWnResize } from "../hooks"
@@ -90,65 +89,55 @@ const Slideshow = ({ images, children }) => {
   }
 
   return (
-    <>
-      <Helmet
-        link={[
-          {
-            href: "https://fonts.googleapis.com/css?family=Gochi+Hand",
-            rel: "stylesheet",
-          },
-        ]}
-      ></Helmet>
-      <section>
-        {svgIcos()}
-        <main css={styles.job}>
-          <header>
-            <AniLink
-              cover
-              to={`/experience`}
-              css={styles.arrowBack}
-              direction="right"
-              data-test="goback"
-              bg="#666"
-              style={{ opacity: 1 }}
-            >
-              <svg css={styles.iconJob}>
-                <use xlinkHref="#icon-arrowback"></use>
-              </svg>
-            </AniLink>
-          </header>
-          <div css={styles.slideshow} data-test="slideshow" ref={slideshow}>
-            {getSlides()}
-            {!!slidesTotal && (
-              <nav css={styles.slideshowNav}>
-                <button
-                  onClick={goToPrevious}
-                  css={styles.btnjob}
-                  aria-label="Previous slide"
-                  data-test="previous"
-                >
-                  <svg className="icon">
-                    <use xlinkHref="#icon-prev"></use>
-                  </svg>
-                </button>
-                <button
-                  onClick={goToNext}
-                  css={styles.btnjob}
-                  aria-label="Next slide"
-                  data-test="next"
-                >
-                  <svg className="icon">
-                    <use xlinkHref="#icon-next"></use>
-                  </svg>
-                </button>
-              </nav>
-            )}
-            <div css={styles.gradient}></div>
-          </div>
-          {children}
-        </main>
-      </section>
-    </>
+    <section>
+      {svgIcos()}
+      <main css={styles.job}>
+        <header>
+          <AniLink
+            cover
+            to={`/experience`}
+            css={styles.arrowBack}
+            direction="right"
+            data-test="goback"
+            bg="#666"
+            style={{ opacity: 1 }}
+          >
+            <svg css={styles.iconJob}>
+              <use xlinkHref="#icon-arrowback"></use>
+            </svg>
+          </AniLink>
+        </header>
+        <div css={styles.slideshow} data-test="slideshow" ref={slideshow}>
+          {getSlides()}
+          {!!slidesTotal && (
+            <nav css={styles.slideshowNav}>
+              <button
+                onClick={goToPrevious}
+                css={styles.btnjob}
+                aria-label="Previous slide"
+                data-test="previous"
+              >
+                <svg className="icon">
+                  <use xlinkHref="#icon-prev"></use>
+                </svg>
+              </button>
+              <button
+                onClick={goToNext}
+                css={styles.btnjob}
+                aria-label="Next slide"
+                data-test="next"
+              >
+                <svg className="icon">
+                  <use xlinkHref="#icon-next"></use>
+                </svg>
+              </button>
+            </nav>
+          )}
+          <div css={styles.gradient}></div>
+        </div>
+        {children}
+      </main>
+    </section>
   )
 }
 

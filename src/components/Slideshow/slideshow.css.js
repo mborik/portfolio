@@ -123,12 +123,12 @@ const styles = {
     background-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.8)
     );
     width: 100%;
-    height: 100%;
+    height: 50%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: 1;
     pointer-events: none;
   `,
@@ -162,7 +162,6 @@ const styles = {
     pointer-events: auto;
   `,
   slideImgCaption: css`
-    font-family: "Gochi Hand", cursive;
     position: absolute;
     width: 100%;
     top: 83%;
@@ -196,6 +195,7 @@ const styles = {
     opacity: 0;
     font-weight: 500;
     opacity: 0;
+    text-shadow: 2px 1px 1px #000;
     ${media45em} {
       width: calc(100% - 2em);
       margin: 0 0 4em 0;

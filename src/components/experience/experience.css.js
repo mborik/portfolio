@@ -71,12 +71,11 @@ const styles = {
       order: 2;
     }
     &::before {
-      font-family: sans-serif;
       font-size: 10em;
       position: absolute;
       top: -1em;
       left: -0.15em;
-      opacity: 0.3;
+      opacity: 0.1;
       content: attr(data-year);
     }
     ${media52Dot5em} {
@@ -140,14 +139,14 @@ const styles = {
     border: 2px solid #fff;
   `,
   position: css`
-    font-size: 1em;
-    font-weight: 900;
+    font-size: 0.8em;
+    font-weight: 600;
     margin: 0 0 0 1em;
     white-space: nowrap;
   `,
   company: css`
-    font-size: 0.9em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 900;
     margin: 1em 0 0.5em;
   `,
 }

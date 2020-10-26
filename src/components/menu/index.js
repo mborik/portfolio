@@ -15,7 +15,7 @@ const Menu = ({
     home: { title: "Home", color: "#999", url: "/" },
     experience: {
       title: "Work Experience",
-      color: "#555",
+      color: "#444",
       url: "/experience",
     },
     skills: { title: "Skills", color: "#777", url: "/skills" },

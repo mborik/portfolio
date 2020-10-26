@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: true,
-        defaultQuality: 75,
+        defaultQuality: 90,
       },
     },
     `gatsby-transformer-remark`,

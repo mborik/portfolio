@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "PosAm"
 company: "PosAm"
 logo: ../images/companies/posam.png
 jobTitle: "Senior Frontend Development Engineer"

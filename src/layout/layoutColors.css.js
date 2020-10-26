@@ -28,8 +28,8 @@ const styles = css`
     background: radial-gradient(ellipse at center, #888 0%, #666 100%);
   }
   .experience.layout-wrapper .layout-inner {
-    background: #666;
-    background: radial-gradient(ellipse at center, #666 0%, #444 100%);
+    background: #777;
+    background: radial-gradient(ellipse at center, #777 0%, #333 100%);
   }
   .home .hamburgercolr::before,
   .home .hamburgercolr::after,
