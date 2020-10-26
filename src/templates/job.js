@@ -79,9 +79,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(
-      fields: { slug: { eq: $slug }, hideOnExperience: { eq: false } }
-    ) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         company

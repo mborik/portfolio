@@ -29,12 +29,17 @@ const siteMetadata = {
 module.exports = {
   siteMetadata,
   plugins: [
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: true,
         defaultQuality: 90,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        checkSupportedExtensions: false,
       },
     },
     `gatsby-transformer-remark`,

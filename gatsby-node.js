@@ -71,12 +71,6 @@ exports.onCreateNode = ({ node, getNode, actions }, themeOptions) => {
       name: `slug`,
       value: `${basePath}${slug}`,
     })
-    // Adds Skills that you have on your own but hides them in work experience
-    createNodeField({
-      node,
-      name: `hideOnExperience`,
-      value: /\/_additionalSkills.*$/.test(node.fileAbsolutePath),
-    })
   }
 }
 

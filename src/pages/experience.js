@@ -24,12 +24,7 @@ export default ({ data, transitionStatus }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: {
-        fields: {
-          slug: { regex: "/experience/" }
-          hideOnExperience: { eq: false }
-        }
-      }
+      filter: { fields: { slug: { regex: "/experience/" } } }
       sort: { fields: [frontmatter___dateFrom], order: DESC }
     ) {
       totalCount
