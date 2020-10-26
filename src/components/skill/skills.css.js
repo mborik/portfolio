@@ -54,7 +54,7 @@ const styles = {
   `,
   gridLayerRight: css`
     max-width: calc(136px * 5);
-    margin-top: -5rem;
+    margin-top: 0;
     margin-left: 10rem;
     transform: perspective(3000px) translateY(-70px) rotateX(55deg)
       rotateZ(-45deg);
@@ -141,9 +141,9 @@ const styles = {
     position: relative;
 
     img {
-      width: 90%;
-      height: 90%;
-      margin: 5%;
+      width: 82%;
+      height: 82%;
+      margin: 8%;
     }
   `,
   gridTitle: css`

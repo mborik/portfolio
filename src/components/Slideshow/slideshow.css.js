@@ -23,12 +23,12 @@ const styles = {
     }
   `,
   arrowBack: css`
-    right: 0;
-    bottom: 0;
+    left: 1.5em;
+    top: 1.5em;
     position: fixed;
-    margin: 0 1.5em 1.25em 0;
     background: none;
     border: 4px solid;
+    margin: 0;
     padding: 0;
     display: block;
     width: 3em;
@@ -39,8 +39,8 @@ const styles = {
     opacity: 0;
     transition: opacity 0.5s;
     z-index: 1001;
-    background: #1568dd;
-    border-color: #1568dd;
+    background: #333;
+    border-color: #333;
     color: #fff;
     box-shadow: 0 14px 59px -7px rgba(0, 0, 0, 0.85);
     &:focus {
@@ -48,12 +48,13 @@ const styles = {
     }
     &:hover {
       background: inherit;
-      color: #1568dd;
+      background: #fff;
+      color: #333;
     }
     ${media45em} {
       margin: 0 0.25em 0.75em 0;
-      background: #1568dd;
-      border-color: #1568dd;
+      background: #333;
+      border-color: #333;
     }
   `,
   iconJob: css`
@@ -112,7 +113,7 @@ const styles = {
       outline: none;
     }
     &:hover {
-      color: #1568dd;
+      color: #2fa0ec;
     }
     &:nth-of-type(2) {
       margin: 0 0 0 0.5em;

@@ -26,29 +26,37 @@ function AnimateItem({ type, title, image }) {
 
     function handleMouseEnter(e) {
       // Set animation
-      animateItems(e, item => {
-        anime.remove(item)
-        type === "static"
-          ? anime({
-              targets: item,
-              translateX: 50,
-              translateY: -50,
-              duration: 500,
-              easing: "cubicBezier(.2, 1, .2, 1)",
-              delay: 20,
-            })
-          : anime({
-              targets: item,
-              translateX: -50,
-              translateY: -50,
-            })
-      })
+      animateItems(
+        e,
+        item => {
+          e.target.style.zIndex = 3
+
+          anime.remove(item)
+          type === "static"
+            ? anime({
+                targets: item,
+                translateX: 50,
+                translateY: -50,
+                duration: 500,
+                easing: "cubicBezier(.2, 1, .2, 1)",
+                delay: 20,
+              })
+            : anime({
+                targets: item,
+                translateX: -50,
+                translateY: -50,
+              })
+        },
+        false
+      )
     }
 
     function handleMouseLeave(e) {
       animateItems(
         e,
         item => {
+          e.target.style.zIndex = 2
+
           anime.remove(item)
           anime({
             targets: item,

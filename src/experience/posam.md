@@ -5,25 +5,28 @@ logo: ../images/companies/posam.png
 jobTitle: "Senior Frontend Development Engineer"
 skills:
   [
-    { title: "Git", image: ../images/skills/git.svg },
     { title: "VSCode", image: ../images/skills/vscode.svg },
+    { title: "TypeScript", image: ../images/skills/typescript.svg },
     { title: "HTML 5", image: ../images/skills/html5.svg },
     { title: "CSS 3", image: ../images/skills/css3.svg },
     { title: "SCSS", image: ../images/skills/sass.svg },
-    { title: "TypeScript", image: ../images/skills/typescript.svg },
     { title: "Angular", image: ../images/skills/angular.svg },
     { title: "NgRx", image: ../images/skills/ngrx.svg },
     { title: "Bootstrap", image: ../images/skills/bootstrap.svg },
-    { title: "Lodash", image: ../images/skills/lodash.svg },
-    { title: "Moment.js", image: ../images/skills/moment.svg },
+    { title: "lodash", image: ../images/skills/lodash.svg },
+    { title: "moment.js", image: ../images/skills/moment.svg },
     { title: "Yarn", image: ../images/skills/yarn.svg },
     { title: "npm", image: ../images/skills/npm.svg },
     { title: "Node.js", image: ../images/skills/nodejs.svg },
+    { title: "git", image: ../images/skills/git.svg },
+    { title: "GitLab", image: ../images/skills/gitlab.svg },
+    { title: "DevTools", image: ../images/skills/devtools.svg },
+    { title: "Gimp", image: ../images/skills/gimp.svg },
+    { title: "Inkscape", image: ../images/skills/inkscape.svg },
     { title: "RESTful API", image: ../images/skills/rest-api.svg },
     { title: "Swagger", image: ../images/skills/swagger.svg },
     { title: "Jira", image: ../images/skills/jira.svg },
     { title: "Confluence", image: ../images/skills/confluence.svg },
-    { title: "GitLab", image: ../images/skills/gitlab.svg },
     { title: "Slack", image: ../images/skills/slack.svg },
   ]
 images: [
