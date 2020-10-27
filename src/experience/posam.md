@@ -34,9 +34,9 @@ images: [
     caption: "intro",
     title: "PosAm, spol. s r.o.",
     description: "Use arrows or cursor keys to navigate through the participated projects...",
-    layout: "3",
+    layout: "6",
     files: [
-      { image: ../images/companies/posam/logo_highres.png },
+      { image: ../images/companies/posam/logo_hires.png },
     ],
   },
   {
@@ -68,7 +68,7 @@ images: [
       <li>Solution built on <b>Angular 8</b> framework, <b>NgRx</b> and Reactive Forms.</li></ul>",
     layout: "1",
     files: [
-      { image: ../images/companies/posam/jsrot_cez_central_2.png },
+      { image: ../images/companies/posam/jsrot_cez_central_2.jpg },
       { image: ../images/companies/posam/jsrot_cez_central_1.png },
     ],
   },

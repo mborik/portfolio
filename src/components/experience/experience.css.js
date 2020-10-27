@@ -41,7 +41,7 @@ const styles = {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-content: space-between;
     min-height: 100vh;
     &::before,
@@ -60,16 +60,11 @@ const styles = {
   `,
   job: css`
     width: 50%;
+    flex: 0 0 auto;
     min-width: 280px;
     margin: 0 0 2em;
     padding: 1em 4em 0;
     position: relative;
-    &:nth-of-type(2n + 1) {
-      order: 1;
-    }
-    &:nth-of-type(2n) {
-      order: 2;
-    }
     &::before {
       font-size: 10em;
       position: absolute;
@@ -80,36 +75,22 @@ const styles = {
     }
     ${media52Dot5em} {
       width: 33.33%;
-      margin: 0 0 9em;
+      margin: 0;
       &:first-of-type {
         margin-top: 5em;
       }
       &:nth-of-type(3) {
         margin-top: 14em;
       }
-      &:nth-of-type(3n + 1) {
-        order: 1;
-      }
-      &:nth-of-type(3n + 2) {
-        order: 2;
-      }
-      &:nth-of-type(3n) {
-        order: 3;
+      &:nth-of-type(4) {
+        margin-top: -9em;
+        margin-left: 5em;
       }
     }
     ${media36em} {
       width: 100%;
       margin: 2em 0;
       padding: 1em 2em 0;
-      &:nth-of-type(3n + 1) {
-        order: 0;
-      }
-      &:nth-of-type(3n + 2) {
-        order: 0;
-      }
-      &:nth-of-type(3n) {
-        order: 0;
-      }
     }
   `,
   link: css`

@@ -258,7 +258,7 @@ const styles = {
       left: 50%;
     }
     .slide-img:not(:last-child) {
-      width: 300px;
+      width: 500px;
       height: 300px;
     }
     .slide-img:not(:last-child) .slide-img-inner {
@@ -282,7 +282,7 @@ const styles = {
     }
     .slide-img:last-child {
       transform: translate3d(-50%, -50%, 0);
-      width: 450px;
+      width: 560px;
       height: 400px;
     }
     .slide-img:last-child .slide-img-inner {
@@ -369,6 +369,17 @@ const styles = {
       clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
       -webkit-clip-path: url("#polygon-clip-rhomboid");
       clip-path: url("/#polygon-clip-rhomboid");
+    }
+  `,
+  slideLayout6: css`
+    .slide-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: contain !important;
+        object-position: center !important;
+      }
     }
   `,
 }

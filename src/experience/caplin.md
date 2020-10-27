@@ -28,7 +28,7 @@ images: [
       <li>Solution based on <b>BladeRunnerJS</b> open-source JavaScript toolkit and framework.</li>
       <li>Strict test-driven development consisting of unit tests and acceptance tests (presentation layer / UX).</li>
       <li>Agile software development, running in 2 week long sprints, code review sessions and approval after every developer's task.</li></ul>",
-    layout: "3",
+    layout: "6",
     files: [
       { image: ../images/companies/caplin/fxpro.png },
     ],

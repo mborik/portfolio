@@ -175,6 +175,35 @@ const layoutConfig = {
       delay: 250,
     },
   },
+  layout6: {
+    out: {
+      translateY: {
+        next: "60%",
+        previous: "-60%",
+      },
+      opacity: 0,
+      duration: 700,
+      easing: "easeOutQuint",
+      itemsDelay: 50,
+    },
+    in: {
+      resetProps: {
+        translateY: {
+          next: "-60%",
+          previous: "60%",
+        },
+        opacity: 0,
+        objectFit: "contain",
+        objectPosition: "center",
+      },
+      translateY: "0%",
+      opacity: 1,
+      duration: 700,
+      easing: "easeOutQuint",
+      itemsDelay: 50,
+      delay: 250,
+    },
+  },
 }
 
 export default layoutConfig
