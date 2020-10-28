@@ -1,6 +1,6 @@
 ---
 title: "Antik"
-company: "Antik"
+company: "Antik Tech"
 logo: ../images/companies/antik.png
 jobTitle: "Senior Developer / Lead"
 skills:
@@ -8,6 +8,7 @@ skills:
     { title: "Linux", image: ../images/skills/linux.svg },
     { title: "C", image: ../images/skills/c.svg },
     { title: "C++", image: ../images/skills/cpp.svg },
+    { title: "Webkit", image: ../images/skills/nodewebkit.svg },
     { title: "Node.js", image: ../images/skills/nodejs.svg },
     { title: "RESTful API", image: ../images/skills/rest-api.svg },
     { title: "git", image: ../images/skills/git.svg },

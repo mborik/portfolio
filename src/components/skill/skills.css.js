@@ -54,16 +54,14 @@ const styles = {
   `,
   gridLayerRight: css`
     max-width: calc(136px * 5);
-    margin-top: 0;
-    margin-left: 10rem;
-    transform: perspective(3000px) translateY(-70px) rotateX(55deg)
-      rotateZ(-45deg);
-    transform-origin: center center;
+    margin-top: 3rem;
+    transform: perspective(3000px) rotateX(55deg) rotateZ(-45deg);
+    transform-origin: center top;
     ${media50em} {
       width: calc(100% + 450px);
-      transform: perspective(3000px) translateY(-17rem) rotateX(55deg)
+      margin-top: 8rem;
+      transform: perspective(3000px) translateX(-8rem) rotateX(55deg)
         rotateZ(-45deg);
-      transform-origin: center bottom;
     }
   `,
   gridLayerLeft: css`
@@ -141,8 +139,8 @@ const styles = {
     position: relative;
 
     img {
-      width: 82%;
-      height: 82%;
+      width: 82% !important;
+      height: 82% !important;
       margin: 8%;
     }
   `,

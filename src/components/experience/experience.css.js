@@ -86,6 +86,10 @@ const styles = {
         margin-top: -9em;
         margin-left: 5em;
       }
+      &:nth-of-type(5) {
+        margin-top: -2em;
+        margin-left: -4em;
+      }
     }
     ${media36em} {
       width: 100%;
