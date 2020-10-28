@@ -17,7 +17,7 @@ skills:
 images: [
   {
     caption: "intro",
-    title: "Antik Technology",
+    title: "Antik Technology, Košice",
     description: "Use arrows or cursor keys to navigate through the participated projects...",
     layout: "6",
     files: [

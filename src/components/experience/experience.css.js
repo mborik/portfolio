@@ -87,8 +87,11 @@ const styles = {
         margin-left: 5em;
       }
       &:nth-of-type(5) {
-        margin-top: -2em;
+        margin-top: -6em;
         margin-left: -4em;
+      }
+      &:nth-of-type(6) {
+        margin-left: -3em;
       }
     }
     ${media36em} {

@@ -18,7 +18,7 @@ const Menu = ({
       color: "#444",
       url: "/experience",
     },
-    skills: { title: "Skills", color: "#777", url: "/skills" },
+    // skills: { title: "Skills", color: "#777", url: "/skills" },
     aboutMe: {
       title: "Who am I?",
       color: "#999",

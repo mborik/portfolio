@@ -14,10 +14,10 @@ skills:
 images: [
   {
     caption: "reklamacie",
-    title: "Sales department of PROCESNÁ AUTOMATIZÁCIA a.s.",
+    title: "Sales department of PROCESNÁ AUTOMATIZÁCIA, Košice",
     description: "<ul>
-      <li>Analysis of customer requirements, designing of database model based on MySQL database and development of web application of <b>complaint system for Sales department</b>.</li>
-      <li>Application serving up to 10 employees, every working day for many years without any issue or bug-report.</li></ul>",
+      <li>Analysis of customer requirements, designing of database model and development of web application of <b>complaint system for Sales department</b>.</li>
+      <li>Application running on PHP + MySQL database on backend and serving up to 10&nbsp;employees, every working day for many years without any issue or bug-report.</li></ul>",
     layout: "1",
     files: [
       { image: ../images/companies/pa/reklamacie_1.png },
