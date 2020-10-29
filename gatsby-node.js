@@ -18,6 +18,7 @@ exports.onPreBootstrap = ({ store, reporter }) => {
   const { program } = store.getState()
   const dirs = [
     path.join(program.directory, "src/experience"),
+    path.join(program.directory, "src/projects"),
     path.join(program.directory, "src/images"),
     path.join(program.directory, "src/utils"),
   ]
@@ -36,7 +37,7 @@ exports.onCreatePage = ({ page, actions }, themeOptions) => {
     "ComponentAboutMe",
     "ComponentExperience",
     "ComponentIndex",
-    "ComponentSkills",
+    "ComponentProjects",
   ]
 
   if (
@@ -56,7 +57,16 @@ exports.onCreatePage = ({ page, actions }, themeOptions) => {
   }
 }
 
+let created403 = false
 exports.onCreateNode = ({ node, getNode, actions }, themeOptions) => {
+  if (!created403 && node.path === `/403/`) {
+    actions.createPage({
+      ...node,
+      path: `/403.html`,
+    })
+    created403 = true
+  }
+
   const { createNodeField } = actions
   let { basePath } = themeOptions
   basePath = organizeSlash(basePath)

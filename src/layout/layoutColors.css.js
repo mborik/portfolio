@@ -22,7 +22,7 @@ const styles = css`
   .white .hamburgercolr::after {
     background-color: #000;
   }
-  .skill.layout-wrapper .layout-inner {
+  .projects.layout-wrapper .layout-inner {
     color: #fff;
     background: #888;
     background: radial-gradient(ellipse at center, #888 0%, #666 100%);
@@ -33,13 +33,14 @@ const styles = css`
   }
   .home .hamburgercolr::before,
   .home .hamburgercolr::after,
-  .skill .hamburgercolr::before,
-  .skill .hamburgercolr::after,
+  .projects .hamburgercolr::before,
+  .projects .hamburgercolr::after,
   .experience .hamburgercolr::before,
   .experience .hamburgercolr::after {
     background-color: #fff;
   }
   .home .btn-contact-color,
+  .projects .btn-contact-color,
   .experience .btn-contact-color {
     color: #fff;
   }
