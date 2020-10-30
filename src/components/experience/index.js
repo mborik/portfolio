@@ -35,7 +35,7 @@ const Experience = ({
         let showYear = false
         if (index % 2 === 0) {
           showYear = true
-          currentYear = dateTo
+          currentYear = dateFrom
         }
 
         return (

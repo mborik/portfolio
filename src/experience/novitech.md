@@ -1,5 +1,5 @@
 ---
-title: "NTT"
+title: "Novitech Tax"
 company: "Novitech Tax"
 logo: ../images/companies/ntt.png
 jobTitle: "Developer / Data analyst"

@@ -1,5 +1,5 @@
 ---
-title: "pa"
+title: "PA CENTRUM"
 company: "PA CENTRUM"
 logo: ../images/companies/pa.png
 jobTitle: "Full-stack Developer"

@@ -13,17 +13,6 @@ const siteMetadata = {
     resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
     stackOverflow: ``,
   },
-  homePage: {
-    h1Text: `Hello, I'm Martin Bórik`,
-    h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts...`,
-    typewriter: [
-      `Frontend Software Engineer`,
-      `Full-Stack Javascript Developer`,
-      `Alternative Electronic Music Producer`,
-      `Digital Imaginary, Sound and Video Processing`,
-      `Desktop Publishing, Typography and Graphics Procession`,
-    ],
-  },
 }
 
 module.exports = {

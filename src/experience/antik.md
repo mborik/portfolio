@@ -31,7 +31,7 @@ images: [
       <li>Touch-screen attendance terminal running on embedded device <a href='https://beagleboard.org/black' target='_blank'>BeagleBone Black</a>.</li>
       <li>UI/UX design by <a href='https://pixis.sk' target='_blank'>PIXIS</a>.</li>
       <li>Single-page web application built on pure HTML5/CSS3/JavaScript.</li>
-      <li>Node.js on backend handling of employee ID-card reading and controlling the camera.</li></ul>",
+      <li>Node.js on backend handling a read of employee ID-card and controlling the camera.</li></ul>",
     layout: "2",
     files: [
       { image: ../images/companies/antik/attendance_2.jpg },
@@ -42,7 +42,7 @@ images: [
     caption: "ekioh",
     title: "Project: Ekioh",
     description: "<ul>
-      <li>C/C++ developer and team-leader of <b>WebKit+SVG</b> based web-browser implementation.</li>
+      <li>C/C++ developer and team-leader of <b>WebKit+SVG</b> based web-browser implementation of <a href='https://ekioh.com' target='_blank'>Ekioh engine</a>.</li>
       <li>Running on embedded device (IPTV Set-Top Box) with minimal HW requirements which requires massive optimizations primarily in renderer onto Linux framebuffer abstraction layer.</li>
       <li>This project later led to <b>Antik-middleware Plugin</b> that provided bi-directional communication with all middleware capabilities (IPTV, AV streaming...)</li></ul>",
     layout: "6",
@@ -55,8 +55,8 @@ images: [
     title: "Node.js microservices & servers",
     description: "Node.js backend developer of time-critical solutions:<ul>
       <li>Describing of communication protocol format and development of socket server which can handle up to <b>ten thousands of client devices realtime</b>.</li>
-      <li>RESTful API server running on embedded device for remote communication with <b>POS terminal</b>.</li>
-      <li>RESTful API server to communication with remote hospitality systems.</li></ul>",
+      <li>Server running on embedded device for remote communication with <b>POS terminal</b>.</li>
+      <li>Micro-server for communication with remote hospitality systems.</li></ul>",
     layout: "6",
     files: [
       { image: ../images/companies/antik/node-servers.jpg },
