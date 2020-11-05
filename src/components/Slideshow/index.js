@@ -6,7 +6,7 @@ import { useWnResize } from "../hooks"
 import Slide from "./Slide"
 import styles from "./slideshow.css"
 
-const Slideshow = ({ images, children }) => {
+const Slideshow = ({ backLink = "/", images, children }) => {
   const slideshow = useRef()
   const dimentions = useWnResize(slideshow, 10)
   const [current, setCurrent] = useState(0)
@@ -95,7 +95,7 @@ const Slideshow = ({ images, children }) => {
         <header>
           <AniLink
             cover
-            to={`/experience`}
+            to={backLink}
             css={styles.arrowBack}
             direction="right"
             data-test="goback"

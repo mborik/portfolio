@@ -127,10 +127,17 @@ const LayoutContactMe = ({ children, bgClassName }) => {
             </svg>
           </button>
           <div className="contactme-container">
-            <div css={styles.contactMe}>Contact:</div>
             <div className="contactme-info">
-              <p>Get in touch with me on</p>
               <p>
+                <b>Martin Bórik - borik.net</b>
+                <br />
+                <span style={{ color: "#848484" }}>Košice, Slovakia</span>
+                <br />
+                <Obfuscate email={email} />
+                <br />
+                <Obfuscate tel="+421908343277">+421 908 343 277</Obfuscate>
+              </p>
+              <p className="contactme-social">
                 {Object.entries(social)
                   .filter(([_key, value]) => value != ``)
                   .map(([key, value]) => {
@@ -143,10 +150,10 @@ const LayoutContactMe = ({ children, bgClassName }) => {
                     let title
                     let ico
                     if (key !== "resumeInPdf") {
-                      title = `${capitalize(key)} Account`
+                      title = `${capitalize(key)}`
                       ico = key.toLocaleLowerCase()
                     } else {
-                      title = "Download my CV"
+                      title = "CV in PDF"
                       ico = "cv"
                     }
                     return (
@@ -164,9 +171,6 @@ const LayoutContactMe = ({ children, bgClassName }) => {
                       </a>
                     )
                   })}
-              </p>
-              <p>
-                Or drop me an email at <Obfuscate email={email} />
               </p>
             </div>
           </div>

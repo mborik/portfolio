@@ -6,7 +6,7 @@ import Slideshow from "../components/Slideshow"
 import Skill from "../components/skill"
 import siteTitle from "../utils/siteTitle"
 
-export default ({ data }) => {
+export default ({ path, data }) => {
   const post = data.markdownRemark
   useLayoutEffect(() => {
     if (!post) {
@@ -14,6 +14,14 @@ export default ({ data }) => {
       return <></>
     }
   }, [post])
+
+  const backLinkMatch = /^(\/\w+)\//.exec(path)
+  const backLink = (backLinkMatch && backLinkMatch[1]) || "/"
+
+  const jobTitle = [post.frontmatter.jobTitle]
+  if (post.frontmatter.company) {
+    jobTitle.push(post.frontmatter.company)
+  }
 
   function formatDateRange(dateFrom, dateTo) {
     const result = [dateFrom]
@@ -39,13 +47,9 @@ export default ({ data }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>
-          {siteTitle(
-            `${post.frontmatter.jobTitle} @ ${post.frontmatter.company}`
-          )}
-        </title>
+        <title>{siteTitle(jobTitle.join(" @ "))}</title>
       </Helmet>
-      <Slideshow images={post.frontmatter.images}>
+      <Slideshow backLink={backLink} images={post.frontmatter.images}>
         <div css={styles.jobtitle}>
           <div css={styles.jobtitleContent} data-test="content">
             <h1>{post.frontmatter.company}</h1>

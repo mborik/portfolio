@@ -82,20 +82,31 @@ const styles = {
       width: 100%;
     }
     .contactme-info {
+      text-align: left;
       font-size: 1.5rem;
-      display: block;
-      width: 75%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 33%;
       margin: 0 auto;
       padding: 0.85em 0;
-      text-align: center;
-      display: block;
       transform: translate3d(0, 20px, 0);
       p {
+        flex: 0 1 auto;
         margin-bottom: 0;
+
+        a {
+          font-weight: normal;
+        }
       }
+
       ${media40em} {
         font-size: 1.3rem;
       }
+    }
+    .contactme-social {
+      display: flex;
+      flex-flow: column nowrap;
     }
     .contactme-open .btn-contactme-close {
       opacity: 1;
@@ -176,20 +187,14 @@ const styles = {
     flex-flow: row nowrap;
     font-size: 1.25em;
   `,
-  contactMe: css`
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 75%;
-    max-width: 900px;
-    padding: 3em 0 0.1em;
-  `,
   whiteLink: css`
-    color: #fff;
+    color: #848484;
     display: inline-block;
     padding: 10px;
+
+    &:hover {
+      color: #fff;
+    }
   `,
 }
 
