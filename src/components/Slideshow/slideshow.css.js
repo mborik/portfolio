@@ -287,7 +287,6 @@ const styles = {
     }
     .slide-img:last-child .slide-img-inner {
       border: 10px solid #fff;
-      border-bottom-width: 65px;
     }
     ${media45em} {
       .slide-img:not(:last-child) {

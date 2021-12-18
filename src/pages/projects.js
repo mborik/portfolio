@@ -14,7 +14,7 @@ export default ({ data, transitionStatus }) => {
       <Experience
         jobs={data.allMarkdownRemark.edges}
         transitionStatus={transitionStatus}
-        title="Side & hobby projects"
+        title="Side &amp; hobby projects"
         description="Working on side or hobby projects pushes me forward and probably it taught me the most."
       />
     </LayoutContactMe>
