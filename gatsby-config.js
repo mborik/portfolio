@@ -3,7 +3,7 @@ const siteMetadata = {
   siteTitle: `Martin Bórik ▪ borik.net`,
   siteName: `Martin Bórik`,
   siteShortName: `borik.net`,
-  siteDescription: `frontend developer, 8bit freak, loving father and former alternative electronic music producer`,
+  siteDescription: `frontend developer, 8bit freak, loving father and electronic music producer`,
   siteKeywords: `frontend software engineer, full stack javascript developer`,
   email: `martin@borik.net`,
   social: {

@@ -14,7 +14,7 @@ const Home = () => {
     typewriter: [
       `Frontend Software Engineer`,
       `Full-Stack Javascript Developer`,
-      `Alternative Electronic Music Producer`,
+      `Electronic Music Producer`,
       `Digital Imaginary, Sound and Video Processing`,
       `Desktop Publishing, Typography and Graphics Procession`,
     ],
