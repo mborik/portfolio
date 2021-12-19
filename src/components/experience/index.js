@@ -25,13 +25,16 @@ const Experience = ({
           node: {
             id,
             fields: { slug },
-            frontmatter: { company, logo, jobTitle, dateFrom, dateTo: dateEnd },
+            frontmatter: { company, logo, jobTitle, dateFrom, dateTo },
           },
         },
         index
       ) => {
-        const dateTo = dateEnd || dateFrom
-        const years = dateFrom === dateTo ? dateFrom : `${dateFrom} - ${dateTo}`
+        const years = dateTo
+          ? dateTo === dateFrom
+            ? dateFrom
+            : `${dateFrom} - ${dateTo}`
+          : `${dateFrom} - ${new Date().getFullYear()}`
         let showYear = false
         if (index % 2 === 0) {
           showYear = true
