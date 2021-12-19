@@ -25,7 +25,7 @@ const styles = css`
   .projects.layout-wrapper .layout-inner {
     color: #fff;
     background: #888;
-    background: radial-gradient(ellipse at center, #888 0%, #666 100%);
+    background: radial-gradient(ellipse at center, #888 0%, #444 100%);
   }
   .experience.layout-wrapper .layout-inner {
     background: #777;
