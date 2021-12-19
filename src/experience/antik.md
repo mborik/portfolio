@@ -29,7 +29,7 @@ images: [
     title: "Attendance terminal",
     description: "<ul>
       <li>Touch-screen attendance terminal running on embedded device <a href='https://beagleboard.org/black' target='_blank'>BeagleBone Black</a>.</li>
-      <li>UI/UX design by <a href='https://pixis.sk' target='_blank'>PIXIS</a>.</li>
+      <li>UI/UX design by <a href='https://pixis.sk' rel='nofollow' target='_blank'>PIXIS</a>.</li>
       <li>Single-page web application built on pure HTML5/CSS3/JavaScript.</li>
       <li>Node.js on backend handling a read of employee ID-card and controlling the camera.</li></ul>",
     layout: "2",
