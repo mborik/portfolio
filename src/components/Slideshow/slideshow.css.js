@@ -238,10 +238,16 @@ const styles = {
     .slide-img {
       position: absolute;
       width: calc(50% - 1em);
+      img {
+        object-fit: contain !important;
+      }
     }
     .slide-img:first-of-type {
       left: 0.5em;
       height: 100%;
+      img {
+        object-position: top right !important;
+      }
     }
     .slide-img:nth-of-type(n + 2) {
       left: calc(50% + 0.5em);
