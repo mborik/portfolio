@@ -1,8 +1,8 @@
 ---
 title: "jazvynadusi"
-company: ""
+company: "Jazvy na duši"
 logo: ../images/projects/jazvynadusi.jpg
-jobTitle: "Book: Jazvy na duši"
+jobTitle: "women's novel"
 skills:
   [
     { title: "Illustrator", image: ../images/skills/adobe-illustrator.svg },

@@ -25,9 +25,9 @@ images: [
   {
     caption: "sudolabs",
     title: "Sudolabs, Košice",
-    description: "<b>Experts in building software products for startups & corporations.</b><br>
-      In Sudolabs are code quality, performance and visual output equally important. We reviewing every line written, discussing optimizations and applying best practices so we are able to scale our products, save costs and elevate the expansion process.<br>
-      Use arrows or cursor keys to navigate through the participated projects...",
+    description: "<b>Experts in building software products for startups &amp; corporations.</b><br>
+      In Sudolabs are code quality, performance and visual output equally important. We reviewing every line written, discussing optimizations and applying best practices so we are able to scale our products, save costs and elevate the expansion process.
+      <p style='margin-top:1rem'>Use arrows or cursor keys to navigate through the participated projects...</p>",
     layout: "6",
     files: [
       { image: ../images/companies/sudolabs/intro.jpg },
@@ -39,7 +39,7 @@ images: [
     description: "<ul>
       <li>Designing of database in PostgreSQL, migrations in Knex.js, models in Objection.js.</li>
       <li>Coding GraphQL queries, mutations, resolvers and dataloaders, developing the application built on Next.js, Apollo, React, styled-components and Formik+Yup.</li>
-      <li>On-boarding project in Sudolabs to build minimum viable product, now already introduced live with great success.</li></ul>",
+      <li>My on-boarding project in Sudolabs to build minimum viable product, now already introduced live with great success.</li></ul>",
     layout: "1",
     files: [
       { image: ../images/companies/sudolabs/dnaera-vertical-complex.png },

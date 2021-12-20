@@ -1,8 +1,8 @@
 ---
 title: "speccy2010"
-company: ""
+company: "Speccy2010"
 logo: ../images/projects/speccy2010.png
-jobTitle: "Speccy2010"
+jobTitle: "ZX-Spectrum clone firmware"
 skills:
   [
     { title: "VHDL", image: ../images/skills/vhdl.svg },

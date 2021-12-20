@@ -1,8 +1,8 @@
 ---
 title: "regression"
-company: ""
+company: "Regression"
 logo: ../images/projects/regression.png
-jobTitle: "Regression"
+jobTitle: "ZX-Spectrum design demo"
 skills:
   [
     { title: "Z80", image: ../images/skills/z80.svg },

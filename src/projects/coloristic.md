@@ -1,8 +1,8 @@
 ---
 title: "coloristic"
-company: ""
+company: "Coloristic"
 logo: ../images/projects/coloristic.png
-jobTitle: "Coloristic"
+jobTitle: "ZX-Spectrum game"
 skills:
   [
     { title: "Z80", image: ../images/skills/z80.svg },

@@ -2,7 +2,7 @@
 title: "colorace"
 company: "ColorAceEditor"
 logo: ../images/projects/colorace.png
-jobTitle: "Web Developer"
+jobTitle: "pixelart screen editor"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },

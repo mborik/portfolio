@@ -1,8 +1,8 @@
 ---
 title: "z80-macroasm"
-company: ""
+company: "z80-macroasm"
 logo: ../images/projects/z80-macroasm.png
-jobTitle: "Z80 Macro-Assembler"
+jobTitle: "VSCode extension"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },
@@ -12,7 +12,7 @@ skills:
 images: [
   {
     caption: "z80-macroasm",
-    title: "z80-macroasm-vscode",
+    title: "Z80 Macro-Assembler",
     description: "Extension for Visual Studio Code provides the following features:<ul>
       <li>syntax highlighting for Z80 assembly sources of well known Z80 macro-assemblers:<br>
       <b>SjASM</b>, <b>SjASMPlus</b>, <b>Macroassembler AS</b>, <b>Pasmo</b>, <b>rasm</b> and <b>tniASM</b></li>

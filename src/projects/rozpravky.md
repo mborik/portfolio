@@ -1,8 +1,8 @@
 ---
 title: "rozpravky"
-company: ""
+company: "Zopárstranové rozprávky"
 logo: ../images/projects/rozpravky.jpg
-jobTitle: "Book: Zopárstranové rozprávky"
+jobTitle: "fairy tale book"
 skills:
   [
     { title: "InDesign", image: ../images/skills/adobe-indesign.svg },
@@ -19,6 +19,7 @@ images: [
     files: [
       { image: ../images/projects/rozpravky/preview1.jpg },
       { image: ../images/projects/rozpravky/preview2.jpg },
+      { image: ../images/projects/rozpravky/preview3.jpg },
     ],
   },
 ]
