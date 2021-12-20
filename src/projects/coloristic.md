@@ -6,6 +6,7 @@ jobTitle: "Coloristic"
 skills:
   [
     { title: "Z80", image: ../images/skills/z80.svg },
+    { title: "Node.js", image: ../images/skills/nodejs.svg },
   ]
 images: [
   {
