@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Icon from "../../icon"
 import styles from "./contact-me.css"
 
 const ContactButton = ({ openContact }) => (
@@ -12,9 +13,7 @@ const ContactButton = ({ openContact }) => (
       data-test="contactme"
     >
       Contact&ensp;
-      <svg className="icon">
-        <use xlinkHref="#icon-contact"></use>
-      </svg>
+      <Icon.Contact />
     </button>
   </div>
 )

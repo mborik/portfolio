@@ -372,8 +372,6 @@ const styles = {
     .slide-img-inner {
       -webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
       clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
-      -webkit-clip-path: url("#polygon-clip-rhomboid");
-      clip-path: url("/#polygon-clip-rhomboid");
     }
   `,
   slideLayout6: css`

@@ -7,7 +7,6 @@ import styles from "./contact-me.css"
 import ContactButton from "./contactButton"
 import ContactContent from "./contactContent"
 import Menu from "../../menu"
-import SvgIcons from "../../svgIcons"
 import siteTitle from "../../../utils/siteTitle"
 import { siteMetadata } from "../../../../gatsby-config"
 
@@ -80,7 +79,6 @@ const LayoutContactMe = ({ children, bgClassName }) => {
           </div>
         </div>
       </div>
-      <SvgIcons />
     </>
   )
 }

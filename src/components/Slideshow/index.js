@@ -3,8 +3,14 @@ import PropTypes from "prop-types"
 import useEventListener from "@use-it/event-listener"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { useWnResize } from "../hooks"
+import Icon from "../icon"
 import Slide from "./Slide"
 import styles from "./slideshow.css"
+
+const KEYCODE = {
+  LEFT: 37,
+  RIGHT: 39,
+}
 
 const Slideshow = ({ backLink = "/", images, children }) => {
   const slideshow = useRef()
@@ -14,12 +20,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
   const [direction, setDirection] = useState("next")
   const slidesTotal = images.length - 1
 
-  // Enable Navigation
-  function onEndAnimating() {
-    setIsAnimating(false)
-  }
-
-  function goToNext() {
+  const goToNext = () => {
     if (!isAnimating) {
       setIsAnimating(true)
       setDirection("next")
@@ -27,7 +28,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
     }
   }
 
-  function goToPrevious() {
+  const goToPrevious = () => {
     if (!isAnimating) {
       setIsAnimating(true)
       setDirection("previous")
@@ -35,62 +36,18 @@ const Slideshow = ({ backLink = "/", images, children }) => {
     }
   }
 
-  useEventListener("keydown", e => {
-    const evt = e || window.event
-    const keycode = evt.which || evt.keyCode
-    if (keycode === 37) {
+  useEventListener("keydown", event => {
+    const evt = event || window.event
+    const keyCode = evt.which || evt.keyCode
+    if (keyCode === KEYCODE.LEFT) {
       goToPrevious()
-    } else if (keycode === 39) {
+    } else if (keyCode === KEYCODE.RIGHT) {
       goToNext()
     }
   })
 
-  function getSlides() {
-    return (
-      dimentions &&
-      images.map((item, index) => (
-        <Slide
-          {...item}
-          active={current === index}
-          key={item.title}
-          dimentions={dimentions}
-          direction={direction}
-          onEndAnimating={onEndAnimating}
-        />
-      ))
-    )
-  }
-
-  function svgIcos() {
-    return (
-      <svg className="hidden">
-        <defs>
-          <symbol id="icon-prev" viewBox="0 0 100 50">
-            <title>prev</title>
-            <polygon points="5.4,25 18.7,38.2 22.6,34.2 16.2,27.8 94.6,27.8 94.6,22.2 16.2,22.2 22.6,15.8 18.7,11.8" />
-          </symbol>
-          <symbol id="icon-next" viewBox="0 0 100 50">
-            <title>next</title>
-            <polygon points="81.3,11.8 77.4,15.8 83.8,22.2 5.4,22.2 5.4,27.8 83.8,27.8 77.4,34.2 81.3,38.2 94.6,25 " />
-          </symbol>
-          <symbol id="icon-arrowback" viewBox="0 0 24 24">
-            <title>arrow-back</title>
-            <path d="M7.839 17.296a.847.847 0 0 0 1.21 0 .853.853 0 0 0 0-1.198L2.914 9.965h20.238A.843.843 0 0 0 24 9.118a.852.852 0 0 0-.847-.86H2.915l6.133-6.12a.868.868 0 0 0 0-1.21.847.847 0 0 0-1.21 0L.255 8.513a.833.833 0 0 0 0 1.197l7.585 7.586z" />
-          </symbol>
-          <clippath
-            id="polygon-clip-rhomboid"
-            clipPathUnits="objectBoundingBox"
-          >
-            <polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
-          </clippath>
-        </defs>
-      </svg>
-    )
-  }
-
   return (
     <section>
-      {svgIcos()}
       <main css={styles.job}>
         <header>
           <AniLink
@@ -102,13 +59,23 @@ const Slideshow = ({ backLink = "/", images, children }) => {
             bg="#666"
             style={{ opacity: 1 }}
           >
-            <svg css={styles.iconJob}>
-              <use xlinkHref="#icon-arrowback"></use>
-            </svg>
+            <Icon.Back css={styles.iconJob} />
           </AniLink>
         </header>
         <div css={styles.slideshow} data-test="slideshow" ref={slideshow}>
-          {getSlides()}
+          {dimentions &&
+            images.map((item, index) => (
+              <Slide
+                {...item}
+                active={current === index}
+                key={item.title}
+                dimentions={dimentions}
+                direction={direction}
+                onEndAnimating={() => {
+                  setIsAnimating(false)
+                }}
+              />
+            ))}
           {!!slidesTotal && (
             <nav css={styles.slideshowNav}>
               <button
@@ -117,9 +84,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
                 aria-label="Previous slide"
                 data-test="previous"
               >
-                <svg className="icon">
-                  <use xlinkHref="#icon-prev"></use>
-                </svg>
+                <Icon.Prev />
               </button>
               <button
                 onClick={goToNext}
@@ -127,9 +92,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
                 aria-label="Next slide"
                 data-test="next"
               >
-                <svg className="icon">
-                  <use xlinkHref="#icon-next"></use>
-                </svg>
+                <Icon.Next />
               </button>
             </nav>
           )}

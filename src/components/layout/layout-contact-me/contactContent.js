@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import capitalize from "../../../utils/capitalize"
+import Icon from "../../icon"
 import styles from "./contact-me.css"
 
 const BASE_LINKS = {
   gitHub: "https://github.com/",
   twitter: "https://twitter.com/",
-  stackOverflow: "https://stackoverflow.com/users/",
   linkedIn: "https://www.linkedin.com/",
 }
 
@@ -20,21 +20,21 @@ const ContactContent = ({ children, isContactOpen, social, closeContact }) => (
       data-test="contactmeClose"
       onClick={closeContact}
     >
-      <svg className="icon">
-        <use xlinkHref="#icon-cross" />
-      </svg>
+      <Icon.Cross />
     </button>
     <div className="contactme-container">
       <div className="contactme-info">
         <p>{children}</p>
         <p className="contactme-social">
           {Object.entries(social)
-            .filter(([_key, value]) => value != ``)
+            .filter(([_key, value]) => value)
             .map(([key, value]) => {
-              const { title, ico } =
-                key === "resumeInPdf"
-                  ? { title: "CV in PDF", ico: "cv" }
-                  : { title: `${capitalize(key)}`, ico: key.toLowerCase() }
+              let title = capitalize(key),
+                ico = title
+              if (key === "resumeInPdf") {
+                title = "CV in PDF"
+                ico = "CV"
+              }
               return (
                 <a
                   key={value}
@@ -44,9 +44,7 @@ const ContactContent = ({ children, isContactOpen, social, closeContact }) => (
                   rel="noopener noreferrer"
                   title={title}
                 >
-                  <svg className="icon">
-                    <use xlinkHref={`#icon-${ico}`}></use>
-                  </svg>
+                  {Icon[ico]()}
                 </a>
               )
             })}
