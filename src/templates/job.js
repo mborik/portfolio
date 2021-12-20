@@ -17,13 +17,17 @@ export default ({ path, data }) => {
 
   const backLinkMatch = /^(\/\w+)\//.exec(path)
   const backLink = (backLinkMatch && backLinkMatch[1]) || "/"
+  const isProjects = backLink === "/projects"
 
-  const jobTitle = [post.frontmatter.jobTitle]
-  if (post.frontmatter.company) {
-    jobTitle.push(post.frontmatter.company)
-  }
+  console.log(path, backLink)
+  const title = isProjects
+    ? post.frontmatter.company
+    : [
+        ...([post.frontmatter.jobTitle] || []),
+        ...([post.frontmatter.company] || []),
+      ]
 
-  function formatDateRange(dateFrom, dateTo) {
+  const formatDateRange = (dateFrom, dateTo) => {
     const result = [dateFrom]
 
     if (dateTo) {
@@ -37,24 +41,20 @@ export default ({ path, data }) => {
     return result.join(" to ")
   }
 
-  function createMarkup() {
-    return { __html: post.html }
-  }
-
-  return !post ? (
-    <></>
-  ) : (
+  return post ? (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{siteTitle(jobTitle.join(" @ "))}</title>
+        <title>{siteTitle(title)}</title>
       </Helmet>
       <Slideshow backLink={backLink} images={post.frontmatter.images}>
         <div css={styles.jobtitle}>
           <div css={styles.jobtitleContent} data-test="content">
-            <h1>{post.frontmatter.company}</h1>
+            {!isProjects ? <h1>{post.frontmatter.company}</h1> : null}
             <h3>
-              {post.frontmatter.jobTitle},&nbsp;
+              {!isProjects && post.frontmatter.jobTitle ? (
+                <>{post.frontmatter.jobTitle},&nbsp;</>
+              ) : null}
               {formatDateRange(
                 post.frontmatter.dateFrom,
                 post.frontmatter.dateTo
@@ -65,7 +65,7 @@ export default ({ path, data }) => {
         {post.html && (
           <div
             css={styles.contentText}
-            dangerouslySetInnerHTML={createMarkup()}
+            dangerouslySetInnerHTML={{ __html: post.html }}
           />
         )}
       </Slideshow>
@@ -78,7 +78,7 @@ export default ({ path, data }) => {
         description="Languages, frameworks, libraries or the apps that I used while I worked for this company, customer or on the project:"
       />
     </>
-  )
+  ) : null
 }
 
 export const query = graphql`

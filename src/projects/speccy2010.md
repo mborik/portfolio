@@ -18,8 +18,8 @@ images: [
     description: "<ul>
       <li>FPGA development board built for the implementation of various gaming computers (but originally focused on <b>ZX Spectrum and its clones</b>).</li>
       <li>This project is <b>next iteration of the firmware</b> primarily aimed on implementation of various disk interfaces which was common in Central European region:<br>
-        DivMMC interface and objectively most advanced disk system MB-02.</li>
-      <li>Use arrows or cursor keys to navigate through the advanced features...</li></ul>",
+        DivMMC interface and objectively most advanced disk system MB-02.</li></ul>
+      <p>Use arrows or cursor keys to navigate through the advanced features...</p>",
     layout: "6",
     files: [
       { image: ../images/projects/speccy2010/board.jpg },

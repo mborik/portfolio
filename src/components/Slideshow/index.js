@@ -76,7 +76,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
                 }}
               />
             ))}
-          {!!slidesTotal && (
+          {slidesTotal ? (
             <nav css={styles.slideshowNav}>
               <button
                 onClick={goToPrevious}
@@ -95,7 +95,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
                 <Icon.Next />
               </button>
             </nav>
-          )}
+          ) : null}
           <div css={styles.gradient}></div>
         </div>
         {children}

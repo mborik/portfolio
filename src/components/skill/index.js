@@ -34,13 +34,11 @@ const Skill = ({
 
   function getSkills() {
     removeTransform()
-    return !loaded ? (
-      <></>
-    ) : (
-      skills.map(({ title, image }) => (
-        <AnimateItem type={type} title={title} key={title} image={image} />
-      ))
-    )
+    return loaded
+      ? skills.map(({ title, image }) => (
+          <AnimateItem type={type} title={title} key={title} image={image} />
+        ))
+      : null
   }
 
   useScrollPosition(({ currPos }) => {
