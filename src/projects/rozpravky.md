@@ -14,7 +14,7 @@ images: [
     title: "Zopárstanové rozprávky",
     description: "<ul>
       <li>Fairy tale book for children written by my friend <b>Michal Orlovský</b>.</li>
-      <li>I've acting as typesetter and graphic designer.</li></ul>",
+      <li>I've acted as typesetter and graphic designer.</li></ul>",
     layout: "2",
     files: [
       { image: ../images/projects/rozpravky/preview1.jpg },

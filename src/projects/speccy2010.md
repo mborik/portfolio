@@ -3,6 +3,7 @@ title: "speccy2010"
 company: "Speccy2010"
 logo: ../images/projects/speccy2010.png
 jobTitle: "ZX-Spectrum clone firmware"
+website: "https://github.com/mborik/speccy2010"
 skills:
   [
     { title: "VHDL", image: ../images/skills/vhdl.svg },

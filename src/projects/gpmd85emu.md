@@ -3,6 +3,7 @@ title: "gpmd85emu"
 company: "GPMD85Emulator"
 logo: ../images/projects/gpmd85emu.png
 jobTitle: ""
+website: "https://github.com/mborik/GPMD85Emulator"
 skills:
   [
     { title: "C", image: ../images/skills/c.svg },

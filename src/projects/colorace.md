@@ -3,6 +3,7 @@ title: "colorace"
 company: "ColorAceEditor"
 logo: ../images/projects/colorace.png
 jobTitle: "pixelart screen editor"
+website: "https://pmd85.borik.net/colorace/"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },

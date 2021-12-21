@@ -3,6 +3,7 @@ title: "saa1099tracker"
 company: "SAA1099Tracker"
 logo: ../images/projects/saa1099tracker.png
 jobTitle: "chiptune music tracker"
+website: "https://saa1099tracker.borik.net/"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },

@@ -3,6 +3,7 @@ title: "z80-macroasm"
 company: "z80-macroasm"
 logo: ../images/projects/z80-macroasm.png
 jobTitle: "VSCode extension"
+website: "https://marketplace.visualstudio.com/items?itemName=mborik.z80-macroasm"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },

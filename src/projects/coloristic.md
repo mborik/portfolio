@@ -3,6 +3,7 @@ title: "coloristic"
 company: "Coloristic"
 logo: ../images/projects/coloristic.png
 jobTitle: "ZX-Spectrum game"
+website: "https://youtu.be/hAXNuSyy4xU"
 skills:
   [
     { title: "Z80", image: ../images/skills/z80.svg },

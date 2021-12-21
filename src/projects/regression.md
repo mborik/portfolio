@@ -3,6 +3,7 @@ title: "regression"
 company: "Regression"
 logo: ../images/projects/regression.png
 jobTitle: "ZX-Spectrum design demo"
+website: "https://youtu.be/RKRRla9x8Vw"
 skills:
   [
     { title: "Z80", image: ../images/skills/z80.svg },
