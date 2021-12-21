@@ -210,9 +210,8 @@ const Menu = ({
     <main css={mainClass}>
       <div>
         <button
-          className={`hamburger${isMenuOpen ? " is-opened-navi" : ""}`}
           ref={elmHamburger}
-          data-test="menu"
+          className={`hamburger${isMenuOpen ? " is-opened-navi" : ""}`}
           onClick={elmHamburgerClick}
         >
           <div className="hamburger-line hamburger-line-1">
@@ -231,7 +230,7 @@ const Menu = ({
             <div className="hamburgercolr hamburger-line-in hamburger-line-in-cross-2"></div>
           </div>
         </button>
-        <div css={[styles.globalMenu, linkColor]} data-test="menulinks">
+        <div css={[styles.globalMenu, linkColor]}>
           <div>{menu}</div>
         </div>
         {svgIcos(shapeColor)}

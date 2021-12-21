@@ -7,7 +7,7 @@ export default () => {
     <Layout title="403 Forbidden">
       <section css={[styles.dataSection, styles.blackColor]}>
         <div css={styles.dataContainer}>
-          <div css={styles.dataContent} data-test="404">
+          <div css={styles.dataContent}>
             <h1>4O3</h1>
             <h2>keep this frequency clear ☝</h2>
             <a href="/">🏠</a>

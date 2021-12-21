@@ -17,7 +17,6 @@ const ContactContent = ({ children, isContactOpen, social, closeContact }) => (
       className="btn-contactme-close"
       aria-label="Close contact me"
       title="Close contact me"
-      data-test="contactmeClose"
       onClick={closeContact}
     >
       <Icon.Cross />

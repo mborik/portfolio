@@ -47,7 +47,7 @@ export default ({ path, data }) => {
       </Helmet>
       <Slideshow backLink={backLink} images={images} website={website}>
         <div css={styles.jobtitle}>
-          <div css={styles.jobtitleContent} data-test="content">
+          <div css={styles.jobtitleContent}>
             {!isProjects ? <h1>{company}</h1> : null}
             <h3>
               {!isProjects && jobTitle ? <>{jobTitle},&nbsp;</> : null}

@@ -88,7 +88,7 @@ const Skill = ({
         showLoadingAnimation={showLoadingAnimation}
       >
         <div css={cssStyles.div}>
-          <ul css={styles.grid} data-test="skills" ref={gridRef}>
+          <ul css={styles.grid} ref={gridRef}>
             {getSkills()}
           </ul>
         </div>

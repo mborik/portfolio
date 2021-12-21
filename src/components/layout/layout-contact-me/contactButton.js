@@ -10,7 +10,6 @@ const ContactButton = ({ openContact }) => (
       className="btn-contact-color"
       onClick={openContact}
       title="Contact me"
-      data-test="contactme"
     >
       Contact&ensp;
       <Icon.Contact />

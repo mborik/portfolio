@@ -55,14 +55,13 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
             to={backLink}
             css={styles.arrowBack}
             direction="right"
-            data-test="goback"
             bg="#666"
             style={{ opacity: 1 }}
           >
             <Icon.Back className="back-icon" css={styles.iconJob} />
           </AniLink>
         </header>
-        <div css={styles.slideshow} data-test="slideshow" ref={slideshow}>
+        <div css={styles.slideshow} ref={slideshow}>
           {dimentions &&
             images.map((item, index) => (
               <Slide

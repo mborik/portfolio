@@ -81,9 +81,7 @@ const Experience = ({
         <p>{description}</p>
       </header>
       <Delay wait={500} showLoadingAnimation={showLoadingAnimation}>
-        <div css={styles.grid} data-test="jobs">
-          {getJobs()}
-        </div>
+        <div css={styles.grid}>{getJobs()}</div>
       </Delay>
     </main>
   )
