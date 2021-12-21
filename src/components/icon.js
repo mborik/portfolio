@@ -27,6 +27,13 @@ const Visit = props => (
   </svg>
 )
 
+const Play = props => (
+  <svg {...sharedProps} viewBox="0 0 60 60" {...props}>
+    <path d="m45.6 29.2-22-15a1 1 0 0 0-1.6.8v30a1 1 0 0 0 1.6.8l22-15a1 1 0 0 0 0-1.6zM24 43.2V16.8L43.2 30 24 43.1z" />
+    <path d="M30 0a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm0 58a28 28 0 1 1 0-56 28 28 0 0 1 0 56z" />
+  </svg>
+)
+
 const Contact = props => (
   <svg {...sharedProps} viewBox="0 0 483.3 483.3" {...props}>
     <g>
@@ -93,6 +100,7 @@ const Icon = {
   Next,
   Back,
   Visit,
+  Play,
   Contact,
   Cross,
   GitHub,

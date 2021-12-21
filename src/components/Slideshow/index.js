@@ -36,6 +36,19 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
     }
   }
 
+  const getVisitLinkIcon = url => {
+    let iconName = "Visit"
+    if (/\bgithub\.com\//.test(url)) {
+      iconName = "GitHub"
+    } else if (/\byoutu\.?be(\.com)?\//.test(url)) {
+      iconName = "Play"
+    }
+    return Icon[iconName]({
+      className: "visitLinkIcon",
+      css: styles.visitLinkIcon,
+    })
+  }
+
   useEventListener("keydown", event => {
     const evt = event || window.event
     const keyCode = evt.which || evt.keyCode
@@ -85,14 +98,11 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
                   title={website.replace(/^https?:\/\//, "")}
                   css={styles.visitLink}
                 >
-                  {Icon[website.includes("github.com") ? "GitHub" : "Visit"]({
-                    className: "visitLinkIcon",
-                    css: styles.visitLinkIcon,
-                  })}
+                  {getVisitLinkIcon(website)}
                 </a>
               )}
-              {slidesTotal && (
-                <>
+              {slidesTotal ? (
+                <div css={{ marginTop: "1.5rem" }}>
                   <button
                     key="previous"
                     onClick={goToPrevious}
@@ -109,8 +119,8 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
                   >
                     <Icon.Next />
                   </button>
-                </>
-              )}
+                </div>
+              ) : null}
             </nav>
           ) : null}
           <div css={styles.gradient}></div>

@@ -70,7 +70,6 @@ const styles = {
     margin: 0;
     padding: 0;
     margin-left: 4.5rem;
-    margin-bottom: 1.5rem;
     display: block;
     width: 1em;
     height: 1em;
@@ -127,6 +126,7 @@ const styles = {
     font-size: 5em;
     right: 0.1em;
     bottom: 1em;
+    min-width: 3em;
     ${media45em} {
       font-size: 4em;
       right: auto;
