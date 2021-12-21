@@ -2,7 +2,7 @@
 title: "jazvynadusi"
 company: "Jazvy na duši"
 logo: ../images/projects/jazvynadusi.jpg
-jobTitle: "women's novel"
+jobTitle: "female novel"
 skills:
   [
     { title: "Illustrator", image: ../images/skills/adobe-illustrator.svg },
@@ -13,7 +13,7 @@ images: [
     caption: "jazvynadusi",
     title: "Jazvy na duši",
     description: "<ul>
-      <li>Women's novel written by my sister <b>Jarmila Bóriková</b>.</li>
+      <li>Female novel written by my sister <b>Jarmila Bóriková</b>.</li>
       <li>I designed cover illustration done by tracing technique and also acting as typesetter.</li></ul>",
     layout: "1",
     files: [
