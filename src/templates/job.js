@@ -25,7 +25,7 @@ export default ({ path, data }) => {
     : [
         ...([post.frontmatter.jobTitle] || []),
         ...([post.frontmatter.company] || []),
-      ]
+      ].join(" @ ")
 
   const formatDateRange = (dateFrom, dateTo) => {
     const result = [dateFrom]
