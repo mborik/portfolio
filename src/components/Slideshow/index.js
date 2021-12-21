@@ -12,7 +12,7 @@ const KEYCODE = {
   RIGHT: 39,
 }
 
-const Slideshow = ({ backLink = "/", images, children }) => {
+const Slideshow = ({ backLink = "/", images, website, children }) => {
   const slideshow = useRef()
   const dimentions = useWnResize(slideshow, 10)
   const [current, setCurrent] = useState(0)
@@ -59,7 +59,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
             bg="#666"
             style={{ opacity: 1 }}
           >
-            <Icon.Back css={styles.iconJob} />
+            <Icon.Back className="back-icon" css={styles.iconJob} />
           </AniLink>
         </header>
         <div css={styles.slideshow} data-test="slideshow" ref={slideshow}>
@@ -76,24 +76,42 @@ const Slideshow = ({ backLink = "/", images, children }) => {
                 }}
               />
             ))}
-          {slidesTotal ? (
+          {slidesTotal || website ? (
             <nav css={styles.slideshowNav}>
-              <button
-                onClick={goToPrevious}
-                css={styles.btnjob}
-                aria-label="Previous slide"
-                data-test="previous"
-              >
-                <Icon.Prev />
-              </button>
-              <button
-                onClick={goToNext}
-                css={styles.btnjob}
-                aria-label="Next slide"
-                data-test="next"
-              >
-                <Icon.Next />
-              </button>
+              {website && (
+                <a
+                  href={website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={website.replace(/^https?:\/\//, "")}
+                  css={styles.visitLink}
+                >
+                  {Icon[website.includes("github.com") ? "GitHub" : "Visit"]({
+                    className: "visitLinkIcon",
+                    css: styles.visitLinkIcon,
+                  })}
+                </a>
+              )}
+              {slidesTotal && (
+                <>
+                  <button
+                    key="previous"
+                    onClick={goToPrevious}
+                    css={styles.btnjob}
+                    aria-label="Previous slide"
+                  >
+                    <Icon.Prev />
+                  </button>
+                  <button
+                    key="next"
+                    onClick={goToNext}
+                    css={styles.btnjob}
+                    aria-label="Next slide"
+                  >
+                    <Icon.Next />
+                  </button>
+                </>
+              )}
             </nav>
           ) : null}
           <div css={styles.gradient}></div>
@@ -105,6 +123,7 @@ const Slideshow = ({ backLink = "/", images, children }) => {
 }
 
 Slideshow.propTypes = {
+  backLink: PropTypes.string,
   images: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -118,6 +137,7 @@ Slideshow.propTypes = {
       caption: PropTypes.string,
     }).isRequired
   ).isRequired,
+  website: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

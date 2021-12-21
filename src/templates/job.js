@@ -8,6 +8,8 @@ import siteTitle from "../utils/siteTitle"
 
 export default ({ path, data }) => {
   const post = data.markdownRemark
+  const { company, jobTitle, website, images, skills } = post.frontmatter
+
   useLayoutEffect(() => {
     if (!post) {
       navigate("/404")
@@ -19,15 +21,11 @@ export default ({ path, data }) => {
   const backLink = (backLinkMatch && backLinkMatch[1]) || "/"
   const isProjects = backLink === "/projects"
 
-  console.log(path, backLink)
   const title = isProjects
-    ? post.frontmatter.company
-    : [
-        ...([post.frontmatter.jobTitle] || []),
-        ...([post.frontmatter.company] || []),
-      ].join(" @ ")
+    ? company
+    : [jobTitle, company].filter(part => part).join(" @ ")
 
-  const formatDateRange = (dateFrom, dateTo) => {
+  const formatDateRange = ({ dateFrom, dateTo }) => {
     const result = [dateFrom]
 
     if (dateTo) {
@@ -47,18 +45,13 @@ export default ({ path, data }) => {
         <meta charSet="utf-8" />
         <title>{siteTitle(title)}</title>
       </Helmet>
-      <Slideshow backLink={backLink} images={post.frontmatter.images}>
+      <Slideshow backLink={backLink} images={images} website={website}>
         <div css={styles.jobtitle}>
           <div css={styles.jobtitleContent} data-test="content">
-            {!isProjects ? <h1>{post.frontmatter.company}</h1> : null}
+            {!isProjects ? <h1>{company}</h1> : null}
             <h3>
-              {!isProjects && post.frontmatter.jobTitle ? (
-                <>{post.frontmatter.jobTitle},&nbsp;</>
-              ) : null}
-              {formatDateRange(
-                post.frontmatter.dateFrom,
-                post.frontmatter.dateTo
-              )}
+              {!isProjects && jobTitle ? <>{jobTitle},&nbsp;</> : null}
+              {formatDateRange(post.frontmatter)}
             </h3>
           </div>
         </div>
@@ -70,7 +63,7 @@ export default ({ path, data }) => {
         )}
       </Slideshow>
       <Skill
-        skills={post.frontmatter.skills}
+        skills={skills}
         type="static"
         title="Tools &amp; Skills"
         style={{ overflow: "hidden", backgroundColor: "#fff" }}
@@ -88,6 +81,7 @@ export const query = graphql`
       frontmatter {
         company
         jobTitle
+        website
         dateFrom(formatString: "MMM YYYY")
         dateTo(formatString: "MMM YYYY")
         images {

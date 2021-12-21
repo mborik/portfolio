@@ -60,10 +60,49 @@ const styles = {
   iconJob: css`
     display: block;
     width: 1.8em;
-    height: 1.8em;
+    height: 3.1em;
     margin: 0 auto;
     fill: currentColor;
-    height: 3.1em;
+  `,
+  visitLink: css`
+    display: inline-block;
+    border: 3px solid;
+    margin: 0;
+    padding: 0;
+    margin-left: 4.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 1em;
+    height: 1em;
+    pointer-events: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1001;
+    background: #fff;
+    border-color: #000;
+    color: #000 !important;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.85);
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background: #2fa0ec;
+      border-color: #fff;
+      color: #fff !important;
+    }
+    ${media45em} {
+      position: absolute;
+      right: 2rem;
+      bottom: 0;
+      border: 0;
+    }
+  `,
+  visitLinkIcon: css`
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 1rem auto;
+    fill: currentColor;
   `,
   slideshow: css`
     position: relative;
@@ -93,6 +132,7 @@ const styles = {
       right: auto;
       bottom: 0em;
       left: 0em;
+      width: 100%;
     }
   `,
   btnjob: css`
