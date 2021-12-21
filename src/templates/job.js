@@ -62,14 +62,16 @@ export default ({ path, data }) => {
           />
         )}
       </Slideshow>
-      <Skill
-        skills={skills}
-        type="static"
-        title="Tools &amp; Skills"
-        style={{ overflow: "hidden", backgroundColor: "#fff" }}
-        showLoadingAnimation={false}
-        description="Languages, frameworks, libraries or the apps that I used while I worked for this company, customer or on the project:"
-      />
+      {skills && skills.length ? (
+        <Skill
+          skills={skills}
+          type="static"
+          title="Tools &amp; Skills"
+          style={{ overflow: "hidden", backgroundColor: "#fff" }}
+          showLoadingAnimation={false}
+          description="Languages, frameworks, libraries or the apps that I used while I worked for this company, customer or on the project:"
+        />
+      ) : null}
     </>
   ) : null
 }

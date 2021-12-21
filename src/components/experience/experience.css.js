@@ -96,6 +96,16 @@ const styles = {
       &:nth-of-type(7) {
         margin-top: -3em;
       }
+      &:nth-of-type(9) {
+        margin-top: 3em;
+      }
+      &:nth-of-type(10) {
+        margin-left: 4em;
+      }
+      &:nth-of-type(11) {
+        margin-top: 3em;
+        margin-left: -4em;
+      }
     }
     ${media36em} {
       width: 100%;
