@@ -16,10 +16,15 @@ skills:
     { title: "GraphQL", image: ../images/skills/graphql.svg },
     { title: "Knex.js", image: ../images/skills/knexjs.svg },
     { title: "Cypress.io", image: ../images/skills/cypress.svg },
+    { title: "DevTools", image: ../images/skills/devtools.svg },
     { title: "Yarn", image: ../images/skills/yarn.svg },
     { title: "npm", image: ../images/skills/npm.svg },
+    { title: "AWS", image: ../images/skills/aws.svg },
+    { title: "PostgresSQL", image: ../images/skills/postgresql.svg },
+    { title: "Docker", image: ../images/skills/docker.svg },
     { title: "Github", image: ../images/skills/github.svg },
     { title: "git", image: ../images/skills/git.svg },
+    { title: "Slack", image: ../images/skills/slack.svg },
   ]
 images: [
   {
