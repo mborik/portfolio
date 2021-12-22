@@ -56,7 +56,7 @@ const styles = {
     }
     > img {
       margin: 0;
-      box-shadow: 0px 2px 7px 0px #0008;
+      box-shadow: 0px 2px 7px 1px #0004;
     }
     > figcaption {
       position: absolute;
@@ -69,8 +69,8 @@ const styles = {
       font-family: ${typography.options.headerFontFamily.join(",")};
       font-size: 1rem;
       font-weight: 100;
-      color: #fffc;
-      text-shadow: 1px 1px 1px #0008;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
       z-index: 1;
     }
   `,

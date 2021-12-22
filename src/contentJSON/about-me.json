@@ -12,16 +12,21 @@
   {
     "id": "young_me",
     "image": "/young_me.jpg",
-    "description": "This is me in 2002 doing my early stuff in C.<br>I apparently felt bit disturbed. 😁"
+    "description": "This is me in early 00s doing some stuff in C.<br>I apparently felt bit disturbed. 😁"
   },
   {
     "id": "career",
     "subtitle": "Career",
-    "content": "But my first steps into the professional IT were bit tough. I've never been such school-guy so altrough I've made a few humble attempts to study at university I dropped out after year or two because I didn't feel it helped me develop my career. Here you have to understand that I lived in the country of the former Ostblok in the 90s where no one will give you a chance in IT because you didn't study at university. Therefore I started to work as micro-electrician and then I got the opportunity in a design studio where I worked as a DTP graphic designer and set up a web development department here, step by step. This was a spark that ignited my career and it opened the way for me. I changed several jobs and a change came whenever I could fundamentally change technologies or workflows to always learn something new and keep a wide range of my knowledge."
+    "content": "But my first steps into the professional IT were bit tough. I've never been such school-guy so altrough I've made a few humble attempts to study at university I dropped out after year or two because I didn't feel it helped me develop my career. Here you have to understand that I lived in the country of the former Ostblok in early 00s where no one will give you a chance in IT until you didn't study at university. Therefore I started to work as micro-electrician and then I got the opportunity in a design studio where I worked as a DTP graphic designer and set up a web development department here, step by step. This was a spark that ignited my career and it opened the way for me. I changed several jobs and a change came whenever I could fundamentally change technologies or workflows to always learn something new and keep a wide range of my knowledge."
   },
   {
     "id": "presenting_me",
     "image": "/presenting_me.jpg",
-    "description": "A moment from my presentation within the Ness Idea Contest 2017."
+    "description": "A moment from my presentation within the Ness Idea Contest 2017.<br>In the end, I won the honored jury award. 😊"
+  },
+  {
+    "id": "hobbies",
+    "subtitle": "Hobbies",
+    "content": "Things I do when I'm not working are also connected to computers. I still focus on old computers and I'm doing lot o stuff to keep it alive and spread a knowledge about that gems. Besides that my beloved daughter has been filling my free time for several years, my biggest passion is <b>production of electronic music</b>. It's amazing when you could create an opuses under your hands just with the help of your computer, full of real or synthetic instruments whether or not you can play them."
   }
 ]
