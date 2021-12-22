@@ -15,15 +15,24 @@ export default () => {
         <div css={styles.aboutContainer}>
           <div css={styles.aboutContent}>
             <span css={styles.aboutShadow}>borik.net</span>
-            {aboutMe.map(({ subtitle, content }) => (
-              <Fragment key={subtitle}>
-                <h2
-                  css={styles.hTag}
-                  dangerouslySetInnerHTML={{ __html: subtitle }}
-                ></h2>
-                <p dangerouslySetInnerHTML={{ __html: content }}></p>
-              </Fragment>
-            ))}
+            {aboutMe.map(({ id, subtitle, content, image, description }) =>
+              image ? (
+                <figure css={styles.heroImg}>
+                  <img src={image} />
+                  <figcaption
+                    dangerouslySetInnerHTML={{ __html: description }}
+                  ></figcaption>
+                </figure>
+              ) : (
+                <Fragment key={id}>
+                  <h2
+                    css={styles.hTag}
+                    dangerouslySetInnerHTML={{ __html: subtitle }}
+                  ></h2>
+                  <p dangerouslySetInnerHTML={{ __html: content }}></p>
+                </Fragment>
+              )
+            )}
           </div>
         </div>
       </section>

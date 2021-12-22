@@ -16,7 +16,7 @@ const Home = () => {
       `Full-Stack Javascript Developer`,
       `Electronic Music Producer`,
       `Digital Imaginary, Sound and Video Processing`,
-      `Desktop Publishing, Typography and Graphics Procession`,
+      `Desktop Publishing, Typesetting and Graphic design`,
     ],
   }
 

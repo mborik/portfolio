@@ -1,4 +1,8 @@
 import { css } from "@emotion/core"
+import mediaQueryGenerator from "../utils/mediaQGen"
+import typography from "../utils/typography"
+
+const [media45em] = mediaQueryGenerator([{ type: "max", size: "45" }])
 
 const styles = {
   aboutSection: css`
@@ -42,6 +46,33 @@ const styles = {
     font-size: 12rem;
     font-weight: 900;
     width: 200vw;
+  `,
+  heroImg: css`
+    width: 100%;
+    position: relative;
+    ${media45em} {
+      margin: 0 -4rem;
+      width: auto;
+    }
+    > img {
+      margin: 0;
+      box-shadow: 0px 2px 7px 0px #0008;
+    }
+    > figcaption {
+      position: absolute;
+      display: flex;
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      max-height: 100%;
+      align-items: self-end;
+      font-family: ${typography.options.headerFontFamily.join(",")};
+      font-size: 1rem;
+      font-weight: 100;
+      color: #fffc;
+      text-shadow: 1px 1px 1px #0008;
+      z-index: 1;
+    }
   `,
 }
 

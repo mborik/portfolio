@@ -1,10 +1,27 @@
 [
   {
+    "id": "intro",
     "subtitle": "Who am I?",
-    "content": "I'm a <b>Senior Software Development Engineer</b> born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business but even more years in high-level programming in general. Currently, more than decade focused on latest JavaScript features."
+    "content": "I'm a <b>Senior Software Development Engineer</b> born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business but even more years in high-level programming in general. Currently, more than decade focused on JavaScript and its latest features."
   },
   {
+    "id": "history",
     "subtitle": "History",
     "content": "My humble beginnigs are dated into late 80s when I&nbsp;was boy who started learning the <b>BASIC</b> on Czechoslovakia produced micro-computer <b>PMD&nbsp;85</b>. After Velvet Revolution my older brother bought us an amazing <b>ZX-Spectrum+</b> and my interest in a&nbsp;computers has grown, so in the last years of elementary school I&nbsp;also learned <b>assembly language</b> of Zilog Z80 processor and I've started to do some beginner's experiments in it. Later then I've started with learning of C programming language while I&nbsp;was studying on vocational school focused on electrical engineering. I&nbsp;suppose that all this predestined my career."
+  },
+  {
+    "id": "young_me",
+    "image": "/young_me.jpg",
+    "description": "This is me in 2002 doing my early stuff in C.<br>I apparently felt bit disturbed. 😁"
+  },
+  {
+    "id": "career",
+    "subtitle": "Career",
+    "content": "But my first steps into the professional IT were bit tough. I've never been such school-guy so altrough I've made a few humble attempts to study at university I dropped out after year or two because I didn't feel it helped me develop my career. Here you have to understand that I lived in the country of the former Ostblok in the 90s where no one will give you a chance in IT because you didn't study at university. Therefore I started to work as micro-electrician and then I got the opportunity in a design studio where I worked as a DTP graphic designer and set up a web development department here, step by step. This was a spark that ignited my career and it opened the way for me. I changed several jobs and a change came whenever I could fundamentally change technologies or workflows to always learn something new and keep a wide range of my knowledge."
+  },
+  {
+    "id": "presenting_me",
+    "image": "/presenting_me.jpg",
+    "description": "A moment from my presentation within the Ness Idea Contest 2017."
   }
 ]
