@@ -65,7 +65,7 @@ const styles = {
       bottom: 1rem;
       left: 1rem;
       max-height: 100%;
-      align-items: self-end;
+      align-items: flex-end;
       font-family: ${typography.options.headerFontFamily.join(",")};
       font-size: 1rem;
       font-weight: 100;

@@ -1,6 +1,6 @@
 const siteMetadata = {
   siteUrl: `https://borik.net`,
-  siteTitle: `Martin Bórik ▪ borik.net`,
+  siteTitle: `Martin Bórik ∙ borik.net`,
   siteName: `Martin Bórik`,
   siteShortName: `borik.net`,
   siteDescription: `frontend developer, 8bit freak, loving father and electronic music producer`,
