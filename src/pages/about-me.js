@@ -1,16 +1,13 @@
 import React, { Fragment } from "react"
-import { Helmet } from "react-helmet"
 import aboutMe from "../contentJSON/about-me.json"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/aboutme.css"
-import siteTitle from "../utils/siteTitle"
+import SEO from "../components/seo"
 
 export default () => {
   return (
     <LayoutContactMe bgClassName="aboutme">
-      <Helmet>
-        <title>{siteTitle("About")}</title>
-      </Helmet>
+      <SEO title="About" />
       <section css={styles.aboutSection}>
         <div css={styles.aboutContainer}>
           <div css={styles.aboutContent}>

@@ -4,14 +4,14 @@ const siteMetadata = {
   siteName: `Martin Bórik`,
   siteShortName: `borik.net`,
   siteDescription: `frontend developer, 8bit freak, loving father and electronic music producer`,
-  siteKeywords: `frontend software engineer, full stack javascript developer`,
+  siteKeywords: `frontend software engineer full stack javascript developer electronic music producer`,
   email: `martin@borik.net`,
   social: {
     twitter: `mborik128`,
     gitHub: `mborik`,
     linkedIn: `in/mborik/`,
     resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
-    stackOverflow: ``,
+    openGraphImage: `/og-image-borik-net.jpg`,
   },
 }
 

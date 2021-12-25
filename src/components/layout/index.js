@@ -1,11 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import { Global, css } from "@emotion/core"
 import styles from "./layout.css"
+import SEO from "../seo"
 import Menu from "../menu"
-import siteTitle from "../../utils/siteTitle"
-import { siteMetadata } from "../../../gatsby-config"
 
 const Layout = ({
   title,
@@ -27,16 +25,7 @@ const Layout = ({
         css={styles.wrapper}
         className={`layout-wrapper ${bgClassName || "white"}`}
       >
-        <Helmet
-          title={siteTitle(title)}
-          meta={[
-            { name: "description", content: siteMetadata.siteDescription },
-            { name: "keywords", content: siteMetadata.siteKeywords },
-            { charSet: "utf-8" },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        <SEO title={title} />
         <div className="layout-inner">
           <div css={styles.layout}>
             <Menu

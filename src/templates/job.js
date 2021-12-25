@@ -1,10 +1,9 @@
 import React, { useLayoutEffect } from "react"
 import { graphql, navigate } from "gatsby"
-import { Helmet } from "react-helmet"
 import styles from "./job.css"
 import Slideshow from "../components/Slideshow"
+import SEO from "../components/seo"
 import Skill from "../components/skill"
-import siteTitle from "../utils/siteTitle"
 
 export default ({ path, data }) => {
   const post = data.markdownRemark
@@ -41,10 +40,7 @@ export default ({ path, data }) => {
 
   return post ? (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{siteTitle(title)}</title>
-      </Helmet>
+      <SEO title={title} />
       <Slideshow backLink={backLink} images={images} website={website}>
         <div css={styles.jobtitle}>
           <div css={styles.jobtitleContent}>

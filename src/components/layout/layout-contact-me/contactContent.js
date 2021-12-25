@@ -8,6 +8,7 @@ const BASE_LINKS = {
   gitHub: "https://github.com/",
   twitter: "https://twitter.com/",
   linkedIn: "https://www.linkedin.com/",
+  resumeInPdf: "",
 }
 
 const ContactContent = ({ children, isContactOpen, social, closeContact }) => (
@@ -26,7 +27,7 @@ const ContactContent = ({ children, isContactOpen, social, closeContact }) => (
         <p>{children}</p>
         <p className="contactme-social">
           {Object.entries(social)
-            .filter(([_key, value]) => value)
+            .filter(([key, value]) => value && BASE_LINKS.hasOwnProperty(key))
             .map(([key, value]) => {
               let title = capitalize(key),
                 ico = title

@@ -1,16 +1,13 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import Experience from "../components/experience"
-import siteTitle from "../utils/siteTitle"
+import SEO from "../components/seo"
 
 export default ({ data, transitionStatus }) => {
   return (
     <LayoutContactMe bgClassName="projects">
-      <Helmet>
-        <title>{siteTitle("Hobby projects")}</title>
-      </Helmet>
+      <SEO title="Hobby projects" />
       <Experience
         jobs={data.allMarkdownRemark.edges}
         transitionStatus={transitionStatus}

@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Helmet from "react-helmet"
 import Obfuscate from "react-obfuscate"
 import PropTypes from "prop-types"
 import { Global, css } from "@emotion/core"
@@ -7,13 +6,13 @@ import styles from "./contact-me.css"
 import ContactButton from "./contactButton"
 import ContactContent from "./contactContent"
 import Menu from "../../menu"
-import siteTitle from "../../../utils/siteTitle"
+import SEO from "../../seo"
 import { siteMetadata } from "../../../../gatsby-config"
 
 const LayoutContactMe = ({ children, bgClassName }) => {
   const [isContactOpen, setIsContactOpen] = useState(false)
 
-  const { email, social, siteDescription, siteKeywords } = siteMetadata
+  const { email, social } = siteMetadata
 
   return (
     <>
@@ -29,16 +28,7 @@ const LayoutContactMe = ({ children, bgClassName }) => {
         css={styles.wrapper}
         className={`layout-wrapper ${bgClassName || "white"}`}
       >
-        <Helmet
-          title={siteTitle()}
-          meta={[
-            { name: "description", content: siteDescription },
-            { name: "keywords", content: siteKeywords },
-            { charSet: "utf-8" },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        <SEO />
         <ContactContent
           social={social}
           isContactOpen={isContactOpen}

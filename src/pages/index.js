@@ -4,10 +4,9 @@ import Typewriter from "typewriter-effect"
 import GraphemeSplitter from "grapheme-splitter"
 import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/home.css"
-import { siteMetadata } from "../../gatsby-config"
+import SEO from "../components/seo"
 
 const Home = () => {
-  const { siteTitle } = siteMetadata
   const { h1Text, h2Text, typewriter } = {
     h1Text: `Hello, I'm Martin Bórik`,
     h2Text: `and for more than 20 years I'm acting as a programmer and I'm focusing on other areas of digital arts...`,
@@ -27,10 +26,7 @@ const Home = () => {
 
   return (
     <LayoutContactMe bgClassName="home">
-      <Helmet>
-        <title>{siteTitle}</title>
-        <meta charset="UTF-8" />
-      </Helmet>
+      <SEO />
       <section css={styles.dataSection}>
         <div css={styles.dataContainer}>
           <span css={styles.dataShadow}></span>

@@ -41,11 +41,9 @@ const styles = {
   aboutShadow: css`
     color: rgba(0, 0, 0, 0.04);
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 20vh;
+    left: 20vw;
     font-size: 12rem;
-    font-weight: 900;
-    width: 200vw;
   `,
   heroImg: css`
     width: 100%;
