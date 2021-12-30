@@ -18,7 +18,7 @@ images: [
   {
     caption: "intro",
     title: "Antik Technology, Košice",
-    description: "Use arrows or cursor keys to navigate through the participated projects...",
+    description: "Use arrows or cursor keys to navigate through the projects I've participated in...",
     layout: "6",
     files: [
       { image: ../images/companies/antik/logo_hires.jpg },

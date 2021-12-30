@@ -33,7 +33,7 @@ images: [
   {
     caption: "intro",
     title: "PosAm, spol. s r.o.",
-    description: "Use arrows or cursor keys to navigate through the participated projects...",
+    description: "Use arrows or cursor keys to navigate through the projects I've participated in...",
     layout: "6",
     files: [
       { image: ../images/companies/posam/logo_hires.png },

@@ -31,8 +31,8 @@ images: [
     caption: "sudolabs",
     title: "Sudolabs, Košice",
     description: "<b>Experts in building software products for startups &amp; corporations.</b><br>
-      In Sudolabs are code quality, performance and visual output equally important. We reviewing every line written, discussing optimizations and applying best practices so we are able to scale our products, save costs and elevate the expansion process.
-      <p style='margin-top:1rem'>Use arrows or cursor keys to navigate through the participated projects...</p>",
+      In Sudolabs, code quality, performance and visual output are equally important. We review every line of code written, discuss optimizations and apply the best practices so that we are able to scale our products, save costs and elevate the expansion process.
+      <p style='margin-top:1rem'>Use arrows or cursor keys to navigate through the projects I've participated in...</p>",
     layout: "6",
     files: [
       { image: ../images/companies/sudolabs/intro.jpg },

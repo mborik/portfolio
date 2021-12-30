@@ -2,7 +2,7 @@
 title: "jazvynadusi"
 company: "Jazvy na duši"
 logo: ../images/projects/jazvynadusi.jpg
-jobTitle: "female novel"
+jobTitle: "novel for women"
 website: "https://www.martinus.sk/?uItem=894841"
 skills:
   [
@@ -14,8 +14,8 @@ images: [
     caption: "jazvynadusi",
     title: "Jazvy na duši",
     description: "<ul>
-      <li>Female novel written by my sister <b>Jarmila Bóriková</b>.</li>
-      <li>I designed cover illustration done by tracing technique and also acting as typesetter.</li></ul>",
+      <li>Novel for women written by my sister <b>Jarmila Bóriková</b>.</li>
+      <li>I designed the cover illustration for the novel by applying a tracing technique and I was also a typesetter.</li></ul>",
     layout: "1",
     files: [
       { image: ../images/projects/jazvynadusi/cover.jpg },

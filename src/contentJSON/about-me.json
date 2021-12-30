@@ -2,31 +2,31 @@
   {
     "id": "intro",
     "subtitle": "Who am I?",
-    "content": "I'm a <b>Senior Software Development Engineer</b> born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business but even more years in high-level programming in general. Currently, more than decade focused on JavaScript and its latest features."
+    "content": "I'm a&nbsp;<b>Senior Software Development Engineer</b> born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business and even more years of experience in high-level programming in general. Currently, I&nbsp;have been focusing on JavaScript and its latest features for more than a&nbsp;decade."
   },
   {
     "id": "history",
     "subtitle": "History",
-    "content": "My humble beginnigs are dated into late 80s when I&nbsp;was boy who started learning the <b>BASIC</b> on Czechoslovakia produced micro-computer <b>PMD&nbsp;85</b>. After Velvet Revolution my older brother bought us an amazing <b>ZX-Spectrum+</b> and my interest in a&nbsp;computers has grown, so in the last years of elementary school I&nbsp;also learned <b>assembly language</b> of Zilog Z80 processor and I've started to do some beginner's experiments in it. Later then I've started with learning of C programming language while I&nbsp;was studying on vocational school focused on electrical engineering. I&nbsp;suppose that all this predestined my career."
+    "content": "My humble beginnings date back to the 1980s when I&nbsp;was a&nbsp;boy who started to learn <b>BASIC</b> on a&nbsp;micro-computer <b>PMD&nbsp;85</b> produced in Czechoslovakia. After the Velvet Revolution, my elder brother bought the amazing <b>ZX-Spectrum+</b> and my interest in the computers grew even stronger. Therefore, during the final years of my elementary school, I&nbsp;also learned the <b>assembly language</b> of the Zilog Z80 processor and I&nbsp;started to experiment with it. Later on, while I&nbsp;was studying electrical engennering at a&nbsp;Secondary Vocational School, I&nbsp;started to learn the <b>C&nbsp;programming language</b>. I&nbsp;guess that all these steps predestined my career."
   },
   {
     "id": "young_me",
     "image": "/young_me.jpg",
-    "description": "This is me in early 00s doing some stuff in C.<br>I apparently felt bit disturbed. 😁"
+    "description": "This is me in the early 00s doing some stuff in C.<br>I apparently felt bit disturbed. 😁"
   },
   {
     "id": "career",
     "subtitle": "Career",
-    "content": "But my first steps into the professional IT were bit tough. I've never been such school-guy so altrough I've made a few humble attempts to study at university I dropped out after year or two because I didn't feel it helped me develop my career. Here you have to understand that I lived in the country of the former Ostblok in early 00s where no one will give you a chance in IT until you didn't study at university. Therefore I started to work as micro-electrician and then I got the opportunity in a design studio where I worked as a DTP graphic designer and set up a web development department here, step by step. This was a spark that ignited my career and it opened the way for me. I changed several jobs and a change came whenever I could fundamentally change technologies or workflows to always learn something new and keep a wide range of my knowledge."
+    "content": "My first steps in professionsal IT were a&nbsp;little bit tough. I&nbsp;have never been really interested in school and although I&nbsp;have made a&nbsp;few attempts to earn a&nbsp;university degree, I&nbsp;dropped out after a&nbsp;year or two because I&nbsp;did not feel that traditional university education was helping me develop my career. In order to understand this fact, it is necessary to mention that in the early 00s, I&nbsp;was living in an Eastern European country where obtaining a&nbsp;university degree was an indispensable prerequisite for getting an IT job. Subsequently, I&nbsp;started to work as a&nbsp;micro-electrician and later on, I&nbsp;got the opportunity to work for a&nbsp;design studio as a&nbsp;DTP graphic designer where I&nbsp;set up a&nbsp;web development department from scratch. This event turned out to be the spark that ignited my career and opened many doors for me. I&nbsp;changed several jobs, and every change was associated with my effort to innovate workflows or technologies I&nbsp;used and always learn something new in order to broaden my horizons."
   },
   {
     "id": "presenting_me",
     "image": "/presenting_me.jpg",
-    "description": "A moment from my presentation within the Ness Idea Contest 2017.<br>In the end, I won the honored jury award. 😊"
+    "description": "A&nbsp;moment from my presentation within the Ness Idea Contest 2017.<br>In the end, I&nbsp;won the honored jury award. 😊"
   },
   {
     "id": "hobbies",
     "subtitle": "Hobbies",
-    "content": "Things I do when I'm not working are also connected to computers. I still focus on old computers and I'm doing lot o stuff to keep it alive and spread a knowledge about that gems. Besides that my beloved daughter has been filling my free time for several years, my biggest passion is <b>production of electronic music</b>. It's amazing when you could create an opuses under your hands just with the help of your computer, full of real or synthetic instruments whether or not you can play them."
+    "content": "When I&nbsp;am not working, I&nbsp;devote my time to activities related to computers, too. I&nbsp;am interested in old computers and I&nbsp;do a&nbsp;lot in order to keep that gems alive and spread knowledge about them. Besides my beloved daughter who has been keeping me occupied for several years now, my biggest passion is <b>production of electronic music</b>. It is amazing to create an opus just with the help of your computer, full of real or synthetic instruments, regardless of whether you can play them or not."
   }
 ]

@@ -32,7 +32,7 @@ images: [
   {
     caption: "intro",
     title: "Masternaut Ltd, UK",
-    description: "Use arrows or cursor keys to navigate through the participated projects...",
+    description: "Use arrows or cursor keys to navigate through the projects I've participated in...",
     layout: "6",
     files: [
       { image: ../images/companies/masternaut/logo_hires.png },
