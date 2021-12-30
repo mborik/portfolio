@@ -17,6 +17,8 @@ const styles = {
     width: 100%;
     padding: 0 3vmax;
     min-height: 50vh;
+    overflow: hidden;
+    background: #fff;
     h2 {
       margin: 0 0 1rem;
       font-size: 3rem;
@@ -27,12 +29,11 @@ const styles = {
     }
     p {
       padding: 0;
-      font-weight: 700;
-      max-width: 60%;
+      max-width: 33%;
       ${media50em} {
         font-size: 1em;
         line-height: 1.2em;
-        max-width: 500px;
+        max-width: 320px;
       }
     }
   `,
@@ -44,7 +45,7 @@ const styles = {
   `,
   headerStatic: css`
     position: relative;
-    z-index: 1;
+    z-index: 0;
   `,
   fixed: css`
     position: fixed;
@@ -54,14 +55,20 @@ const styles = {
   `,
   gridLayerRight: css`
     max-width: calc(136px * 5);
-    margin-top: 3rem;
-    transform: perspective(3000px) rotateX(55deg) rotateZ(-45deg);
+    margin: 3rem 0;
+    transition: transform 0.3s;
+    transform: perspective(3000px) rotateX(55deg) translateX(-5vw)
+      rotateZ(-45deg) translateZ(2rem);
     transform-origin: center top;
     ${media50em} {
-      width: calc(100% + 450px);
-      margin-top: 8rem;
-      transform: perspective(3000px) translateX(-8rem) rotateX(55deg)
-        rotateZ(-45deg);
+      width: calc(80px * 5);
+      margin: 8rem 0;
+      transform: perspective(3000px) rotateX(45deg) rotateZ(320deg)
+        translateZ(8rem);
+    }
+    ${media36em} {
+      transform: perspective(3000px) translateX(-1rem) rotateX(45deg)
+        rotateZ(350deg) translateZ(4rem);
     }
   `,
   gridLayerLeft: css`
@@ -70,7 +77,6 @@ const styles = {
     z-index: 2;
     transform-origin: top left;
     padding-top: 10rem;
-    // padding-left: 20rem;
     width: calc(80% + 20rem);
   `,
   gridHeight: css`
@@ -94,12 +100,18 @@ const styles = {
     margin: 0;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    ${media36em} {
-      width: 100px;
-    }
+    transition: none;
     &:hover span {
       opacity: 1;
       transform: translate3d(0, -5px, 0);
+    }
+    ${media50em} {
+      width: 72px;
+      span {
+        overflow-wrap: normal;
+        font-size: 0.7rem;
+        font-weight: 100;
+      }
     }
     &::before {
       content: "";
@@ -137,7 +149,10 @@ const styles = {
     margin: 0;
     padding: 0;
     position: relative;
-
+    ${media50em} {
+      width: 70px;
+      height: 70px;
+    }
     img {
       width: 82% !important;
       height: 82% !important;

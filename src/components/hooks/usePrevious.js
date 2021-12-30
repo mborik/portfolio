@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react"
  * @param {*} value
  * @returns {*} re
  */
-function usePrevious(value) {
+const usePrevious = value => {
   const ref = useRef()
   useEffect(() => {
     ref.current = value

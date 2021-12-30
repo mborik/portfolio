@@ -10,7 +10,6 @@ const Skill = ({
   title,
   description,
   showLoadingAnimation = true,
-  transitionStatus = "entered",
   type = "static",
   style = false,
 }) => {
@@ -19,10 +18,8 @@ const Skill = ({
   const gridHeightRef = useRef(null)
   const wrapperDiv = useRef(null)
 
-  /**
-   * Remove transform css to let work fix position
-   */
-  function removeTransform() {
+  const getSkills = () => {
+    // Remove transform css to let work fix position
     if (wrapperDiv.current) {
       if (wrapperDiv.current.style.removeProperty) {
         wrapperDiv.current.style.removeProperty("transform")
@@ -30,10 +27,6 @@ const Skill = ({
         wrapperDiv.current.style.removeAttribute("transform")
       }
     }
-  }
-
-  function getSkills() {
-    removeTransform()
     return loaded
       ? skills.map(({ title, image }) => (
           <AnimateItem type={type} title={title} key={title} image={image} />
@@ -53,10 +46,6 @@ const Skill = ({
       gridHeightRef.current.style.height = `calc(${gridRef.current.clientHeight}px + 45rem)`
     }
   }, [type, loaded])
-
-  function handleLoad() {
-    setLoaded(true)
-  }
 
   const cssStyles =
     type === "static"
@@ -79,12 +68,11 @@ const Skill = ({
         <h2 css={cssStyles.h2}>{title}</h2>
         <p css={cssStyles.p}>{description}</p>
       </header>
-      {/* TODO: Find a workaround for this */}
-      {/* It appears that AniLink causes the page to render many times */}
-      {/* {transitionStatus === "exited" ? ( */}
       <Delay
         wait={1000}
-        cb={handleLoad}
+        cb={() => {
+          setLoaded(true)
+        }}
         showLoadingAnimation={showLoadingAnimation}
       >
         <div css={cssStyles.div}>
@@ -93,13 +81,6 @@ const Skill = ({
           </ul>
         </div>
       </Delay>
-      {/* ) : (
-          <div css={cssStyles.div}>
-            <ul css={styles.grid} ref={gridRef}>
-              {getSkills()}
-            </ul>
-          </div>
-        )} */}
       <div css={styles.gridHeight} ref={gridHeightRef}></div>
     </main>
   )
@@ -115,7 +96,6 @@ Skill.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   showLoadingAnimation: PropTypes.bool,
-  transitionStatus: PropTypes.string,
   type: PropTypes.string,
   style: PropTypes.object,
 }

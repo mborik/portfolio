@@ -146,6 +146,9 @@ const styles = {
     background: none;
     font-size: 1.5em;
     display: block;
+    ${media45em} {
+      font-size: 1em;
+    }
     .icon {
       height: 0.5em;
     }
@@ -261,8 +264,8 @@ const styles = {
       border-bottom: 1px solid;
     }
     ${media45em} {
-      font-size: 1.3em;
-      line-height: 1;
+      font-size: calc(max(8px, min(1.15rem, 100vw / 30)));
+      line-height: 1.25;
     }
   `,
   slideImgwrap: css`

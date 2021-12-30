@@ -16,7 +16,7 @@ const Experience = ({
 }) => {
   const jobItems = useRef(jobs.map(createRef))
 
-  function getJobs() {
+  const getJobs = () => {
     let currentYear
 
     return jobs.map(

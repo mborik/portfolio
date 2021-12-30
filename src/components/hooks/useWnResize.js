@@ -10,7 +10,7 @@ import isSSR from "../../utils/isSSR"
  * @param {number} [delay=500]
  * @returns {object} [{width, height}]
  */
-function useWnResize(ref = false, delay = 500) {
+const useWnResize = (ref = false, delay = 500) => {
   const [windowSize, setWindowSize] = useState(null)
 
   const getSize = useCallback(() => {

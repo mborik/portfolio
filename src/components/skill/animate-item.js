@@ -35,7 +35,11 @@ function AnimateItem({ type, title, image }) {
           type === "static"
             ? anime({
                 targets: item,
-                translateX: 50,
+                translateX:
+                  window.matchMedia &&
+                  window.matchMedia("screen and (max-width: 36em)").matches
+                    ? 0
+                    : 50,
                 translateY: -50,
                 duration: 500,
                 easing: "cubicBezier(.2, 1, .2, 1)",
@@ -93,9 +97,7 @@ function AnimateItem({ type, title, image }) {
         <div css={styles.gridImg} ref={imageRef}>
           <CompatibleImg
             imageInfo={image}
-            style={{
-              overflow: "visible",
-            }}
+            style={{ overflow: "visible" }}
             alt={title}
           />
         </div>

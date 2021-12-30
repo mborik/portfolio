@@ -11,17 +11,12 @@ const Home = () => {
     h1Text: `Hello, I'm Martin Bórik`,
     h2Text: `and for more than 20 years I've been a programmer and I've focused on multiple areas of digital arts...`,
     typewriter: [
-      `Frontend Software Engineer`,
+      `Frontend Software Development Engineer`,
       `Full-Stack Javascript Developer`,
       `Electronic Music Producer`,
       `Digital Imagery, Sound and Video Processing`,
       `Desktop Publishing, Typesetting and Graphic design`,
     ],
-  }
-
-  function stringSplitter(string) {
-    const splitter = new GraphemeSplitter()
-    return splitter.splitGraphemes(string)
   }
 
   return (
@@ -40,7 +35,8 @@ const Home = () => {
                 autoStart: true,
                 loop: true,
                 delay: 55,
-                stringSplitter,
+                stringSplitter: string =>
+                  new GraphemeSplitter().splitGraphemes(string),
               }}
             />
           </div>
