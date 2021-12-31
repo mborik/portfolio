@@ -34,6 +34,9 @@ const styles = {
       max-width: calc(100vw - 5em);
       margin: 1em 0 0 5px;
       font-weight: 500;
+      ${media52Dot5em} {
+        width: 45em;
+      }
     }
   `,
   grid: css`
@@ -105,6 +108,9 @@ const styles = {
       &:nth-of-type(11) {
         margin-top: 3em;
         margin-left: -4em;
+      }
+      &:nth-of-type(12) {
+        margin-top: 5em;
       }
     }
     ${media36em} {

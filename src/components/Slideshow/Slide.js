@@ -268,9 +268,6 @@ const Slide = ({
                 objectPosition="top left"
                 alt={title}
               />
-              {caption && index === 4 && (
-                <h4 css={styles.slideImgCaption}>{caption}</h4>
-              )}
             </div>
           </div>
         ))}

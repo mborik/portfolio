@@ -204,20 +204,6 @@ const styles = {
   slideCurrent: css`
     pointer-events: auto;
   `,
-  slideImgCaption: css`
-    position: absolute;
-    width: 100%;
-    top: 83%;
-    text-align: center;
-    margin: 0;
-    padding: 1em;
-    font-size: 1.25em;
-    color: #25303b;
-    font-weight: normal;
-    ${media45em} {
-      font-size: 0.75em;
-    }
-  `,
   animationContainer: css`
     position: absolute;
     overflow: hidden;

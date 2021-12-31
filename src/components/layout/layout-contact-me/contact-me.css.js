@@ -88,6 +88,7 @@ const styles = {
       flex-flow: row nowrap;
       justify-content: space-between;
       width: 33%;
+      min-width: 24rem;
       margin: 0 auto;
       padding: 0.85em 0;
       transform: translate3d(0, 20px, 0);
@@ -102,6 +103,7 @@ const styles = {
 
       ${media40em} {
         font-size: 1.3rem;
+        min-width: 20rem;
       }
     }
     .contactme-social {
