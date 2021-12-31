@@ -12,7 +12,7 @@ export default ({ data, transitionStatus }) => {
         jobs={data.allMarkdownRemark.edges}
         transitionStatus={transitionStatus}
         title="Work Experience"
-        description="My work experience is pretty long and this timeline will guide you through all companies / customers I've worked for and projects I've worked on."
+        description="My work experience is pretty long and this timeline will guide you through all companies or customers I've been working for and projects I've been working on."
       />
     </LayoutContactMe>
   )

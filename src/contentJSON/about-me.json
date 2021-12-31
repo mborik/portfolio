@@ -7,26 +7,26 @@
   {
     "id": "history",
     "subtitle": "History",
-    "content": "My humble beginnings date back to the 1980s when I&nbsp;was a&nbsp;boy who started to learn <b>BASIC</b> on a&nbsp;micro-computer <b>PMD&nbsp;85</b> produced in Czechoslovakia. After the Velvet Revolution, my elder brother bought the amazing <b>ZX-Spectrum+</b> and my interest in the computers grew even stronger. Therefore, during the final years of my elementary school, I&nbsp;also learned the <b>assembly language</b> of the Zilog Z80 processor and I&nbsp;started to experiment with it. Later on, while I&nbsp;was studying electrical engennering at a&nbsp;Secondary Vocational School, I&nbsp;started to learn the <b>C&nbsp;programming language</b>. I&nbsp;guess that all these steps predestined my career."
+    "content": "My humble beginnings date back to the 1980s when I&nbsp;was a&nbsp;boy who started to learn <b>BASIC</b> on a&nbsp;micro-computer <b>PMD&nbsp;85</b> produced in Czechoslovakia. After the Velvet Revolution, my elder brother bought the amazing <b>ZX-Spectrum+</b> and my interest in computers grew even stronger. Therefore, during the final years of my elementary school, I&nbsp;also learned the <b>assembly language</b> of the Zilog Z80 processor and I&nbsp;started to experiment with it. Later on, while I&nbsp;was studying electrical engineering at a&nbsp;Secondary Vocational School, I&nbsp;started to learn the <b>C&nbsp;programming language</b>. I&nbsp;guess that all these steps predestined my career."
   },
   {
     "id": "young_me",
     "image": "/young_me.jpg",
-    "description": "This is me in the early 00s doing some stuff in C.<br>I apparently felt bit disturbed. 😁"
+    "description": "This is me in the early '00s doing some stuff in C,<br>looking as if I had been inturrupted by someone. 😁"
   },
   {
     "id": "career",
     "subtitle": "Career",
-    "content": "My first steps in professional IT were a&nbsp;little bit tough. I&nbsp;have never been really interested in school and although I&nbsp;have made a&nbsp;few attempts to earn a&nbsp;university degree, I&nbsp;dropped out after a&nbsp;year or two because I&nbsp;did not feel that traditional university education was helping me develop my career. In order to understand this fact, it is necessary to mention that in the early 00s, I&nbsp;was living in an Eastern European country where obtaining a&nbsp;university degree was an indispensable prerequisite for getting an IT job. Subsequently, I&nbsp;started to work as a&nbsp;micro-electrician and later on, I&nbsp;got the opportunity to work for a&nbsp;design studio as a&nbsp;DTP graphic designer where I&nbsp;set up a&nbsp;web development department from scratch. This event turned out to be the spark that ignited my career and opened many doors for me. I&nbsp;changed several jobs, and every change was associated with my effort to innovate workflows or technologies I&nbsp;used and always learn something new in order to broaden my horizons."
+    "content": "My first steps in professional IT were a&nbsp;little bit tough. I&nbsp;have never been really interested in school and although I&nbsp;have made a&nbsp;few attempts to earn a&nbsp;university degree, I&nbsp;dropped out after a&nbsp;year or two because I&nbsp;did not feel that traditional university education was helping me develop my career. In order to understand this fact, it is necessary to mention that in the early '00s, I&nbsp;was living in an Eastern European country where obtaining a&nbsp;university degree was an indispensable prerequisite for getting an IT job. Subsequently, I&nbsp;started to work as a&nbsp;micro-electrician and later on, I&nbsp;got the opportunity to work for a&nbsp;design studio as a&nbsp;DTP graphic designer where I&nbsp;set up a&nbsp;web development department from scratch. This event turned out to be the spark that ignited my career and opened many doors for me. I&nbsp;changed several jobs, and every change was motivated by my effort to innovate workflows or technologies that I&nbsp;was using as well as by my desire to always learn something new in order to broaden my horizons."
   },
   {
     "id": "presenting_me",
     "image": "/presenting_me.jpg",
-    "description": "A&nbsp;moment from my presentation within the Ness Idea Contest 2017.<br>In the end, I&nbsp;won the honored jury award. 😊"
+    "description": "A snapshot from my presentation at the Ness Idea Contest 2017.<br>Eventually, I won the honorable mention prize. 😊"
   },
   {
     "id": "hobbies",
     "subtitle": "Hobbies",
-    "content": "When I&nbsp;am not working, I&nbsp;devote my time to activities related to computers, too. I&nbsp;am interested in old computers and I&nbsp;do a&nbsp;lot in order to keep that gems alive and spread knowledge about them. Besides my beloved daughter who has been keeping me occupied for several years now, my biggest passion is <b>production of electronic music</b>. It's amazing to create an opus just with the help of your computer, full of real or synthetic instruments, regardless of whether you can play them or not."
+    "content": "When I&nbsp;am not working, I&nbsp;like to devote my time to computer-related activities. I&nbsp;am interested in old computers and I&nbsp;do a&nbsp;lot in order to keep those gems alive and spread knowledge about them. Besides my beloved daughter who has been keeping me occupied for several years now, my biggest passion is <b>production of electronic music</b>. It's amazing to create an opus just with the help of your computer, full of real or synthetic instruments, regardless of whether you can play them or not."
   }
 ]

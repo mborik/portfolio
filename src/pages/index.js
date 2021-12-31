@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const Home = () => {
   const { h1Text, h2Text, typewriter } = {
     h1Text: `Hello, I'm Martin Bórik`,
-    h2Text: `and for more than 20 years I've been a programmer and I've focused on multiple areas of digital arts...`,
+    h2Text: `and I've been a programmer for more than 20 years and for nearly all of that time, I've been focusing on multiple areas of digital arts...`,
     typewriter: [
       `Frontend Software Development Engineer`,
       `Full-Stack Javascript Developer`,
