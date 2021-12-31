@@ -64,7 +64,11 @@ export default ({ path, data }) => {
           type="static"
           title="Tools &amp; Skills"
           showLoadingAnimation={false}
-          description="Languages, frameworks, libraries or the apps that I used while I worked for this company, customer or on the project:"
+          description={`Languages, frameworks, libraries or the apps that I used${
+            isProjects
+              ? ""
+              : " while I was working for this company on projects for commercial clients or on inhouse projects"
+          }:`}
         />
       ) : null}
     </>
