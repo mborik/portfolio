@@ -10,7 +10,7 @@ const siteMetadata = {
     twitter: `mborik128`,
     gitHub: `mborik`,
     linkedIn: `in/mborik/`,
-    resumeInPdf: `/Martin_Borik_CV_2020.pdf`,
+    resumeInPdf: `/Martin_Borik_CV_2022.pdf`,
     openGraphImage: `/og-image-borik-net.jpg`,
   },
 }
