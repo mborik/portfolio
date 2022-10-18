@@ -4,7 +4,7 @@ import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/aboutme.css"
 import SEO from "../components/seo"
 
-export default () => {
+const PageAboutMe = () => {
   return (
     <LayoutContactMe bgClassName="aboutme">
       <SEO title="About" />
@@ -36,3 +36,5 @@ export default () => {
     </LayoutContactMe>
   )
 }
+
+export default PageAboutMe

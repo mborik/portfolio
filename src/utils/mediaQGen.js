@@ -3,9 +3,9 @@
  *
  * @param {array} breakPoints
  */
-const mediaQueryGenerator = breakPoints => {
+const mediaQueryGenerator = (breakPoints) => {
   return breakPoints.map(
-    item => `@media screen and (${item.type}-width: ${item.size}em)`
+    (item) => `@media screen and (${item.type}-width: ${item.size}em)`
   )
 }
 

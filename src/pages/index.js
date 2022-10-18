@@ -6,7 +6,7 @@ import LayoutContactMe from "../components/layout/layout-contact-me"
 import styles from "../css/home.css"
 import SEO from "../components/seo"
 
-const Home = () => {
+const PageHome = () => {
   const { h1Text, h2Text, typewriter } = {
     h1Text: `Hello, I'm Martin Bórik`,
     h2Text: `and I've been a programmer for more than 20 years and for nearly all of that time, I've been focusing on multiple areas of digital arts...`,
@@ -35,7 +35,7 @@ const Home = () => {
                 autoStart: true,
                 loop: true,
                 delay: 55,
-                stringSplitter: string =>
+                stringSplitter: (string) =>
                   new GraphemeSplitter().splitGraphemes(string),
               }}
             />
@@ -46,4 +46,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default PageHome

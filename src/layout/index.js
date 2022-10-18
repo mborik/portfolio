@@ -3,7 +3,7 @@ import { Global } from "@emotion/react"
 import styles from "./layout.css"
 import styleColors from "./layoutColors.css"
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <div className="pgContainer">
@@ -16,3 +16,5 @@ export default ({ children }) => {
     </>
   )
 }
+
+export default Layout

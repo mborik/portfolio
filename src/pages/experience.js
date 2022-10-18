@@ -4,7 +4,7 @@ import LayoutContactMe from "../components/layout/layout-contact-me"
 import Experience from "../components/experience"
 import SEO from "../components/seo"
 
-export default ({ data, transitionStatus }) => {
+const PageExperience = ({ data, transitionStatus }) => {
   return (
     <LayoutContactMe bgClassName="experience">
       <SEO title="Work Experience" />
@@ -50,3 +50,5 @@ export const query = graphql`
     }
   }
 `
+
+export default PageExperience

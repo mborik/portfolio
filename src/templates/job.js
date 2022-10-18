@@ -5,7 +5,7 @@ import Slideshow from "../components/Slideshow"
 import SEO from "../components/seo"
 import Skill from "../components/skill"
 
-export default ({ path, data }) => {
+const Job = ({ path, data }) => {
   const post = data.markdownRemark
   const { company, jobTitle, website, images, skills } = post.frontmatter
 
@@ -22,7 +22,7 @@ export default ({ path, data }) => {
 
   const title = isProjects
     ? company
-    : [jobTitle, company].filter(part => part).join(" @ ")
+    : [jobTitle, company].filter((part) => part).join(" @ ")
 
   const formatDateRange = ({ dateFrom, dateTo }) => {
     const result = [dateFrom]
@@ -76,7 +76,7 @@ export default ({ path, data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -115,3 +115,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Job

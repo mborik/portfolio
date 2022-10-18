@@ -28,7 +28,7 @@ function AnimateItem({ type, title, image }) {
       // Set animation
       animateItems(
         e,
-        item => {
+        (item) => {
           e.target.style.zIndex = 3
 
           anime.remove(item)
@@ -58,7 +58,7 @@ function AnimateItem({ type, title, image }) {
     function handleMouseLeave(e) {
       animateItems(
         e,
-        item => {
+        (item) => {
           e.target.style.zIndex = 2
 
           anime.remove(item)

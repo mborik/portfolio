@@ -15,4 +15,4 @@ async function replaceHelmetAttrs() {
 const start = Date.now()
 replaceHelmetAttrs()
   .then(() => console.log(`postbuild done in ${Date.now() - start}ms`))
-  .catch(err => console.error(err))
+  .catch((err) => console.error(err))

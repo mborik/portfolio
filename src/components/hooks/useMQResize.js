@@ -10,7 +10,7 @@ import isSSR from "../../utils/isSSR"
  * @param {*} queries Media Query List
  * @returns
  */
-const useMQResize = queries => {
+const useMQResize = (queries) => {
   const [queryMatch, setQueryMatch] = useState(null)
   const keys = useRef(Object.keys(queries))
 

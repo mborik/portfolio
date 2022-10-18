@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styles from "../css/home.css"
 
-export default () => {
+const Page404 = () => {
   return (
     <Layout title="404 Not Found">
       <section css={[styles.dataSection, styles.blackColor]}>
@@ -17,3 +17,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Page404

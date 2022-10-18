@@ -36,7 +36,7 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
     }
   }
 
-  const getVisitLinkIcon = url => {
+  const getVisitLinkIcon = (url) => {
     let iconName = "Visit"
     if (/\bgithub\.com\//.test(url)) {
       iconName = "GitHub"
@@ -49,7 +49,7 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
     })
   }
 
-  useEventListener("keydown", event => {
+  useEventListener("keydown", (event) => {
     const evt = event || window.event
     const keyCode = evt.which || evt.keyCode
     if (keyCode === KEYCODE.LEFT) {

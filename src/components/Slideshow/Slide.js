@@ -197,7 +197,7 @@ const Slide = ({
         // Reset before animating
         const resetTransform = getResetProps(layoutConf)
         // Elements to anime
-        const items = imagesRef.current.map(item => {
+        const items = imagesRef.current.map((item) => {
           item.current.style.opacity = resetTransform.opacity
           item.current.style.transform = resetTransform.transform
 
@@ -216,7 +216,7 @@ const Slide = ({
       const layoutConf = (layoutConfig[`layout${layout}`] || [])["out"]
       if (layoutConf) {
         // Elements to anime
-        const items = imagesRef.current.map(item => item.current)
+        const items = imagesRef.current.map((item) => item.current)
         const animeProps = getAnimeProps(layoutConf, items)
         // After animation ends, hide container and enable navigation again
         animeProps["complete"] = () => {

@@ -9,7 +9,7 @@ const mkdirp = require("mkdirp")
  * @param {String} path
  * @returns String return the path with / at the beginning
  */
-const organizeSlash = path => {
+const organizeSlash = (path) => {
   return path ? `/${path.replace(/^\/|\/$/g, "")}` : ""
 }
 
@@ -22,7 +22,7 @@ exports.onPreBootstrap = ({ store, reporter }) => {
     path.join(program.directory, "src/images"),
     path.join(program.directory, "src/utils"),
   ]
-  dirs.forEach(dir => {
+  dirs.forEach((dir) => {
     if (!fs.existsSync(dir)) {
       reporter.log(`creating the ${dir} directory`)
       mkdirp.sync(dir)
