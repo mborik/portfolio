@@ -93,9 +93,7 @@ export const query = graphql`
           files {
             image {
               childImageSharp {
-                fluid(maxWidth: 1100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -105,9 +103,7 @@ export const query = graphql`
           image {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 200) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }

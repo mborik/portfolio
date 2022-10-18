@@ -18,6 +18,7 @@ const siteMetadata = {
 module.exports = {
   siteMetadata,
   plugins: [
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

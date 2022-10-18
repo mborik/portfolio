@@ -33,11 +33,11 @@ const PageHome = () => {
           <div css={styles.dataContent}>
             <h1>{headline}</h1>
             <h3>
-              {intro.map((el) => (
-                <>
+              {intro.map((el, index) => (
+                <React.Fragment key={index}>
                   {el}
                   <br />
-                </>
+                </React.Fragment>
               ))}
             </h3>
             <Typewriter

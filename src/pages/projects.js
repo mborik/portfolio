@@ -32,9 +32,7 @@ export const query = graphql`
             company
             logo {
               childImageSharp {
-                fluid(maxWidth: 481) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
             jobTitle

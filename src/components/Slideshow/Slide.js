@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, createRef } from "react"
-import PropTypes from "prop-types"
-import Img from "gatsby-image/withIEPolyfill"
 import anime from "animejs"
+import PropTypes from "prop-types"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { usePrevious } from "../hooks"
 import layoutConfig from "./layoutConfig"
 import styles from "./slideshow.css"
@@ -261,9 +261,9 @@ const Slide = ({
         {files.map(({ image }, index) => (
           <div key={index} className="slide-img">
             <div ref={imagesRef.current[index]} css={styles.animationContainer}>
-              <Img
+              <GatsbyImage
                 className="slide-img-inner"
-                fluid={image.childImageSharp.fluid}
+                image={image.childImageSharp.gatsbyImageData}
                 style={{ position: "absolute" }}
                 objectPosition="top left"
                 alt={title}

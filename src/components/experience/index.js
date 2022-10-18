@@ -1,7 +1,7 @@
 import React, { useRef, createRef } from "react"
 import PropTypes from "prop-types"
+import { GatsbyImage } from "gatsby-plugin-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Img from "gatsby-image"
 import Delay from "../delay"
 import styles from "./experience.css"
 
@@ -55,9 +55,9 @@ const Experience = ({
               direction="left"
               bg="#282b2f"
             >
-              <Img
+              <GatsbyImage
                 css={styles.img}
-                fluid={logo.childImageSharp.fluid}
+                image={logo.childImageSharp.gatsbyImageData}
                 alt={company}
               />
               <span css={styles.year}>{years}</span>
