@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import mediaQueryGenerator from "../../utils/mediaQGen"
 
 const [media45em] = mediaQueryGenerator([{ type: "max", size: "45" }])

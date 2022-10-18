@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Global, css } from "@emotion/core"
+import { Global, css } from "@emotion/react"
 import styles from "./layout.css"
 import SEO from "../seo"
 import Menu from "../menu"

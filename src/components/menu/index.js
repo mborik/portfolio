@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, createRef } from "react"
 import PropTypes from "prop-types"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import styles from "./menu.css"
 
 const Menu = ({

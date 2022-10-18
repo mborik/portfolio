@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 const styles = css`
   .home.layout-wrapper .layout-inner {

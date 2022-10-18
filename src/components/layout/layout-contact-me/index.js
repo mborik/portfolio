@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Obfuscate from "react-obfuscate"
 import PropTypes from "prop-types"
-import { Global, css } from "@emotion/core"
+import { Global, css } from "@emotion/react"
 import styles from "./contact-me.css"
 import ContactButton from "./contactButton"
 import ContactContent from "./contactContent"

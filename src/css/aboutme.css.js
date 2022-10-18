@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import mediaQueryGenerator from "../utils/mediaQGen"
 import typography from "../utils/typography"
 
