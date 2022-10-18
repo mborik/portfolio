@@ -15,6 +15,9 @@ const styles = {
   `,
   dataContent: css`
     padding-top: 20vh;
+    h3 {
+      width: 48rem;
+    }
     .Typewriter {
       font-size: 1.5em;
       color: #666;

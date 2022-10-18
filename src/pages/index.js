@@ -7,12 +7,17 @@ import styles from "../css/home.css"
 import SEO from "../components/seo"
 
 const PageHome = () => {
-  const { h1Text, h2Text, typewriter } = {
-    h1Text: `Hello, I'm Martin Bórik`,
-    h2Text: `and I've been a programmer for more than 20 years and for nearly all of that time, I've been focusing on multiple areas of digital arts...`,
+  const { headline, intro, typewriter } = {
+    headline: `Hello, I'm Martin Bórik`,
+    intro: [
+      `and I've been focusing on multiple areas of digital art for the last 20+ years`,
+      `and all of that time I worked as developer balancing between low-level programming and full-stack JavaScript development.`,
+      `Now I'm transitioning into people management, currently as Scrum Master.`,
+    ],
     typewriter: [
-      `Frontend Software Development Engineer`,
-      `Full-Stack Javascript Developer`,
+      `Software Development Engineer III`,
+      `Full-Stack JavaScript Developer`,
+      `Scrum Master`,
       `Electronic Music Producer`,
       `Digital Imagery, Sound and Video Processing`,
       `Desktop Publishing, Typesetting and Graphic design`,
@@ -26,8 +31,15 @@ const PageHome = () => {
         <div css={styles.dataContainer}>
           <span css={styles.dataShadow}></span>
           <div css={styles.dataContent}>
-            <h1>{h1Text}</h1>
-            <h2>{h2Text}</h2>
+            <h1>{headline}</h1>
+            <h3>
+              {intro.map((el) => (
+                <>
+                  {el}
+                  <br />
+                </>
+              ))}
+            </h3>
             <Typewriter
               css={styles.typewriter}
               options={{

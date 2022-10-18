@@ -2,7 +2,7 @@
 title: "sudolabs"
 company: "Sudolabs"
 logo: ../images/companies/sudolabs.jpg
-jobTitle: "Full-Stack JavaScript Developer"
+jobTitle: "Software Development Engineer III"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },
@@ -39,6 +39,20 @@ images: [
     ],
   },
   {
+    caption: "theexpert",
+    title: "The Expert",
+    description: "<ul>
+      <li>The Expert is for those who are seeking personalized advice, guidance and support from the top interior designers from across the globe via video consultations.</li>
+      <li>Now, I'm acting in <b>Scrum Master</b> role here, after year of full-stack development.</li>
+      <li>Application built on Next.js, Apollo, React, styled-components and Formik+Yup.</li>
+      <li>Backend API on GraphQL. Resolvers, dataloaders and providers in Objection.js to PostgreSQL database.</li></ul>",
+    layout: "3",
+    files: [
+      { image: ../images/companies/sudolabs/theexpert_showroom.jpg },
+      { image: ../images/companies/sudolabs/theexpert_logo.png },
+    ],
+  },
+  {
     caption: "dnaera",
     title: "DNA ERA",
     description: "<ul>
@@ -49,18 +63,6 @@ images: [
     files: [
       { image: ../images/companies/sudolabs/dnaera-vertical-complex.png },
       { image: ../images/companies/sudolabs/dnaera-horizontal-complex.png },
-    ],
-  },
-  {
-    caption: "theexpert",
-    title: "The Expert",
-    description: "<ul>
-      <li>Application built on Next.js, Apollo, React, styled-components and Formik+Yup.</li>
-      <li>Backend API on GraphQL queries and mutations. Resolvers, dataloaders and providers in Objection.js to PostgreSQL database, migrations in Knex.js.</li></ul>",
-    layout: "3",
-    files: [
-      { image: ../images/companies/sudolabs/theexpert_showroom.jpg },
-      { image: ../images/companies/sudolabs/theexpert_logo.png },
     ],
   },
 ]
