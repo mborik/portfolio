@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import React from "react"
 
 /**
  * Get the previous props or state
@@ -7,8 +7,8 @@ import { useEffect, useRef } from "react"
  * @returns {*} re
  */
 const usePrevious = (value) => {
-  const ref = useRef()
-  useEffect(() => {
+  const ref = React.useRef()
+  React.useEffect(() => {
     ref.current = value
   })
   return ref.current

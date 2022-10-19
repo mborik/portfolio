@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, createRef } from "react"
+import React from "react"
 import anime from "animejs"
 import PropTypes from "prop-types"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -18,11 +18,11 @@ const Slide = ({
   caption = null,
 }) => {
   const prevActive = usePrevious(active)
-  const slideRef = useRef()
-  const titleRef = useRef()
-  const imagesRef = useRef(files.map(createRef))
+  const slideRef = React.useRef()
+  const titleRef = React.useRef()
+  const imagesRef = React.useRef(files.map(React.createRef))
 
-  useEffect(() => {
+  React.useEffect(() => {
     let animeInTimeout
 
     /**

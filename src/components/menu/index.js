@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, createRef } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { css } from "@emotion/react"
@@ -26,13 +26,13 @@ const Menu = ({
     },
   }
 
-  const [isMenuOpen, setIsMenuOpen] = useState(null)
-  const elmHamburger = useRef()
-  const isAnimating = useRef(false)
+  const [isMenuOpen, setIsMenuOpen] = React.useState(null)
+  const elmHamburger = React.useRef()
+  const isAnimating = React.useRef(false)
   const arrPathRef = Array(3).fill("")
-  const pathRef = useRef(arrPathRef.map(createRef))
+  const pathRef = React.useRef(arrPathRef.map(React.createRef))
 
-  useEffect(() => {
+  React.useEffect(() => {
     const delayPointsArray = []
     let timeStart = Date.now()
 

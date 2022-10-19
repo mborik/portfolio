@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import useEventListener from "@use-it/event-listener"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -13,11 +13,11 @@ const KEYCODE = {
 }
 
 const Slideshow = ({ backLink = "/", images, website, children }) => {
-  const slideshow = useRef()
+  const slideshow = React.useRef()
   const dimentions = useWnResize(slideshow, 10)
-  const [current, setCurrent] = useState(0)
-  const [isAnimating, setIsAnimating] = useState(false)
-  const [direction, setDirection] = useState("next")
+  const [current, setCurrent] = React.useState(0)
+  const [isAnimating, setIsAnimating] = React.useState(false)
+  const [direction, setDirection] = React.useState("next")
   const slidesTotal = images.length - 1
 
   const goToNext = () => {

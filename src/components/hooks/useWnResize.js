@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react"
+import React from "react"
 import { useDebouncedCallback } from "use-debounce"
 import isSSR from "../../utils/isSSR"
 
@@ -11,9 +11,9 @@ import isSSR from "../../utils/isSSR"
  * @returns {object} [{width, height}]
  */
 const useWnResize = (ref = false, delay = 500) => {
-  const [windowSize, setWindowSize] = useState(null)
+  const [windowSize, setWindowSize] = React.useState(null)
 
-  const getSize = useCallback(() => {
+  const getSize = React.useCallback(() => {
     // Setting state to the updated matches
     setWindowSize({
       width: ref === false ? window.innerWidth : ref.current.offsetWidth,
@@ -25,7 +25,7 @@ const useWnResize = (ref = false, delay = 500) => {
     getSize()
   }, delay)
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!isSSR) {
       // Add listener
       window.addEventListener("resize", resizeHandler)

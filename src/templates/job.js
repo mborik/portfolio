@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react"
+import React from "react"
 import { graphql, navigate } from "gatsby"
 import styles from "./job.css"
 import Slideshow from "../components/Slideshow"
@@ -9,7 +9,7 @@ const Job = ({ path, data }) => {
   const post = data.markdownRemark
   const { company, jobTitle, website, images, skills } = post.frontmatter
 
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     if (!post) {
       navigate("/404")
       return <></>

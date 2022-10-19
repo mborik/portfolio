@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import anime from "animejs"
 import styles from "./skills.css"
 import CompatibleImg from "./compatible-image"
 
 function AnimateItem({ type, title, image }) {
-  const ref = useRef(null)
-  const imageRef = useRef()
+  const ref = React.useRef(null)
+  const imageRef = React.useRef()
 
-  useEffect(() => {
+  React.useEffect(() => {
     /**
      * Run the animation on the child tags
      *

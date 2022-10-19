@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 import AnimateItem from "./animate-item"
@@ -13,10 +13,10 @@ const Skill = ({
   type = "static",
   style = false,
 }) => {
-  const [loaded, setLoaded] = useState(false)
-  const gridRef = useRef(null)
-  const gridHeightRef = useRef(null)
-  const wrapperDiv = useRef(null)
+  const [loaded, setLoaded] = React.useState(false)
+  const gridRef = React.useRef(null)
+  const gridHeightRef = React.useRef(null)
+  const wrapperDiv = React.useRef(null)
 
   const getSkills = () => {
     // Remove transform css to let work fix position
@@ -40,7 +40,7 @@ const Skill = ({
     }
   })
 
-  useEffect(() => {
+  React.useEffect(() => {
     wrapperDiv.current = document.querySelector(".tl-wrapper")
     if (type !== "static" && loaded) {
       gridHeightRef.current.style.height = `calc(${gridRef.current.clientHeight}px + 45rem)`

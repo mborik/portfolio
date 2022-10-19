@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from "react"
+import React from "react"
 import { useDebouncedCallback } from "use-debounce"
 import isSSR from "../../utils/isSSR"
 
@@ -11,10 +11,10 @@ import isSSR from "../../utils/isSSR"
  * @returns
  */
 const useMQResize = (queries) => {
-  const [queryMatch, setQueryMatch] = useState(null)
-  const keys = useRef(Object.keys(queries))
+  const [queryMatch, setQueryMatch] = React.useState(null)
+  const keys = React.useRef(Object.keys(queries))
 
-  const handleQuery = useCallback(() => {
+  const handleQuery = React.useCallback(() => {
     const updatedMatches = keys.current.reduce((acum, media) => {
       acum[media] = !!window.matchMedia(queries[media]).matches
       return acum
@@ -32,7 +32,7 @@ const useMQResize = (queries) => {
     500
   )
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!isSSR && window.matchMedia) {
       // Add listener
       window.addEventListener("resize", resizeHandler)

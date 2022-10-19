@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import styles from "./delay.css"
 
@@ -16,9 +16,9 @@ const Delay = ({
   showLoadingAnimation = true,
   wait = 600,
 }) => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = React.useState(true)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
       cb()

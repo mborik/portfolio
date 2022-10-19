@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Obfuscate from "react-obfuscate"
 import PropTypes from "prop-types"
 import { Global, css } from "@emotion/react"
@@ -10,7 +10,7 @@ import SEO from "../../seo"
 import { siteMetadata } from "../../../../gatsby-config"
 
 const LayoutContactMe = ({ children, bgClassName }) => {
-  const [isContactOpen, setIsContactOpen] = useState(false)
+  const [isContactOpen, setIsContactOpen] = React.useState(false)
 
   const { email, social } = siteMetadata
 
