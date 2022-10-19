@@ -134,6 +134,10 @@ const styles = {
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    // fix strange gatsby layouting issue
+    img {
+      border-radius: 50% !important;
+    }
     &:hover {
       box-shadow: 0 0 12px 2px #fff9;
     }

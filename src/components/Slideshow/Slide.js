@@ -262,8 +262,8 @@ const Slide = ({
           <div key={index} className="slide-img">
             <div ref={imagesRef.current[index]} css={styles.animationContainer}>
               <GatsbyImage
-                className="slide-img-inner"
                 image={image.childImageSharp.gatsbyImageData}
+                className="slide-img-inner"
                 style={{ position: "absolute" }}
                 objectPosition="top left"
                 alt={title}

@@ -56,8 +56,8 @@ const Experience = ({
               bg="#282b2f"
             >
               <GatsbyImage
-                css={styles.img}
                 image={logo.childImageSharp.gatsbyImageData}
+                css={styles.img}
                 alt={company}
               />
               <span css={styles.year}>{years}</span>

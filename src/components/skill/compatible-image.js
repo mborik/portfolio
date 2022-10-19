@@ -8,8 +8,8 @@ const CompatibleImg = ({ alt = "", imageInfo, style }) => {
   if (childImageSharp) {
     return (
       <GatsbyImage
-        style={style}
         image={childImageSharp.gatsbyImageData}
+        style={style}
         alt={alt}
       />
     )
