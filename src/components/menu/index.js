@@ -18,6 +18,7 @@ const Menu = ({
       color: "#444",
       url: "/experience",
     },
+    public: { title: "Public Perception", color: "#666", url: "/public" },
     projects: { title: "Hobby Projects", color: "#777", url: "/projects" },
     aboutMe: {
       title: "Who am I?",

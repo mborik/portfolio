@@ -32,7 +32,7 @@ export const query = graphql`
             company
             logo {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
               }
             }
             jobTitle

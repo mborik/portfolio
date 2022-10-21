@@ -1,7 +1,7 @@
 ---
 title: "neobios"
 company: "Neobios"
-logo: ../images/projects/neobios.jpg
+logo: ../images/public/neobios.jpg
 jobTitle: "electronic music album"
 images: [
   {
@@ -15,12 +15,12 @@ images: [
       <li><a href='https://music.youtube.com/playlist?list=OLAK5uy_nweTMEcQpBt0f916TRAEZ_9JzCYweTJHA' target='_blank' ref='nofollow noreferrer'>Youtube Music</a></li></ul>",
     layout: "5",
     files: [
-      { image: ../images/projects/neobios/none.png },
-      { image: ../images/projects/neobios/photo1.jpg },
-      { image: ../images/projects/neobios/photo2.jpg },
+      { image: ../images/public/neobios/none.png },
+      { image: ../images/public/neobios/photo1.jpg },
+      { image: ../images/public/neobios/photo2.jpg },
     ],
   },
 ]
-dateFrom: "2007-11-11"
+dateFrom: "2014-08-14"
 dateTo: "2014-08-14"
 ---

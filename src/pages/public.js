@@ -4,15 +4,15 @@ import LayoutContactMe from "../components/layout/layout-contact-me"
 import Experience from "../components/experience"
 import SEO from "../components/seo"
 
-const PageExperience = ({ data, transitionStatus }) => {
+const PagePublic = ({ data, transitionStatus }) => {
   return (
-    <LayoutContactMe bgClassName="experience">
-      <SEO title="Work Experience" />
+    <LayoutContactMe bgClassName="public">
+      <SEO title="Public Perception" />
       <Experience
         jobs={data.allMarkdownRemark.edges}
         transitionStatus={transitionStatus}
-        title="Work Experience"
-        description="My work experience is pretty long and this timeline will guide you through all companies or customers I've been working for and projects I've been working on."
+        title="Public perception"
+        description="Personal branding or my effort to create and influence public perception of myself."
       />
     </LayoutContactMe>
   )
@@ -21,7 +21,7 @@ const PageExperience = ({ data, transitionStatus }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fields: { slug: { regex: "/experience/" } } }
+      filter: { fields: { slug: { regex: "/public/" } } }
       sort: { fields: [frontmatter___dateFrom], order: DESC }
     ) {
       totalCount
@@ -49,4 +49,4 @@ export const query = graphql`
   }
 `
 
-export default PageExperience
+export default PagePublic

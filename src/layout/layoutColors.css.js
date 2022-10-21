@@ -31,16 +31,23 @@ const styles = css`
     background: #777;
     background: radial-gradient(ellipse at center, #777 0%, #333 100%);
   }
+  .public.layout-wrapper .layout-inner {
+    background: #666;
+    background: radial-gradient(ellipse at center, #666 0%, #222 100%);
+  }
   .home .hamburgercolr::before,
   .home .hamburgercolr::after,
   .projects .hamburgercolr::before,
   .projects .hamburgercolr::after,
+  .public .hamburgercolr::before,
+  .public .hamburgercolr::after,
   .experience .hamburgercolr::before,
   .experience .hamburgercolr::after {
     background-color: #fff;
   }
   .home .btn-contact-color,
   .projects .btn-contact-color,
+  .public .btn-contact-color,
   .experience .btn-contact-color {
     color: #fff;
   }

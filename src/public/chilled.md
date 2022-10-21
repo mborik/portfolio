@@ -1,7 +1,7 @@
 ---
 title: "chilled"
 company: "Chilled"
-logo: ../images/projects/chilled.jpg
+logo: ../images/public/chilled.jpg
 jobTitle: "electronic music album"
 images: [
   {
@@ -15,11 +15,11 @@ images: [
       <li><a href='https://music.youtube.com/playlist?list=OLAK5uy_nUoUUSKcqobRQE60KOsaV6hxqpxPKRUrY' target='_blank' ref='nofollow noreferrer'>Youtube Music</a></li></ul>",
     layout: "1",
     files: [
-      { image: ../images/projects/chilled/album.jpg },
-      { image: ../images/projects/chilled/inlay.jpg },
+      { image: ../images/public/chilled/album.jpg },
+      { image: ../images/public/chilled/inlay.jpg },
     ],
   },
 ]
-dateFrom: "2003-11-11"
+dateFrom: "2007-08-14"
 dateTo: "2007-08-14"
 ---

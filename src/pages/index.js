@@ -11,7 +11,7 @@ const PageHome = () => {
     headline: `Hello, I'm Martin Bórik`,
     intro: [
       `and I've been focusing on multiple areas of digital art for the last 20+ years`,
-      `and all of that time I worked as developer balancing between low-level programming and full-stack JavaScript development.`,
+      `and all of that time I worked as software developer balancing between low-level programming and full-stack JavaScript development.`,
       `Now I'm transitioning into people management, currently as Scrum Master.`,
     ],
     typewriter: [

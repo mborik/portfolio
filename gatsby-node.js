@@ -19,6 +19,7 @@ exports.onPreBootstrap = ({ store, reporter }) => {
   const dirs = [
     path.join(program.directory, "src/experience"),
     path.join(program.directory, "src/projects"),
+    path.join(program.directory, "src/public"),
     path.join(program.directory, "src/images"),
     path.join(program.directory, "src/utils"),
   ]
@@ -38,11 +39,12 @@ exports.onCreatePage = ({ page, actions }, themeOptions) => {
     "ComponentExperience",
     "ComponentIndex",
     "ComponentProjects",
+    "ComponentPublic",
   ]
 
   if (
     basePath &&
-    /gatsby-theme-byfolio\/src\/pages/g.test(page.componentPath) &&
+    /\/src\/pages/g.test(page.componentPath) &&
     components.includes(page.internalComponentName)
   ) {
     const { createPage, deletePage } = actions
