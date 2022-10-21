@@ -21,7 +21,7 @@ const useWnResize = (ref = false, delay = 500) => {
     })
   }, [ref])
 
-  const [resizeHandler] = useDebouncedCallback(() => {
+  const resizeHandler = useDebouncedCallback(() => {
     getSize()
   }, delay)
 
