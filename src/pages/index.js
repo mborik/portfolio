@@ -8,10 +8,9 @@ import SEO from "../components/seo"
 
 const PageHome = () => {
   const { headline, intro, typewriter } = {
-    headline: `Hello, I'm Martin Bórik`,
+    headline: `Hello, I'm Martin Bórik`,
     intro: [
-      `and I've been focusing on multiple areas of digital art for the last 20+ years`,
-      `and all of that time I worked as software developer balancing between low-level programming and full-stack JavaScript development.`,
+      `and I've been focusing on multiple areas of digital art for the last 20+ years and all of that time I worked as software developer balancing between low-level programming and full-stack JavaScript development.`,
       `Now I'm transitioning into people management, currently as Scrum Master.`,
     ],
     typewriter: [
@@ -20,7 +19,7 @@ const PageHome = () => {
       `Scrum Master`,
       `Electronic Music Producer`,
       `Digital Imagery, Sound and Video Processing`,
-      `Desktop Publishing, Typesetting and Graphic design`,
+      `Desktop Publishing and Graphic Design`,
     ],
   }
 
