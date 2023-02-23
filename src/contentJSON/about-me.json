@@ -2,7 +2,7 @@
   {
     "id": "intro",
     "subtitle": "Who am I?",
-    "content": "I'm a&nbsp;<b>Senior Software Development Engineer</b> born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business and even more years of experience in high-level programming in general. Currently, I&nbsp;have been focusing on JavaScript and its latest features for more than a&nbsp;decade."
+    "content": "I'm a&nbsp;<b>Software Development Engineer III</b>, currently acting in <b>Scrum Master</b> role, born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business balancing between low-level programming and full-stack JavaScript development, now transitioning into people management."
   },
   {
     "id": "history",
@@ -25,8 +25,13 @@
     "description": "A snapshot from my presentation at the Ness Idea Contest 2017.<br>Eventually, I won the honorable mention prize. 😊"
   },
   {
+    "id": "management",
+    "subtitle": "People Management",
+    "content": "In certain moment when the team grew too fast and got into performance and organisation issues, came the need for a <b>Scrum Master</b> role. I&nbsp;initiated and led meetings leading to the formation and reorganisation of the team into smaller development groups, chose members based on 1on1 conversations with them and long-term observation of their relationships and cooperation with each other, still keeping a balanced seniority. Then I defined 2-week Sprint schedule and wrote down all processes, rules and Agile ceremonies agenda to bring whole team on the same page. I'm <b>supporting the team</b> (by removing blockers, managing deps, board checking and updating), <b>supporting Product Manager</b> (by prioritisation and backlog management, shaping visions and product goals, helping to interact with developers and stakeholders) and <b>protecting the team</b> by acting as buffer for disruptive product managers and facing of objections from stakeholders. As part of this role, I also did <b>regular reporting</b> to onsite management and stakeholders of the team performance by Sprint velocity tracking, monitoring of control charts and cumulative flow charts. I&nbsp;also did <b>Agile coaching</b> of team members and helped them to improve their processes, soft skills and knowledge."
+  },
+  {
     "id": "hobbies",
     "subtitle": "Hobbies",
-    "content": "When I&nbsp;am not working, I&nbsp;like to devote my time to computer-related activities. I&nbsp;am interested in old computers and I&nbsp;do a&nbsp;lot in order to keep those gems alive and spread knowledge about them. Besides my beloved daughter who has been keeping me occupied for several years now, my biggest passion is <b>production of electronic music</b>. It's amazing to create an opus just with the help of your computer, full of real or synthetic instruments, regardless of whether you can play them or not."
+    "content": "When I'm not working, I&nbsp;like to devote my time to computer-related activities. I'm interested in old computers and I&nbsp;do a&nbsp;lot in order to keep those gems alive and spread knowledge about them. Besides my beloved daughter who has been keeping me occupied for several years now, my biggest passion is <b>production of electronic music</b>. It's amazing to create an opus just with the help of your computer, full of real or synthetic instruments, regardless of whether you can play them or not."
   }
 ]
