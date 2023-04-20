@@ -28,7 +28,6 @@ const PageHome = () => {
       <SEO />
       <section css={styles.dataSection}>
         <div css={styles.dataContainer}>
-          <span css={styles.dataShadow}></span>
           <div css={styles.dataContent}>
             <h1>{headline}</h1>
             <h3>

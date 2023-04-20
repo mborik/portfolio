@@ -14,7 +14,7 @@ const KEYCODE = {
 
 const Slideshow = ({ backLink = "/", images, website, children }) => {
   const slideshow = React.useRef()
-  const dimentions = useWnResize(slideshow, 10)
+  const dimensions = useWnResize(slideshow, 10)
   const [current, setCurrent] = React.useState(0)
   const [isAnimating, setIsAnimating] = React.useState(false)
   const [direction, setDirection] = React.useState("next")
@@ -75,13 +75,13 @@ const Slideshow = ({ backLink = "/", images, website, children }) => {
           </AniLink>
         </header>
         <div css={styles.slideshow} ref={slideshow}>
-          {dimentions &&
+          {dimensions &&
             images.map((item, index) => (
               <Slide
                 {...item}
                 active={current === index}
                 key={item.title}
-                dimentions={dimentions}
+                dimentions={dimensions}
                 direction={direction}
                 onEndAnimating={() => {
                   setIsAnimating(false)

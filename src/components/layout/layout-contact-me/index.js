@@ -3,6 +3,7 @@ import Obfuscate from "react-obfuscate"
 import PropTypes from "prop-types"
 import { Global, css } from "@emotion/react"
 import styles from "./contact-me.css"
+import bokeh from "./bokeh"
 import ContactButton from "./contactButton"
 import ContactContent from "./contactContent"
 import Menu from "../../menu"
@@ -11,6 +12,10 @@ import { siteMetadata } from "../../../../gatsby-config"
 
 const LayoutContactMe = ({ children, bgClassName }) => {
   const [isContactOpen, setIsContactOpen] = React.useState(false)
+  const canvasRef = React.useRef(null)
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  React.useEffect(bokeh(canvasRef), [canvasRef])
 
   const { email, social } = siteMetadata
 
@@ -45,12 +50,13 @@ const LayoutContactMe = ({ children, bgClassName }) => {
           <Obfuscate tel="+421908343277">+421 908 343 277</Obfuscate>
         </ContactContent>
         <div className={`page${isContactOpen ? " page-move" : ""}`}>
+          <canvas ref={canvasRef} css={styles.bokeh} className="bokeh"></canvas>
           <div css={styles.pageTab} className="tab"></div>
           <div css={styles.pageTab} className="tab"></div>
           <div css={styles.pageTab} className="tab"></div>
           <div css={styles.mainContainer} className="tab">
             <div className="layout-inner">
-              <div css={styles.layoutMagin}>
+              <div css={styles.layoutMargin}>
                 <Menu
                   numPoints={18}
                   duration={600}

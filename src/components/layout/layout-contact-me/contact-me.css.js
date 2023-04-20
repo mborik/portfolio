@@ -19,6 +19,7 @@ const styles = {
     }
     .page {
       width: 100%;
+      overflow: hidden;
       position: relative;
       perspective: 1200px;
       perspective-origin: 50% 0;
@@ -75,6 +76,10 @@ const styles = {
     }
     .contactme-open {
       pointer-events: auto;
+
+      & + * .bokeh {
+        opacity: 0;
+      }
     }
     .contactme-container {
       margin: 5em 0;
@@ -150,7 +155,7 @@ const styles = {
     background-position: 50% 10em;
     background-size: 75% auto;
   `,
-  layoutMagin: css`
+  layoutMargin: css`
     margin-bottom: 1.45rem;
   `,
   pageContainer: css`
@@ -158,6 +163,7 @@ const styles = {
     padding: 0px 1.0875rem 1.45rem;
     padding-top: 0;
     min-height: 100%;
+    z-index: 1;
   `,
   contactContactme: css`
     position: absolute;
@@ -197,6 +203,17 @@ const styles = {
     &:hover {
       color: #fff;
     }
+  `,
+  bokeh: css`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    aspect-ratio: 1/2;
+    pointer-events: none;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    z-index: 1;
   `,
 }
 
