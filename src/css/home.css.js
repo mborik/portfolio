@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import mediaQueryGenerator from "../utils/mediaQGen"
 
-const [media45em] = mediaQueryGenerator([{ type: "max", size: "45" }])
+const [media65em] = mediaQueryGenerator([{ type: "max", size: "65" }])
 
 const styles = {
   blackColor: css`
@@ -11,22 +11,48 @@ const styles = {
     height: 100%;
   `,
   dataContainer: css`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
     margin: 0 auto;
     padding: 0 3rem;
-    max-width: 768px;
-    height: 100%;
-    ${media45em} {
+    padding-top: 20vh;
+    > div {
+      flex: 1 0 auto;
+      max-width: 768px;
+    }
+    ${media65em} {
+      flex-direction: column;
       padding: 0 1rem;
+      padding-top: 10vh;
       width: auto;
     }
   `,
-  dataContent: css`
-    padding-top: 20vh;
+  dataLeftPane: css`
+    text-align: right;
     h3 {
-      max-width: 34rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      max-width: 33rem;
+    }
+  `,
+  dataRightPane: css`
+    text-align: left;
+    h2 {
+      font-size: 2rem;
+      > kbd {
+        margin: 0 0.2em;
+        font-size: inherit;
+      }
+    }
+    h4 {
+      font-size: 1.15rem;
+      line-height: 1.7rem;
+      max-width: 33rem;
     }
     .Typewriter {
-      font-size: 1.5em;
+      font-size: 1.4em;
       color: #666;
     }
   `,
@@ -36,9 +62,10 @@ const styles = {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background: transparent url("/me.png") 75% bottom fixed no-repeat;
-    background-size: 75vmin;
+    background: transparent url("/me.png") 0 bottom fixed no-repeat;
+    background-size: 60vmin;
     opacity: 0.1;
+    z-index: -2;
   `,
 }
 

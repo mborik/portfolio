@@ -169,7 +169,7 @@ const styles = {
     position: absolute;
     top: 1.15em;
     right: 1.25em;
-    z-index: 1;
+    z-index: 10;
     ${media40em} {
       font-size: 0.85em;
       position: absolute;
