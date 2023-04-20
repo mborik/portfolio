@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import mediaQueryGenerator from "../utils/mediaQGen"
 
-const [media65em] = mediaQueryGenerator([{ type: "max", size: "65" }])
+const [media80em] = mediaQueryGenerator([{ type: "max", size: "80" }])
 
 const styles = {
   blackColor: css`
@@ -22,7 +22,7 @@ const styles = {
       flex: 1 0 auto;
       max-width: 768px;
     }
-    ${media65em} {
+    ${media80em} {
       flex-direction: column;
       padding: 0 1rem;
       padding-top: 10vh;
@@ -62,10 +62,10 @@ const styles = {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background: transparent url("/me.png") 0 bottom fixed no-repeat;
-    background-size: 60vmin;
+    background: transparent url("/me.png") left bottom fixed no-repeat;
+    background-size: 50vmin;
     opacity: 0.1;
-    z-index: -2;
+    z-index: -1;
   `,
 }
 
