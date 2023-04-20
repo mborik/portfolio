@@ -14,7 +14,7 @@ images: [
   {
     caption: "regression",
     title: "Regression",
-    description: "Design demo for ZX-Spectrum 128k and ZX-Spectrum Next",
+    description: "Design demo for ZX-Spectrum 128k and ZX-Spectrum Next.<br>1st place in Wild competition on FOReVER 2019",
     layout: "2",
     files: [
       { image: ../images/projects/regression/regression5.png },
