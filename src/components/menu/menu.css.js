@@ -292,6 +292,71 @@ const styles = {
     pointer-events: none;
     z-index: 100;
   `,
+  introMenuItems: css`
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    button.simple-menu-item {
+      width: 3em;
+      height: 3em;
+      display: block;
+      cursor: pointer;
+      position: relative;
+      pointer-events: auto;
+      background: none;
+      border: none;
+      outline: none;
+      color: #222;
+      transition: color 0.3s;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      .icon {
+        display: block;
+        width: 3em;
+        height: 3em;
+      }
+      .title {
+        display: block;
+        position: absolute;
+        left: 2.5em;
+        top: 0;
+        font-size: 2em;
+        width: auto;
+        height: 3em;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: left;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(100%);
+        pointer-events: none;
+        transition: transform 0.5s, opacity 0.3s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-in;
+        text-shadow: 0 0 8px #222;
+      }
+
+      &:hover {
+        color: #fff;
+        .icon {
+          filter: drop-shadow(0 0 8px #222);
+        }
+        .title {
+          opacity: 1;
+          transform: translateX(0);
+          pointer-events: auto;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+      }
+    }
+  `,
   shape: css`
     width: 100vw;
     height: 100%;

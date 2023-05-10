@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { css } from "@emotion/react"
 import styles from "./menu.css"
+import { defaultLinks } from "./menu.links"
 
 const Menu = ({
   numPoints,
@@ -11,22 +12,6 @@ const Menu = ({
   delayPerPath,
   fixedMenuPosition,
 }) => {
-  const defaultLinks = {
-    home: { title: "Home", color: "#999", url: "/" },
-    experience: {
-      title: "Work Experience",
-      color: "#444",
-      url: "/experience",
-    },
-    public: { title: "Public Perception", color: "#666", url: "/public" },
-    projects: { title: "Hobby Projects", color: "#777", url: "/projects" },
-    aboutMe: {
-      title: "Who am I?",
-      color: "#999",
-      url: "/about-me",
-    },
-  }
-
   const [isMenuOpen, setIsMenuOpen] = React.useState(null)
   const elmHamburger = React.useRef()
   const isAnimating = React.useRef(false)

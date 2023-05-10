@@ -55,17 +55,11 @@ const styles = {
       font-size: 1.4em;
       color: #666;
     }
-  `,
-  dataShadow: css`
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background: transparent url("/me.png") left bottom fixed no-repeat;
-    background-size: 50vmin;
-    opacity: 0.1;
-    z-index: -1;
+    ${media80em} {
+      .Typewriter {
+        font-size: 1.15em;
+      }
+    }
   `,
 }
 

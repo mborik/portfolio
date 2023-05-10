@@ -1,7 +1,7 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import GraphemeSplitter from "grapheme-splitter"
-import LayoutContactMe from "../components/layout/layout-contact-me"
+import LayoutIntro from "../components/layout/layout-intro"
 import styles from "../css/home.css"
 import SEO from "../components/seo"
 
@@ -15,11 +15,10 @@ const PageHome = () => {
   ]
 
   return (
-    <LayoutContactMe bgClassName="home">
+    <LayoutIntro>
       <SEO />
       <section css={styles.dataSection}>
         <div css={styles.dataContainer}>
-          <span css={styles.dataShadow}></span>
           <div css={styles.dataLeftPane}>
             <h1>Hello, I'm Martin Bórik</h1>
             <h3>
@@ -58,7 +57,7 @@ const PageHome = () => {
           </div>
         </div>
       </section>
-    </LayoutContactMe>
+    </LayoutIntro>
   )
 }
 
