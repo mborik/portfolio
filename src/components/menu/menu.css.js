@@ -303,6 +303,27 @@ const styles = {
     flex-direction: column;
     justify-content: flex-start;
 
+    &::after {
+      width: 90vw;
+      height: 200%;
+      content: "";
+      display: block;
+      position: absolute;
+      left: -30vw;
+      top: -50%;
+      opacity: 0;
+      transition-timing-function: ease-in;
+      transition: opacity 0.3s;
+      background: #999;
+      background: radial-gradient(ellipse at center, #999f 0%, #9990 60%);
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
     button.simple-menu-item {
       width: 3em;
       height: 3em;
@@ -321,16 +342,18 @@ const styles = {
         display: block;
         width: 3em;
         height: 3em;
+        background: #999;
+        border-radius: 50%;
       }
       .title {
-        display: block;
+        display: flex;
+        align-items: center;
         position: absolute;
         left: 2.5em;
         top: 0;
         font-size: 2em;
         width: auto;
-        height: 3em;
-        vertical-align: middle;
+        height: 100%;
         white-space: nowrap;
         text-align: left;
         color: #fff;
@@ -341,11 +364,17 @@ const styles = {
         transition-delay: 0.1s;
         transition-timing-function: ease-in;
         text-shadow: 0 0 8px #222;
+
+        ${media55em} {
+          font-size: 1.6em;
+        }
       }
 
       &:hover {
         color: #fff;
+
         .icon {
+          background: #222;
           filter: drop-shadow(0 0 8px #222);
         }
         .title {
