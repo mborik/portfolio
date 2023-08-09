@@ -5,6 +5,10 @@
     "content": "I'm a&nbsp;<b>Software Development Engineer III</b>, currently acting in <b>Scrum Master</b> role, born in 1982 operating in <b>Košice, Slovakia</b>, with two decades of experience in professional IT business balancing between low-level programming and full-stack JavaScript development, now transitioning into people management."
   },
   {
+    "id": "current_me",
+    "image": "/current_me.jpg"
+  },
+  {
     "id": "history",
     "subtitle": "History",
     "content": "My humble beginnings date back to the 1980s when I&nbsp;was a&nbsp;boy who started to learn <b>BASIC</b> on a&nbsp;micro-computer <b>PMD&nbsp;85</b> produced in Czechoslovakia. After the Velvet Revolution, my elder brother bought the amazing <b>ZX-Spectrum+</b> and my interest in computers grew even stronger. Therefore, during the final years of my elementary school, I&nbsp;also learned the <b>assembly language</b> of the Zilog Z80 processor and I&nbsp;started to experiment with it. Later on, while I&nbsp;was studying electrical engineering at a&nbsp;Secondary Vocational School, I&nbsp;started to learn the <b>C&nbsp;programming language</b>. I&nbsp;guess that all these steps predestined my career."

@@ -2,6 +2,7 @@ import { css } from "@emotion/react"
 import mediaQueryGenerator from "../utils/mediaQGen"
 
 const [media80em] = mediaQueryGenerator([{ type: "max", size: "80" }])
+const [media42em] = mediaQueryGenerator([{ type: "max", size: "42" }])
 
 const styles = {
   blackColor: css`
@@ -27,6 +28,9 @@ const styles = {
       padding: 0 1rem;
       padding-top: 10vh;
       width: auto;
+    }
+    ${media42em} {
+      padding-top: 32vh;
     }
   `,
   dataLeftPane: css`
@@ -58,6 +62,7 @@ const styles = {
     ${media80em} {
       .Typewriter {
         font-size: 1.15em;
+        color: #333;
       }
     }
   `,

@@ -214,6 +214,9 @@ const styles = {
     opacity: 0.8;
     transition: opacity 0.5s;
     z-index: 1;
+    ${media40em} {
+      width: 200vw;
+    }
   `,
 }
 

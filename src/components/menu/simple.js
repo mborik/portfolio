@@ -5,10 +5,12 @@ import { defaultLinks } from "./menu.links"
 
 const SimpleMenu = ({}) => {
   function menuGenerator({ icon, title, color, url }) {
-    if (url === location.pathname) return null
+    const pathname =
+      typeof window !== "undefined" ? window.location.pathname : "/"
+    if (url === pathname) return null
     return (
-      <li>
-        <AniLink paintDrip key={url} to={url} hex={color}>
+      <li key={url}>
+        <AniLink paintDrip to={url} hex={color}>
           <button className="simple-menu-item">
             {icon()}
             <div className="title">{title}</div>

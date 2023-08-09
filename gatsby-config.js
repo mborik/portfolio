@@ -7,10 +7,10 @@ const siteMetadata = {
   siteKeywords: `frontend software engineer full stack javascript developer electronic music producer`,
   email: `martin@borik.net`,
   social: {
-    twitter: `mborik128`,
     gitHub: `mborik`,
     linkedIn: `in/mborik/`,
     resumeInPdf: `/Martin_Borik_CV_2023.pdf`,
+    twitter: `mborik128`,
     openGraphImage: `/og-image-borik-net.jpg`,
   },
 }

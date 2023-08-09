@@ -41,7 +41,7 @@ const styles = {
   aboutShadow: css`
     color: rgba(0, 0, 0, 0.04);
     position: absolute;
-    top: 20vh;
+    top: 2vh;
     left: 20vw;
     font-size: 12rem;
   `,
