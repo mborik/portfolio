@@ -30,11 +30,17 @@ const Experience = ({
         },
         index
       ) => {
-        const years = dateTo
-          ? dateTo === dateFrom
-            ? dateFrom
-            : `${dateFrom} - ${dateTo}`
-          : `${dateFrom} - ${new Date().getFullYear()}`
+        let years = `${dateFrom}`
+        if (dateTo) {
+          if (dateTo !== dateFrom) {
+            years = `${dateFrom} - ${dateTo}`
+          }
+        } else {
+          const currentYear = `${new Date().getFullYear()}`
+          if (dateFrom !== currentYear) {
+            years = `${dateFrom} - ${currentYear}`
+          }
+        }
         let showYear = false
         if (index % 2 === 0) {
           showYear = true

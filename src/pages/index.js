@@ -7,9 +7,11 @@ import SEO from "../components/seo"
 
 const PageHome = () => {
   const typewriter = [
+    `Technical Analyst`,
     `Software Development Engineer III`,
-    `Full-Stack JavaScript Developer`,
     `Scrum Master`,
+    `Full-Stack JavaScript Developer`,
+    `Low-Level C/C++ Developer`,
     `Electronic Music Producer`,
     `Desktop Publishing and Graphic Design`,
   ]
@@ -23,12 +25,12 @@ const PageHome = () => {
             <h1>Hello, I'm Martin Bórik</h1>
             <h3>
               and I've been focusing on multiple areas of digital art for the
-              last 20+ years and all of that time I&nbsp;worked as software
-              developer balancing between low-level programming and full-stack
-              JavaScript development.
+              last 20+ years.
+              I&nbsp;worked as software developer balancing
+              between low-level programming and full-stack JavaScript development.
               <br />
-              Now I'm transitioning into people management, currently as Scrum
-              Master.
+              I also have experience with people management as Scrum Master,
+              now acting as Technical Analyst.
             </h3>
           </div>
           <div css={styles.dataRightPane}>

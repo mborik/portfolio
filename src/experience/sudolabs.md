@@ -2,7 +2,7 @@
 title: "sudolabs"
 company: "Sudolabs"
 logo: ../images/companies/sudolabs.jpg
-jobTitle: "Software Development Engineer III"
+jobTitle: "Software Engineer III / Scrum Master"
 skills:
   [
     { title: "VSCode", image: ../images/skills/vscode.svg },
@@ -23,7 +23,7 @@ skills:
     { title: "PostgresSQL", image: ../images/skills/postgresql.svg },
     { title: "Docker", image: ../images/skills/docker.svg },
     { title: "Github", image: ../images/skills/github.svg },
-    { title: "git", image: ../images/skills/git.svg },
+    { title: "Notion", image: ../images/skills/notion.svg },
     { title: "Slack", image: ../images/skills/slack.svg },
   ]
 images: [
@@ -43,7 +43,7 @@ images: [
     title: "The Expert",
     description: "<ul>
       <li>The Expert is for those who are seeking personalized advice, guidance and support from the top interior designers from across the globe via video consultations.</li>
-      <li>Now, I'm acting in <b>Scrum Master</b> role here, after year of full-stack development.</li>
+      <li>After a year of full-stack development, I acted in the <b>Scrum Master</b> role.</li>
       <li>Application built on Next.js, Apollo, React, styled-components and Formik+Yup.</li>
       <li>Backend API on GraphQL. Resolvers, dataloaders and providers in Objection.js to PostgreSQL database.</li></ul>",
     layout: "3",
@@ -67,5 +67,5 @@ images: [
   },
 ]
 dateFrom: "2020-11-16"
-dateTo:
+dateTo: "2023-12-31"
 ---
