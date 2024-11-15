@@ -19,10 +19,10 @@ const PagePublic = ({ data, transitionStatus }) => {
 }
 
 export const query = graphql`
-  query {
+  query public {
     allMarkdownRemark(
       filter: { fields: { slug: { regex: "/public/" } } }
-      sort: { fields: [frontmatter___dateFrom], order: DESC }
+      sort: { frontmatter: { dateFrom: DESC } }
     ) {
       totalCount
       edges {
