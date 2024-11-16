@@ -1,12 +1,18 @@
 import Icon from "../icon"
 
 export const defaultLinks = {
-  home: { title: "Home", color: "#999", url: "/", icon: Icon.Prev },
+  home: { title: "Home", color: "#999", url: "/" },
   experience: {
     title: "Work Experience",
     color: "#444",
     url: "/experience",
     icon: Icon.MenuWorkExp,
+  },
+  projects: {
+    title: "Hobby Projects",
+    color: "#777",
+    url: "/projects",
+    icon: Icon.MenuHobby,
   },
   public: {
     title: "Public Perception",
@@ -14,11 +20,11 @@ export const defaultLinks = {
     url: "/public",
     icon: Icon.MenuPublic,
   },
-  projects: {
-    title: "Hobby Projects",
-    color: "#777",
-    url: "/projects",
-    icon: Icon.MenuHobby,
+  music: {
+    title: "Music Production",
+    color: "#000",
+    url: "https://martin.borik.net/",
+    icon: Icon.MenuMusic,
   },
   aboutMe: {
     title: "Who am I?",

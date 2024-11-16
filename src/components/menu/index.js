@@ -139,7 +139,11 @@ const Menu = ({
     )
   }
 
-  function menuGenerator({ title, color, url }) {
+  function menuGenerator({ title, color, url, icon }) {
+    let additionalProps = {}
+    if (url.startsWith("http")) {
+      additionalProps = { target: "_blank", rel: "noopener norefferer" }
+    }
     return (
       <AniLink
         paintDrip
@@ -147,8 +151,10 @@ const Menu = ({
         to={url}
         hex={color}
         className={`global-menu-item${isMenuOpen ? " is-opened" : ""}`}
+        {...additionalProps}
       >
-        {title}
+        <span>{title}</span>
+        {icon && icon()}
       </AniLink>
     )
   }
@@ -186,8 +192,8 @@ const Menu = ({
   let menu = Object.entries(defaultLinks).map(([_key, value]) =>
     !Array.isArray(value)
       ? menuGenerator(value)
-      : value.map(({ title, color, link: url }) =>
-          menuGenerator({ title, color, url })
+      : value.map(({ title, color, link: url, icon }) =>
+          menuGenerator({ title, color, url, icon })
         )
   )
   menu = [].concat(...menu)

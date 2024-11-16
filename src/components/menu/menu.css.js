@@ -45,15 +45,23 @@ const styles = {
       }
     }
     .global-menu-item {
-      font-size: 4vmax;
+      font-size: 3vmax;
       opacity: 0;
       transform: translateY(-100%);
       pointer-events: none;
-      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       margin: 0.25em 0;
       transition: transform 0.3s, opacity 0.3s;
       transition-timing-function: ease-in;
       outline: none;
+      flex: 1 0 100%;
+      white-space: nowrap;
+      > svg {
+        flex: 0 0 3rem;
+        margin: 0 1rem !important;
+      }
       &:nth-of-type(1) {
         transition-delay: 0s;
       }

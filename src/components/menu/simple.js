@@ -8,9 +8,13 @@ const SimpleMenu = ({}) => {
     const pathname =
       typeof window !== "undefined" ? window.location.pathname : "/"
     if (url === pathname) return null
+    let additionalProps = {}
+    if (url.startsWith("http")) {
+      additionalProps = { target: "_blank", rel: "noopener norefferer" }
+    }
     return (
       <li key={url}>
-        <AniLink paintDrip to={url} hex={color}>
+        <AniLink paintDrip to={url} hex={color} {...additionalProps}>
           <button className="simple-menu-item">
             {icon()}
             <div className="title">{title}</div>
