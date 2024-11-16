@@ -1,6 +1,6 @@
 import { siteMetadata } from "../../gatsby-config"
 
-export default part => {
+export default (part) => {
   const result = []
   if (part) {
     result.push(part)

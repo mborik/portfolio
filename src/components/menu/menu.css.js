@@ -53,7 +53,9 @@ const styles = {
       flex-direction: row;
       justify-content: space-between;
       margin: 0.25em 0;
-      transition: transform 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
       transition-timing-function: ease-in;
       outline: none;
       flex: 1 0 100%;
@@ -368,7 +370,9 @@ const styles = {
         opacity: 0;
         transform: translateX(100%);
         pointer-events: none;
-        transition: transform 0.5s, opacity 0.3s;
+        transition:
+          transform 0.5s,
+          opacity 0.3s;
         transition-delay: 0.1s;
         transition-timing-function: ease-in;
         text-shadow: 0 0 8px #222;
@@ -389,7 +393,9 @@ const styles = {
           opacity: 1;
           transform: translateX(0);
           pointer-events: auto;
-          transition: transform 0.3s, opacity 0.3s;
+          transition:
+            transform 0.3s,
+            opacity 0.3s;
         }
       }
     }

@@ -66,7 +66,9 @@ const styles = {
       z-index: 2;
       opacity: 0;
       transform: scale3d(0.8, 0.8, 1);
-      transition: opacity 0.5s, transform 0.5s;
+      transition:
+        opacity 0.5s,
+        transform 0.5s;
       ${media40em} {
         font-size: 1.25em;
       }
@@ -123,7 +125,9 @@ const styles = {
     .contactme-info {
       opacity: 0;
       transform: translate3d(0, 150px, 0);
-      transition: opacity 1s, transform 1s;
+      transition:
+        opacity 1s,
+        transform 1s;
       transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     }
     .contactme-open .contactme-container,

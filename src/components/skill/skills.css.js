@@ -124,7 +124,10 @@ const styles = {
       background: rgba(0, 0, 0, 0.4);
       box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.4);
       transform: translateZ(-1px) scale(0.9);
-      transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s,
+        box-shadow 0.3s;
       backface-visibility: hidden;
       border-radius: 2%;
     }
@@ -171,7 +174,9 @@ const styles = {
     color: #000;
     opacity: 0;
     transform: translate3d(0, -20px, 0);
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
   `,
 }
 
