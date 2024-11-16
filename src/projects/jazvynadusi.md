@@ -3,7 +3,7 @@ title: "jazvynadusi"
 company: "Jazvy na duši"
 logo: ../images/projects/jazvynadusi.jpg
 jobTitle: "novel for women"
-website: "https://www.martinus.sk/?uItem=894841"
+website: "https://www.martinus.sk/722411-jazvy-na-dusi/kniha"
 skills:
   [
     { title: "Illustrator", image: ../images/skills/adobe-illustrator.svg },
