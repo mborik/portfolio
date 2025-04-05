@@ -8,7 +8,8 @@ images: [
   {
     caption: "theexpert",
     title: "Sudolabs blog: Startup scaling",
-    description: "When helping one of our long-term clients scale up their product—a pivotal shift from online consultations to the strategic development of an e-commerce solution — we experienced both challenges and growth opportunities for our team dynamics. How did we adapt, restructure teams, implement Scrum methodologies, and employ a collaborative problem-solving approach to address difficulties that arose during the process?",
+    description: "When helping one of our long-term clients scale up their product—a pivotal shift from online consultations to the strategic development of an e-commerce solution — we experienced both challenges and growth opportunities for our team dynamics. How did we adapt, restructure teams, implement Scrum methodologies, and employ a collaborative problem-solving approach to address difficulties that arose during the process?
+      <span style='display:flex; justify-self:flex-end;margin:-1rem -2rem 0 0'><a href='/Martin_Borik_Startup_scaling_article.pdf' target='_blank' ref='noopener noreferrer nofollow nofollow'>read pdf version »</a></span>",
     layout: "1",
     files: [
       { image: ../images/public/theexpert/page.jpg },

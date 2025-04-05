@@ -8,10 +8,11 @@ images: [
   {
     caption: "zapeceny",
     title: "Zapečené procesory: Podcast",
-    description: "Host of educational-entertaining podcast which explores the history of computing. It’s primarily aimed at younger generations who didn’t experience the computer boom of the 80s and 90s firsthand.",
+    description: "Host of educational-entertaining podcast in Slovak language which explores the history of computer boom of the 80s and 90s and some of these technologies in general.<br /><b>Nominated into newcomer category of Orange podcast of year 2025.</b>",
     layout: "1",
     files: [
       { image: ../images/public/zapeceny/full.png },
+      { image: ../images/public/zapeceny/orange.png },
     ],
   },
 ]
