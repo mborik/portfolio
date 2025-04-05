@@ -22,7 +22,7 @@ export const query = graphql`
   query experience {
     allMarkdownRemark(
       filter: { fields: { slug: { regex: "/experience/" } } }
-      sort: { frontmatter: { dateFrom: DESC } }
+      sort: { frontmatter: { sort: DESC } }
     ) {
       totalCount
       edges {

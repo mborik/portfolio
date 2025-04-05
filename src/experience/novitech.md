@@ -62,4 +62,5 @@ images: [
 ]
 dateFrom: "2005-09-11"
 dateTo: "2011-08-31"
+sort: 1
 ---
