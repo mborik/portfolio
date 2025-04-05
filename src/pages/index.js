@@ -7,13 +7,12 @@ import SEO from "../components/seo"
 
 const PageHome = () => {
   const typewriter = [
-    `Software Analyst`,
-    `Software Development Engineer III`,
     `Scrum Master`,
     `Full-Stack JavaScript Developer`,
     `Low-Level C/C++ Developer`,
     `Cinematic Music Composer`,
     `Desktop Publishing and Graphic Design`,
+    `Podcaster`,
   ]
 
   return (
@@ -27,9 +26,8 @@ const PageHome = () => {
               and I've been focusing on multiple areas of digital art for the
               last 20+ years. I&nbsp;worked as software developer balancing
               between low-level programming and full-stack JavaScript
-              development.
-              <br />I also have experience with people management as Scrum
-              Master, now acting as Software Analyst.
+              development. I also have experience with Project Management, now
+              acting as Scrum Master.
             </h3>
           </div>
           <div css={styles.dataRightPane}>
